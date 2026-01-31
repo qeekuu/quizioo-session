@@ -1,9 +1,17 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { styles, colors } from "./ScreenStyles.styles";
+import {NativeStackNavigationProp} from "@react-navigation/native-stack";
 import AppButton from "../components/AppButton";
+import {RootStackParamList} from "../navigation/types";
+import {useNavigation} from "@react-navigation/native";
+
+type Nav = NativeStackNavigationProp<RootStackParamList, "ChooseQuiz">;
 
 export default function ChooseQuizScreen(){
+	const navigation = useNavigation<Nav>();
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<View style={styles.topBar}>
@@ -13,7 +21,7 @@ export default function ChooseQuizScreen(){
 				<Text style={styles.boldText}>Choose Quiz</Text>
 				<AppButton
 					title="Inżynieria Oprogramowania"
-					onPress={() => console.log("Klik")}
+					onPress={() => navigation.navigate("QuizDetails")}
 				/>
 				<AppButton
 					title="Aplikacje Internetowe"
@@ -24,38 +32,3 @@ export default function ChooseQuizScreen(){
 	);
 }
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#141b2c',
-	},
-
-	text:{
-		color: '#fff',
-	},
-	
-	topBar: {
-		height: 70,
-		justifyContent: 'center',
-		alignItems: 'center',
-		margin: 10,
-		marginBottom: 25,
-		borderRadius: 10,
-		borderBottomWidth: 7,
-		borderBottomColor: '#fd86d4',
-	},
-
-	boldText: {
-		color: '#fff',
-		fontWeight: 'bold',
-		fontSize: 17,
-	},
-
-	mainCard: {
-		justifyContent: 'center',
-		alignItems: 'center',
-		margin: 10,
-		gap: 16,
-	},
-
-});
