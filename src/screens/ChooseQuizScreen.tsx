@@ -21,11 +21,11 @@ export default function ChooseQuizScreen(){
 				<Text style={styles.boldText}>Choose Quiz</Text>
 				<AppButton
 					title="Inżynieria Oprogramowania"
-					onPress={() => navigation.navigate("QuizDetails")}
+					onPress={() => navigation.navigate("QuizDetails", { quizId: "io" })}
 				/>
 				<AppButton
 					title="Aplikacje Internetowe"
-					onPress={() => console.log("Aplikacje Internetowe")}
+					onPress={() => navigation.navigate("QuizDetails", { quizId: "ai" })}
 				/>
 			</View>
 		</SafeAreaView>	

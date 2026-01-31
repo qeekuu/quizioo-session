@@ -1,4 +1,4 @@
 export type RootStackParamList = {
 	ChooseQuiz: undefined;
-	QuizDetails: undefined;
+	QuizDetails: {quizId: string};
 }

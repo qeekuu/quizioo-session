@@ -49,7 +49,15 @@ export const styles = StyleSheet.create({
 		marginBottom: 12,
 	},
 
-	buttonsSection: {
+	answerBox: {
+		padding: 8,
+		borderWidth: 5,
+		borderRadius: 12,
+		borderColor: colors.bordercolor,	
 	},
 
+	answerBoxSelected: {
+		opacity: 0.6,
+		transform: [{ scale: 0.97 }],
+	},
 });

@@ -1,0 +1,25 @@
+{
+  "io": {
+    "title": "Inżynieria Oprogramowania",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Jakie rodzaje nawigacji występują w React Native?",
+        "answers": ["Stack", "Tab", "Drawer", "Redux"],
+        "correct": [0, 1, 2]
+      }
+    ]
+  },
+  "ai": {
+    "title": "Aplikacje Internetowe",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Co to jest REST?",
+        "answers": ["Styl architektury", "Baza danych", "Framework", "Protokół"],
+        "correct": [0]
+      }
+    ]
+  }
+}
+
