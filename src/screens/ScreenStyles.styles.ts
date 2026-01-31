@@ -10,17 +10,18 @@ export const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: colors.surface,
+		paddingHorizontal: 12,
 	},
 
 	text:{
 		color: colors.textcolor,
+		fontSize: 16,
 	},
 	
 	topBar: {
 		height: 70,
 		justifyContent: 'center',
 		alignItems: 'center',
-		margin: 10,
 		marginBottom: 25,
 		borderRadius: 10,
 		borderBottomWidth: 7,
@@ -36,8 +37,19 @@ export const styles = StyleSheet.create({
 	mainCard: {
 		justifyContent: 'center',
 		alignItems: 'center',
-		margin: 10,
 		gap: 16,
+	},
+
+	quizDetails: {
+		gap: 8,
+	},
+
+	answers: {
+		gap: 10,
+		marginBottom: 12,
+	},
+
+	buttonsSection: {
 	},
 
 });
