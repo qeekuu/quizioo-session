@@ -7,7 +7,19 @@
         "question": "Jakie rodzaje nawigacji występują w React Native?",
         "answers": ["Stack", "Tab", "Drawer", "Redux"],
         "correct": [0, 1, 2]
-      }
+      },
+	  {
+        "id": 2,
+        "question": "Czy tekst mozę być umieczony bez <Text>?",
+        "answers": ["Tak", "Nie"],
+        "correct": [1]
+      },
+	  {
+		"id": 3,
+		"question": "Wymień metody, którymi można modyfikować dane:",
+		"answers": ["PUT", "GET", "POST", "PATCH"],
+		"correct": [0, 2, 3]
+	  }
     ]
   },
   "ai": {

@@ -60,4 +60,12 @@ export const styles = StyleSheet.create({
 		opacity: 0.6,
 		transform: [{ scale: 0.97 }],
 	},
+
+	resultCard: {
+		borderWidth: 1,
+		borderColor: colors.bordercolor,
+		borderRadius: 12,
+		padding: 12,
+		gap: 6,
+	},
 });
