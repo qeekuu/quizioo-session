@@ -1,0 +1,216 @@
+{
+	"io8": {
+		"title": "Inzynieria Oprogramowania L8",
+"questions": [
+  {
+    "id": 339,
+    "question": "Automatyzacja testów całkowicie eliminuje ryzyko wprowadzania defektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 340,
+    "question": "Testy automatyczne mogą pełnić rolę dokumentacji oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 341,
+    "question": "Automatyzacja testów jest zawsze korzystna, niezależnie od sposobu jej wykonania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 342,
+    "question": "Automatyzacja testów nie ma wpływu na proces CI/CD.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 343,
+    "question": "Zasady F.I.R.S.T dotyczą automatycznych testów jednostkowych i integracyjnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 344,
+    "question": "Zasada „Fast” oznacza, że testy powinny być uruchamiane jak najszybciej.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 345,
+    "question": "Testy zgodne z zasadą „Independent” mogą zależeć od wyników poprzednich testów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 346,
+    "question": "Testy jednostkowe powinny być możliwe do uruchomienia w różnych środowiskach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 347,
+    "question": "Testy „Self-Validating” wymagają ręcznej analizy raportów w celu sprawdzenia wyniku.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 348,
+    "question": "Zasada „Timely” zaleca pisanie testów przed kodem produkcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 349,
+    "question": "Metoda TDD zakłada pisanie kodu produkcyjnego przed testami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 350,
+    "question": "Testy End-To-End są formą testów funkcjonalnych na poziomie systemowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 351,
+    "question": "Testy E2E zawsze są od początku w pełni zautomatyzowane.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 352,
+    "question": "Testy E2E mogą być wykonywane manualnie przed ich automatyzacją.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 353,
+    "question": "Dla aplikacji z GUI istnieją narzędzia nagrywające i odtwarzające interakcje użytkownika.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 354,
+    "question": "Testy aplikacji webowych korzystają z protokołu WebDriver.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 355,
+    "question": "TestFX umożliwia symulowanie interakcji użytkownika z GUI JavaFX.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 356,
+    "question": "Selenium jest jedną z bibliotek umożliwiających testowanie aplikacji internetowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 357,
+    "question": "Wzorzec PageObject polega na bezpośrednim testowaniu kodu HTML strony.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]
+	}
+}

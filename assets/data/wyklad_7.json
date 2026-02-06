@@ -1,0 +1,557 @@
+{
+	"io7": {
+		"title": "Inżynieria Oprogramowania L7",
+"questions": [
+  {
+    "id": 289,
+    "question": "W programowaniu obiektowym poziomy testowania wymagają całkowicie innego podejścia, a nie tylko dostosowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 290,
+    "question": "Metryki w testowaniu służą do oceny postępu oraz jakości testów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 291,
+    "question": "W programowaniu obiektowym obiekty w podsystemie zwykle mają wspólny „punkt wejścia”.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 292,
+    "question": "Obiekt jako komponent jest zazwyczaj większy niż pojedynczy podprogram.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 293,
+    "question": "Ponowne użycie obiektów może utrudniać testowanie, gdy brak dostępu do kodu źródłowego klas.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 294,
+    "question": "Metryki były projektowane wyłącznie dla jednej metody testowania i zawsze są niezależne od poziomu testów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 295,
+    "question": "Testowanie jednostkowe w programowaniu obiektowym polega na testowaniu metod obiektu osobno (jeśli to możliwe).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 296,
+    "question": "W testowaniu jednostkowym metod obiektu można użyć zarówno testów funkcjonalnych, jak i strukturalnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 297,
+    "question": "Testowanie klas jest poziomem nadrzędnym wobec testowania jednostkowego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 298,
+    "question": "Testy integracyjne w programowaniu obiektowym powinny testować grona wspólnie używanych obiektów i być oparte na scenariuszach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 299,
+    "question": "Testowanie systemowe i akceptacyjne w programowaniu obiektowym przebiega inaczej niż w kodzie proceduralnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 300,
+    "question": "W programowaniu obiektowym granica między testowaniem jednostkowym i integracyjnym jest wyraźniejsza niż w proceduralnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 301,
+    "question": "Testowanie klas dotyczy m.in. sekwencji zależnych operacji obiektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 302,
+    "question": "Podstawowym wymaganiem testowania jednostkowego w testowaniu klas jest weryfikacja metod obiektu w izolacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 303,
+    "question": "Izolację metod w testach jednostkowych można osiągnąć przez użycie dublerów testowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 304,
+    "question": "Testowanie setterów i getterów jest zawsze konieczne w każdym projekcie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 305,
+    "question": "W testowaniu klas należy sprawdzić wszystkie możliwe stany obiektu, czyli zdarzenia zmieniające stan.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 306,
+    "question": "Testowanie przypadków użycia lub scenariuszy opisuje w jaki sposób oprogramowanie będzie używane.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 307,
+    "question": "Testowanie wątków w OOP zakłada sprawdzenie reakcji oprogramowania na zdarzenia.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 308,
+    "question": "Aby dokładnie testować wątki w systemie sterowanym zdarzeniami, testerzy muszą znać sposób przetwarzania zdarzeń wewnątrz systemu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 309,
+    "question": "Testowanie interakcji obiektów weryfikuje ścieżki „metoda–komunikat” od zdarzenia wejściowego do zdarzenia wyjściowego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 310,
+    "question": "Testy integracyjne w OOP powinny dotyczyć gron wspólnie używanych obiektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 311,
+    "question": "Metryki oceniają postęp i jakość testowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 312,
+    "question": "Metryki pokrycia kodu mówią, jaka część kodu jest uruchamiana przez przypadki testowe.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 313,
+    "question": "Poziom wymaganego pokrycia powinien zależeć od kontekstu (np. systemy krytyczne mogą wymagać więcej).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 314,
+    "question": "Metryki pokrycia kodu mogą pomagać wykryć nadmiarowe przypadki testowe (nieujawniające nowych defektów).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 315,
+    "question": "Pokrycie bloków instrukcji potrafi ocenić jakość przetestowania wyrażeń warunkowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 316,
+    "question": "Metryka pokrycia instrukcji jest szczególnym przypadkiem pokrycia bloków, gdy blok ma jedną instrukcję.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 317,
+    "question": "Pokrycie decyzji to stosunek liczby przetestowanych gałęzi instrukcji sterujących do całkowitej liczby gałęzi.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 318,
+    "question": "Pokrycie decyzji zawsze wymaga mniejszej liczby testów niż pokrycie bloków.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 319,
+    "question": "Pokrycie decyzji lepiej niż pokrycie bloków sprawdza wyrażenia warunkowe w instrukcjach sterujących.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 320,
+    "question": "Wadą pokrycia decyzji jest to, że nie uwzględnia short-circuit evaluation.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 321,
+    "question": "Metryka pokrycia ścieżek uwzględnia skracanie obliczeń wartości wyrażeń warunkowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 322,
+    "question": "Pokrycie ścieżek zwykle wymaga więcej przypadków testowych niż pokrycie decyzji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 323,
+    "question": "W komponentach z wieloma pętlami testy ścieżek powinny ograniczać liczbę iteracji wykonywanych w testach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 324,
+    "question": "Metryki pokrycia wymagań są stosowane głównie w testowaniu funkcjonalnym na poziomie testów systemowych i akceptacyjnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 325,
+    "question": "Ogólnie metryki pokrycia wymagań mierzą stosunek liczby przetestowanych wymagań do ich całkowitej liczby.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 326,
+    "question": "Metryka pokrycia błędów dotyczy błędów rozumianych jako wyjątki (np. format danych, brak sieci, brak zasobów).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 327,
+    "question": "Metryka pokrycia błędów to stosunek obsłużonych w testach błędów do liczby błędów, które system powinien obsługiwać.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 328,
+    "question": "Przypadek użycia to zbiór scenariuszy opisujących typowe interakcje z oprogramowaniem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 329,
+    "question": "Metryki pokrycia przypadków użycia mogą być opracowane dla przypadków biznesowych i systemowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 330,
+    "question": "Liczba wykrytych defektów może pomóc oszacować początkową jakość kodu i jej zmianę w kolejnych sesjach testów i napraw.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 331,
+    "question": "Testowanie można zakończyć, gdy liczba wykrytych defektów zaczyna się stabilizować.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 332,
+    "question": "Te same przypadki testowe mogą być później użyte w utrzymaniu do wykrywania regresji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 333,
+    "question": "Gęstość defektów to liczba defektów przypadająca na liczbę wierszy lub tysiące wierszy kodu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 334,
+    "question": "Metryka gęstości defektów nie jest stosowana, bo nie ma definicji wiersza kodu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 335,
+    "question": "Procent wykrytych defektów służy do oceny efektywności testowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 336,
+    "question": "Procent wykrytych defektów to stosunek liczby wykrytych w testach defektów do szacowanej całkowitej liczby defektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 337,
+    "question": "Całkowitą liczbę defektów szacuje się m.in. przez zasiewanie (seeded) defektów – sztuczne wprowadzanie ich do kodu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 338,
+    "question": "Im bardziej typy zasianych defektów odpowiadają prawdziwym defektom, tym bardziej wiarygodna jest metryka.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]
+	}
+}

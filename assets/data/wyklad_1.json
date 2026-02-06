@@ -1,0 +1,458 @@
+{
+	"io1": {
+		"title": "Inżynieria Oprogramowanie W1",
+"questions": [
+  {
+    "id": 1,
+    "question": "Oprogramowanie jest produktem materialnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Wymagania wobec oprogramowania rzadko ulegają zmianom.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Złe zarządzanie projektami jest jedną z przyczyn problemów z oprogramowaniem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Częste zmiany wymagań zwiększają ryzyko niepowodzenia projektu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Informatyka odpowiada na pytanie „jak tworzyć efektywne oprogramowanie”.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Inżynieria oprogramowania odpowiada na pytanie „jak efektywnie tworzyć oprogramowanie”.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Utrzymanie systemu jest elementem inżynierii oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Programowanie proceduralne jest przykładem paradygmatu imperatywnego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Programowanie imperatywne polega na sekwencyjnym wydawaniu poleceń.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Model procesu przedstawia uproszczony obraz rzeczywistości.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Model procesu zawsze opisuje wszystkie szczegóły projektu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Model przepływu danych skupia się na danych wejściowych i wyjściowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Model kaskadowy zakłada jednorazowe przejście przez każdą fazę.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Zmiana wymagań w modelu kaskadowym jest w nim tania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Model kaskadowy jest odpowiedni dla projektów z dobrze znanymi wymaganiami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Model kaskadowy dobrze sprawdza się w dużych projektach inżynierskich.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Tworzenie iteracyjne nie pozwala na prototypowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Końcowy produkt w tworzeniu iteracyjnym często lepiej odpowiada potrzebom użytkowników.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 19,
+    "question": "W tworzeniu iteracyjnym produkt powstaje stopniowo.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 20,
+    "question": "W tworzeniu iteracyjnym informacja zwrotna wpływa na kolejne wersje.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Tworzenie iteracyjne dobrze radzi sobie ze zmiennymi wymaganiami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 22,
+    "question": "Metody formalne wykorzystują formalne języki specyfikacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Metody formalne opierają się na dowodach matematycznych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Metody formalne są często stosowane w systemach safety-critical.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Metody formalne eliminują potrzebę testowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Metody formalne gwarantują wysoką jakość i niezawodne oprogramowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Metody formalne generują dodatkowe koszty.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Integracja i konfiguracja opiera się na ponownym użyciu komponentów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 29,
+    "question": "W integracji i konfiguracji komponenty mogą pochodzić z poprzednich projektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 30,
+    "question": "W integracji i konfiguracji proces ten jest zawsze drogi i wolny.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 31,
+    "question": "W integracji i konfiguracji produkt zawsze w pełni spełnia wymagania klienta.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Metody zwinne najlepiej skalują się na duże projekty.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 33,
+    "question": "W metodach zwinnych wymagania muszą być dokładnie określone na początku.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Metody zwinne można łączyć z innymi podejściami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 35,
+    "question": "CI/CD zakłada automatyczne testowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 36,
+    "question": "DevOps integruje rozwój i wdrażanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 37,
+    "question": "DevOps jest szczególnie przydatny w chmurze.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 38,
+    "question": "DevSecOps rozszerza DevOps o bezpieczeństwo.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Czy testy mają niski koszt?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Koszt tworzenia oprogramowania zależy od typu oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Model rozwoju wpływa na koszty tworzenia oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]
+}
+}

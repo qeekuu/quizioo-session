@@ -1,0 +1,656 @@
+{
+	"io6": {
+		"title": "Inzynieria Oprogramowania L6",
+"questions": [
+  {
+    "id": 230,
+    "question": "Testowanie dynamiczne polega na uruchamianiu oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 231,
+    "question": "Testy integracyjne sprawdzają współpracę komponentów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 232,
+    "question": "Testy systemowe dotyczą ukończonej wersji oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 233,
+    "question": "Testy akceptacyjne potwierdzają spełnienie wymagań interesariuszy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 234,
+    "question": "Testy integracyjne są wykonywane wyłącznie po testach systemowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 235,
+    "question": "Testowanie akceptacyjne może być wykonane przez klienta.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 236,
+    "question": "Testowanie defektów polega na porównywaniu zachowania programu ze specyfikacją.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 237,
+    "question": "Przypadek testowy zawiera dane wejściowe i oczekiwane wyniki.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 238,
+    "question": "Główną trudnością testowania jest zaprojektowanie jak największej liczby testów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 239,
+    "question": "Jakość testów może być oceniana za pomocą metryk.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 240,
+    "question": "Testowanie defektów jest niezależne od projektowania przypadków testowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 241,
+    "question": "Testowanie funkcjonalne jest nazywane testowaniem czarnej skrzynki.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 242,
+    "question": "W testowaniu funkcjonalnym kod źródłowy jest zawsze dostępny.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 243,
+    "question": "Testowanie funkcjonalne może być stosowane na każdym poziomie testowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 244,
+    "question": "Podział na klasy równoważności jest pierwszym krokiem projektowania testów funkcjonalnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 245,
+    "question": "Klasy równoważności zawierają dane o podobnej charakterystyce.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 246,
+    "question": "Klasy równoważności dzielą tylko dane poprawne.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 247,
+    "question": "Testowanie wartości brzegowych jest częścią testowania funkcjonalnego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 248,
+    "question": "Testy powinny być wybierane wyłącznie ze środka klas równoważności.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 249,
+    "question": "Wartości brzegowe leżą na granicach klas równoważności.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 250,
+    "question": "Testuje się także wartości tuż poza granicami klas.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 251,
+    "question": "Testowanie wartości brzegowych zwiększa szansę wykrycia defektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 252,
+    "question": "Testowanie wartości brzegowych zakłada, że błędy często występują na granicach zakresów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 253,
+    "question": "Testowanie strukturalne jest nazywane testowaniem białej skrzynki.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 254,
+    "question": "W testowaniu strukturalnym kod źródłowy jest dostępny.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 255,
+    "question": "Testowanie strukturalne nie może być stosowane w testach integracyjnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 256,
+    "question": "Testowanie strukturalne ignoruje warunki w kodzie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 257,
+    "question": "Testowanie strukturalne nie dotyczy ścieżek wykonania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 258,
+    "question": "Ścieżka to sekwencja wykonywanych instrukcji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 259,
+    "question": "Ścieżki pierwotne różnią się co najmniej jedną instrukcją.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 260,
+    "question": "Przetestowanie wszystkich ścieżek pierwotnych gwarantuje brak defektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 261,
+    "question": "Graf przepływu sterowania (CFG) pomaga znaleźć ścieżki pierwotne.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 262,
+    "question": "Złożoność cyklomatyczna to minimalna liczba testów strukturalnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 263,
+    "question": "Każdy prosty warunek powinien być sprawdzony jako prawdziwy i fałszywy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 264,
+    "question": "Testowanie integracyjne weryfikuje interakcję komponentów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 265,
+    "question": "Testowanie integracyjne jest procesem przyrostowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 266,
+    "question": "Testowanie integracyjne metodą wielkiego wybuchu zachodzi, gdy integracja tylko dwóch kompnentów jest niemożliwa i potrzeba ich więcej.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 267,
+    "question": "Podejście zstępujące zaczyna od komponentów niskopoziomowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 268,
+    "question": "Podejście wstępujące wymaga sterowników testów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 269,
+    "question": "W praktyce oba podejścia (zstępujące i wstępujące) są często stosowane równocześnie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 270,
+    "question": "Dubler testowy zastępuje brakujący komponent.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 271,
+    "question": "Atrapa (dummy) posiada pełną implementację.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 272,
+    "question": "Fałszywka (fake) ma działającą, lecz uproszczoną implementację.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 273,
+    "question": "Namiastka (stub) odpowiada tylko na określone zapytania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 274,
+    "question": "Szpieg (spy) rejestruje informacje o wywołaniach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 275,
+    "question": "Makieta (mock) sprawdza poprawność wywołań.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 276,
+    "question": "Mock może zgłosić wyjątek przy nieprawidłowym użyciu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 277,
+    "question": "Testy integracyjne skupiają się głównie na interfejsach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 278,
+    "question": "Parametry interfejsów można testować testami brzegowymi.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 279,
+    "question": "Referencje i wskaźniki nie wymagają szczególnej uwagi.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 280,
+    "question": "Pamięć dzielona powinna być testowana przy różnych kolejnościach wykonania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 281,
+    "question": "Testy powinny sprawdzać reakcję na awarię komponentu wywoływanego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 282,
+    "question": "Przekazywanie komunikatów testuje się testami przeciążeniowymi.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 283,
+    "question": "Testowanie systemowe odbywa się po zakończeniu prac rozwojowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 284,
+    "question": "Testy przeciążeniowe badają zachowanie przy nadmiernym obciążeniu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 285,
+    "question": "Testy zgodności sprawdzają spełnienie standardów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 286,
+    "question": "Testy przenośności sprawdzają działanie na różnych platformach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 287,
+    "question": "Testy niezawodności nie są częścią testów systemowych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 288,
+    "question": "Testowanie systemowe nie obejmuje wymagań niefunkcjonalnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]
+	}
+}

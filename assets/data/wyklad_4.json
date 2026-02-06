@@ -1,0 +1,612 @@
+{
+	"io4": {
+		"title": "Inzynieria Oprgogramowania L4",
+"questions": [
+  {
+    "id": 133,
+    "question": "Projektowanie architektoniczne jest końcową fazą projektu, wykonywaną po implementacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 134,
+    "question": "Proces projektowania architektonicznego składa się m.in. ze strukturalizacji systemu modelowania sterowania i podziału na moduły.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 135,
+    "question": "Podsystem to część systemu, której usługi zależą od usług innych podsystemów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 136,
+    "question": "Podsystemy składają się z modułów i mają interfejs do komunikacji z innymi podsystemami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 137,
+    "question": "Pojedynczy podsystem można rozpatrywać jako samodzielny system.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 138,
+    "question": "Moduł zazwyczaj może być rozpatrywany jako niezależny system.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 139,
+    "question": "Moduł oferuje co najmniej jedną usługę i może korzystać z usług innego modułu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 140,
+    "question": "Pojedynczy moduł zwykle składa się z innych modułów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 141,
+    "question": "Moduł nie jest komponentem systemu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 142,
+    "question": "Statyczny model strukturalny obejmuje komponenty lub podsystemy, które można zbudować jako niezależne jednostki.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 143,
+    "question": "Model dynamiczny procesu nie przedstawia podziały systemu na procesy czasu wykonania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 144,
+    "question": "Model interfejsów definiuje usługi oferowane przez każdy podsystem za pośrednictwem jego interfejsu publicznego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 145,
+    "question": "Model związków obejmuje związki takie jak przepływ danych między podsystemami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 146,
+    "question": "Dokumentacja architektury systemu może składać się z: statycznego modelu strukturalnego, modelu dynamicznego procesu, modelu interfejsów, modelu związków.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 147,
+    "question": "Architektura systemu może wpływać m.in. na efektywność, bezpieczeństwo, dostępność i konserwację.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 148,
+    "question": "Im bliżej 1 jest wartość I, tym komponent jest bardziej niezależny i „odpowiedzialny”.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 149,
+    "question": "Architektura może być zbudowana wyłącznie z komponentów „maksymalnie niezależnych”, bez szkody dla możliwości modyfikacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 150,
+    "question": "Efektywność często podnosi się przez użycie niewielkiej liczby komponentów gruboziarnistych, rzadko się komunikujących.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 151,
+    "question": "Poufność (bezpieczeństwo) zwykle osiąga się przez strukturę niewarstwową i umieszczanie krytycznych elementów w warstwach zewnętrznych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 152,
+    "question": "Dostępność zwiększa się przez stosowanie komponentów redundantnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 153,
+    "question": "Konserwację (maintainability) wspiera się poprzez dużą liczbę drobnoziarnistych, samodzielnych komponentów łatwych do zmiany.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 154,
+    "question": "Miara niestabilności pozwala oszacować jak bardzo prawdopodobne jest to, że dany komponent nie ulegnie zmianom w przyszłości.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 155,
+    "question": "Model repozytorium jest typowy dla systemów przetwarzających małe ilości danych wokół centralnej bazy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 156,
+    "question": "Ewolucja systemu w modelu repozytorium może być łatwa ze względu na narzucony model danych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 157,
+    "question": "Wadą repozytorium jest konieczność narzucenia wspólnego modelu danych wszystkim podsystemom.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 158,
+    "question": "Model klient–serwer składa się z serwerów oferujących usługi, klientów korzystających z usług i sieci (nie zawsze koniecznej).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 159,
+    "question": "Model repozytorium zapewnia efektywny sposób współdzielenia dużych ilości danych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 160,
+    "question": "Model klient-serwer posiada wspólny model danych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 161,
+    "question": "Model klient-serwer jest architekturą rozproszoną.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 162,
+    "question": "Model maszyny abstrakcyjnej to inaczej model warstwowy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 163,
+    "question": "Architektura warstwowa jest trudna do przenoszenia i modyfikowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 164,
+    "question": "Model maszyny abstrakcyjnej to model warstwowy, gdzie każda warstwa oferuje usługi używane do budowy kolejnej.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 165,
+    "question": "Podejście warstwowe jest łatwe w zastosowaniu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 166,
+    "question": "„Czysty” model warstwowy zawsze zwiększa wydajność systemu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 167,
+    "question": "W sterowaniu scentralizowanym jeden podsystem odpowiada całkowicie za sterowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 168,
+    "question": "W sterowaniu zdarzeniami jeden podsystem odpowiada całkowicie za sterowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 169,
+    "question": "W sterowaniu zdarzeniami każdy z podsystemów może reagować na zdarzenia pochodzące z zewnątrz.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 170,
+    "question": "Model wywołanie–powrót dotyczy systemów sekwencyjnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 171,
+    "question": "Modelu menedżera nie można stosować w przypadku systemów współbieżnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 172,
+    "question": "Zaletą wywołanie–powrót jest łatwa analiza przepływu sterowania i deterministyczne działanie, a wadą utrudniona obsługa wyjątków.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 173,
+    "question": "Podstawowe modele sterowania zdarzeniami to: Model rozgłaszania i model wywołanie–powrót.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 174,
+    "question": "Podstawowe modele sterowania zdarzeniami to: Model z przerwaniami i model rozgłaszania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 175,
+    "question": "W modelu rozgłaszania zdarzenie jest ogłoszeniem dla wszystkich podsystemów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 176,
+    "question": "W modelu z przerwaniami  zewnętrzne przerwania są wykrywane przez obsługę przerwań i przekazywane do odpowiedniego komponentu, gdzie są przetwarzane.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 177,
+    "question": "W modelu rozgłaszania zaletą jest brak informacji zwrotnej, co do tego, czy zdarzenie zostało obsłużone.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 178,
+    "question": "W modelu rozgłaszania zaletą jest prostota ewolucji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 179,
+    "question": "w modelu z przerwaniami zaletą są szybkie odpowiedzi na zdarzenia, a wadą złożoność programowania i trudności z zatwierdzeniem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 180,
+    "question": "Model przepływu danych to inaczej model potokowy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 181,
+    "question": "W modelu obiektowym obiekty są luźno od siebie uzależnione.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 182,
+    "question": "W modelu obiektowym obiekty nie są luźno od siebie uzależnione.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 183,
+    "question": "Model obiektowy nie może być zastosowany zarówno w systemach współbieżnych, jak i sekwencyjnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 184,
+    "question": "Architektura potokowa umożliwia wielokrotne użycie przekształceń.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 185,
+    "question": "Model potokowy jest łatwy do zaimplementowania zarówno w systemach sekwencyjnych, jak i współbieżnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 186,
+    "question": "W modelu potokowym Konieczne jest wprowadzenie wspólnego formatu danych zrozumiałego dla wszystkich przekształceń.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 187,
+    "question": "Model potokowy nadaje się do systemów interaktywnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]
+	}
+}

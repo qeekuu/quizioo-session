@@ -1,0 +1,447 @@
+{
+	"io2": {
+		"title": "Inżynieria Oprogramowania W2",
+"questions": [
+  {
+    "id": 42,
+    "question": "Scrum jest pełnym, kompletnym przepisem na zarządzanie projektem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Scrum jest planem ramowym (framework) do zarządzania złożonymi problemami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 44,
+    "question": "W Scrum przejrzystość oznacza, że proces tworzenia produktu ma być widoczny.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 45,
+    "question": "W Scrum kontrola (inspection) służy wykrywaniu problemów przez częste badanie artefaktów i postępu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Adaptacja w scrum polega na jak najszybszym usprawnieniu procesu przy spadku jakości.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Zespół Scrum powinien mieć nie więcej niż 10 osób.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Scrum Master odpowiada za przestrzeganie zasad Scrum i usuwanie przeszkód.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Product Owner w Scrum reprezentuje potrzeby interesariuszy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 50,
+    "question": "Scrum pracuje iteracyjnie i przyrostowo.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 51,
+    "question": "Jedna iteracja w Scrum nazywa się sprintem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 52,
+    "question": "Sprint w Scrum zwykle trwa dokładnie miesiąc.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 53,
+    "question": "W trakcie sprintu w Scrum nie mogą być wprowadzone zmiany zagrażające celowi sprintu lub jakości.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Sprint w Scrum może zostać przerwany przez właściciela produktu, gdy cel sprintu przestanie być ważny.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 55,
+    "question": "W Scrum w trakcie sprintu zawsze wolno zmieniać cel sprintu bez ograniczeń.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 56,
+    "question": "Każdy sprint w Scrum ma cztery rodzaje wydarzeń.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Scrum ma trzy artefakty.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 58,
+    "question": "Rejestr produktu w Scrum to uporządkowana lista zadań do udoskonalania produktu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Przyrost w Scrum musi spełniać Definition of Done (DoD), a gdy nie spełnia – wraca do rejestru produktu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Rejestr sprintu w Scrum zawiera cel sprintu, plan dostarczenia przyrostu i zadania wybrane z rejestru produktu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 61,
+    "question": "Przyrost w Scrum jest konkretnym wynikiem, który przybliża projekt do celu produktu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 62,
+    "question": "Scrum jest metodą zwinną.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 63,
+    "question": "Scrum pomaga szybko reagować na zmiany wymagań.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 64,
+    "question": "Scrum wprowadza do procesu punkt widzenia interesariuszy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 65,
+    "question": "Scrum jest zawsze łatwy do wdrożenia.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 66,
+    "question": "Scrum bywa abstrakcyjny i może być trudny do wprowadzenia.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 67,
+    "question": "Planning poker służy do szacowania pracy dla zadań przenoszonych do sprintu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 68,
+    "question": "W tradycyjnych modelach zarządzania kierownik dzieli pracę na zadania (tasks) i etapy (milestones).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 69,
+    "question": "Wykres Gantta przedstawia harmonogram projektu w sposób graficzny.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 70,
+    "question": "Na wykresie Gantta romby reprezentują etapy, a paski zadania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 71,
+    "question": "Sieć PERT przedstawia harmonogram jako graf skierowany.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 72,
+    "question": "W sieci PERT wierzchołki reprezentują zadania i etapy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 73,
+    "question": "W Scrum ryzyko jest zwykle widoczne późno, bo feedback jest rzadki.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 74,
+    "question": "W metodach zwinnych częsty feedback umożliwia szybszą reakcję na ryzyko.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 75,
+    "question": "W tradycyjnym podejściu kierownik projektu rozpoznaje zagrożenia i tworzy plany przeciwdziałania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 76,
+    "question": "Ocena ryzyka nie jest potrzebna do przygotowania planów przeciwdziałania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 77,
+    "question": "Strategie unikania jako plan przeciwdziałania mają zmniejszać prawdopodobieństwo wystąpienia ryzyka.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 78,
+    "question": "Strategie minimalizacji jako plan przeciwdziałania mają zmniejszać wpływ zagrożenia.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 79,
+    "question": "Plany awaryjne przygotowuje się na wypadek najpoważniejszych zagrożeń w projekcie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 80,
+    "question": "Po ustaleniu planów przeciwdziałania nie trzeba ich aktualizować.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 81,
+    "question": "Scrum ogranicza się tylko i wyłącznie do inżynierii oprogramowania",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]
+	}
+}

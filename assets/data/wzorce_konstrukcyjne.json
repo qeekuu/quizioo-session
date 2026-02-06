@@ -1,0 +1,282 @@
+{
+	"wk": {
+		"title": "Wzorce Konstrukcyjne",
+"questions": [
+  {
+    "id": 358,
+    "question": "Singleton jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 359,
+    "question": "Singleton jest wzorcem czynnościowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 360,
+    "question": "Metoda fabrykująca jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 361,
+    "question": "Metoda fabrykująca jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 362,
+    "question": "Fabryka abstrakcyjna jest wzorcem czynnościowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 363,
+    "question": "Fabryka abstrakcyjna jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 364,
+    "question": "Budowniczy jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 365,
+    "question": "Budowniczy jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 366,
+    "question": "Prototyp jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 367,
+    "question": "Prototyp jest wzorcem czynnościowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 368,
+    "question": "Singleton zapewnia, że dana klasa może mieć tylko jedną instancję oraz globalny punkt dostępu do niej.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 369,
+    "question": "Singleton jest szczególnie użyteczny, gdy zasób powinien być unikalny w systemie (np. wspólne dane konfiguracyjne).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 370,
+    "question": "Metoda fabrykująca polega na tworzeniu obiektów przez specjalną metodę zamiast bezpośrednio przez new.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 371,
+    "question": "Dzięki metodzie fabrykującej typ tworzonego obiektu może być wybierany w trakcie działania programu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 372,
+    "question": "Wzorzec metoda fabrykująca stosuje się m.in. gdy nie da się z góry ustalić, jakich klas obiektów trzeba będzie utworzyć.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 373,
+    "question": "Metoda fabrykująca zawsze zwraca dokładnie ten sam konkretny typ w każdej klasie potomnej.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 374,
+    "question": "Wzorzec ułatwia dodawanie nowych typów obiektów przy minimalnych zmianach w istniejącym kodzie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 375,
+    "question": "Fabryka abstrakcyjna umożliwia tworzenie rodzin powiązanych obiektów bez wskazywania ich konkretnych klas.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 376,
+    "question": "Wzorzec fabryka abstrakcyjna udostępnia interfejs do tworzenia grupy powiązanych „produktów” współpracujących ze sobą.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 377,
+    "question": "Główną ideą we wzorcu fabryka abstrakcyjna jest uzależnienie kodu klienta od szczegółów tworzenia obiektów, żeby mógł je kontrolować.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 378,
+    "question": "Budowniczy oddziela proces tworzenia złożonego obiektu od jego reprezentacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 379,
+    "question": "Budowniczy jest szczególnie przydatny, gdy obiekt ma wiele parametrów opcjonalnych lub złożoną strukturę.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 380,
+    "question": "Wzorzec budowniczy stosuje się m.in. gdy konstruktor ma zbyt wiele parametrów i spada czytelność kodu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 381,
+    "question": "Wzorzec budowniczy wymaga, aby wszystkie pola obiektu były obowiązkowe.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 382,
+    "question": "We wzorcu budowniczy ten sam proces budowania może tworzyć różne warianty obiektu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]
+	}
+}

@@ -1,12 +1,27 @@
 import React, { useMemo, useState } from "react";
 import { View, Text, Pressable, FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { RouteProp, useRoute } from "@react-navigation/native";
+import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { RootStackParamList } from "../navigation/types";
 import AppButton from "../components/AppButton";
 import { styles } from "./ScreenStyles.styles";
 import quizzes from "../../assets/data/quizzes.json";
+import questions from "../../assets/data/questions.json";
+import io1 from "../../assets/data/wyklad_1.json";
+import io2 from "../../assets/data/wyklad_2.json";
+import io3 from "../../assets/data/wyklad_3.json";
+import io4 from "../../assets/data/wyklad_4.json";
+import io5 from "../../assets/data/wyklad_5.json";
+import io6 from "../../assets/data/wyklad_6.json";
+import io7 from "../../assets/data/wyklad_7.json";
+import io8 from "../../assets/data/wyklad_8.json";
+import uml from "../../assets/data/uml.json";
+import wk from "../../assets/data/wzorce_konstrukcyjne.json";
+import ws from "../../assets/data/wzorce_strukturalne.json";
+import wc from "../../assets/data/wzorce_czynnosciowe.json";
+import {NativeStackNavigationProp} from "@react-navigation/native-stack";
 
+type Nav = NativeStackNavigationProp<RootStackParamList, "QuizDetails">;
 type QuizDetailsRouteProp = RouteProp<RootStackParamList, "QuizDetails">;
 
 type Question = {
@@ -21,6 +36,22 @@ type Quiz = {
     questions: Question[];
 };
 
+const QUIZ_DB: Record<string, Quiz> = {
+  ...(questions as Record<string, Quiz>),
+  ...(io1 as Record<string, Quiz>),
+  ...(io2 as Record<string, Quiz>),
+  ...(io3 as Record<string, Quiz>),
+  ...(io4 as Record<string, Quiz>),
+  ...(io5 as Record<string, Quiz>),
+  ...(io6 as Record<string, Quiz>),
+  ...(io7 as Record<string, Quiz>),
+  ...(io8 as Record<string, Quiz>),
+  ...(uml as Record<string, Quiz>),
+  ...(wk as Record<string, Quiz>),
+  ...(ws as Record<string, Quiz>),
+  ...(wc as Record<string, Quiz>),
+};
+
 type AnswerRecord = {
     questionId: number;
     question: string;
@@ -29,6 +60,7 @@ type AnswerRecord = {
     selected: number[];
     isCorrect: boolean;
 };
+
 
 const arraysEqualAsSets = (a: number[], b: number[]) => {
     if (a.length !== b.length)
@@ -75,12 +107,18 @@ const shuffleAnswersAndRemapCorrect = (q: Question): Question => {
 };
 
 export default function QuizDetails() {
+	const navigation = useNavigation<Nav>();
     const route = useRoute<QuizDetailsRouteProp>();
     const { quizId } = route.params;
 
-    const quiz: Quiz | undefined = useMemo(() => {
-        return (quizzes as Record<string, Quiz>)[quizId];
-    }, [quizId]);
+    // const quiz: Quiz | undefined = useMemo(() => {
+        // return (questions as Record<string, Quiz>)[quizId];
+    // }, [quizId]);
+	
+	const quiz = useMemo<Quiz | undefined>(() => {
+		return QUIZ_DB[quizId];
+	}, [quizId]);
+	
 
     const shuffledQuestions: Question[] = useMemo(() => {
         const qs = quiz?.questions ?? [];
@@ -127,7 +165,7 @@ export default function QuizDetails() {
     if (!quiz) {
         return (
             <SafeAreaView style={styles.container}>
-                <Text style={styles.text}>Nie znaleziono quizu: {quizId}</Text>
+                <Text style={styles.text}>Cannot find quiz: {quizId}</Text>
             </SafeAreaView>
         );
     }
@@ -140,9 +178,9 @@ export default function QuizDetails() {
                 </View>
 
                 <View style={styles.quizDetails}>
-                    <Text style={styles.boldText}>Koniec!</Text>
+                    <Text style={styles.boldText}>Finished!</Text>
                     <Text style={styles.text}>
-                        Wynik: {score}/{shuffledQuestions.length}
+                        Score: {score}/{shuffledQuestions.length}
                     </Text>
                 </View>
 
@@ -157,27 +195,27 @@ export default function QuizDetails() {
                         return (
                             <View style={styles.resultCard}>
                                 <Text style={styles.boldText}>
-                                    {i + 1}. {item.isCorrect ? "✅ Poprawnie" : "❌ Błędnie"}
+                                    {i + 1}. {item.isCorrect ? "✅ Correct" : "❌ Incorrect"}
                                 </Text>
 
                                 <Text style={styles.text}>{item.question}</Text>
 
                                 <Text style={styles.text}>
-                                    Twoja odpowiedź:{" "}
+                                    Your answer:{" "}
                                     {selectedTexts.length ? selectedTexts.join(", ") : "—"}
                                 </Text>
 
                                 <Text style={styles.text}>
-                                    Poprawna odpowiedź: {correctTexts.join(", ")}
+                                    Correct answer: {correctTexts.join(", ")}
                                 </Text>
                             </View>
                         );
                     }}
                 />
 
-                <View style={{ padding: 12 }}>
+                <View style={{ padding: 12, gap: 8 }}>
                     <AppButton
-                        title="Zagraj ponownie"
+                        title="Play again!"
                         onPress={() => {
                             setIndex(0);
                             setSelected([]);
@@ -185,6 +223,10 @@ export default function QuizDetails() {
                             setHistory([]);
                         }}
                     />
+					<AppButton
+						title="Return to selection screen"
+						onPress={() => navigation.navigate("ChooseQuiz")}
+					/>
                 </View>
             </SafeAreaView>
         );
@@ -198,9 +240,9 @@ export default function QuizDetails() {
 
             <View style={styles.quizDetails}>
                 <Text style={styles.boldText}>
-                    Pytanie {index + 1}/{shuffledQuestions.length}
+                    Question {index + 1}/{shuffledQuestions.length}
                 </Text>
-                <Text style={styles.text}>Wynik: {score}</Text>
+                <Text style={styles.text}>Score: {score}</Text>
                 <Text style={styles.text}>{current.question}</Text>
             </View>
 

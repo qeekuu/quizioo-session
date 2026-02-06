@@ -21,7 +21,7 @@ export default function ChooseQuizScreen(){
 				<Text style={styles.boldText}>Choose Quiz</Text>
 				<AppButton
 					title="Inżynieria Oprogramowania"
-					onPress={() => navigation.navigate("QuizDetails", { quizId: "io" })}
+					onPress={() => navigation.navigate("IOScreen")}
 				/>
 				<AppButton
 					title="Aplikacje Internetowe"

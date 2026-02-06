@@ -1,0 +1,491 @@
+{
+	"ws": {
+		"title": "Wzorce Strukturalne",
+"questions": [
+  {
+    "id": 383,
+    "question": "Adapter jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 384,
+    "question": "Adapter jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 385,
+    "question": "Most jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 386,
+    "question": "Most jest wzorcem czynnościowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 387,
+    "question": "Kompozyt jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 388,
+    "question": "Kompozyt jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 389,
+    "question": "Dekorator jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 390,
+    "question": "Dekorator jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 391,
+    "question": "Fasada jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 392,
+    "question": "Fasada jest wzorcem czynnościowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 393,
+    "question": "Pyłek jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 394,
+    "question": "Pyłek jest wzorcem czynnościowym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 395,
+    "question": "Proxy jest wzorcem strukturalnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 396,
+    "question": "Proxy jest wzorcem konstrukcyjnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 397,
+    "question": "Adapter umożliwia współpracę klas o niekompatybilnych interfejsach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 398,
+    "question": "Adapter „opakowuje” obiekt, dostarczając nowy, bardziej oczekiwany interfejs.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 399,
+    "question": "Adapter wymaga modyfikacji istniejącej klasy, aby dopasować jej interfejs.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 400,
+    "question": "Adapter jest zalecany, gdy chcemy użyć istniejącej klasy, ale jej interfejs nie pasuje do wymaganego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 401,
+    "question": "Most oddziela abstrakcję od implementacji, umożliwiając ich niezależny rozwój.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 402,
+    "question": "Most tworzy dwie niezależne hierarchie: jedną dla abstrakcji i drugą dla implementacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 403,
+    "question": "Most „twardo” wiąże klasę abstrakcji z jedną implementacją na stałe.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 404,
+    "question": "Most łączy abstrakcję z implementacją poprzez interfejs.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 405,
+    "question": "Kompozyt pozwala budować złożone struktury z prostszych elementów i traktować je jednolicie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 406,
+    "question": "Kompozyt umożliwia budowę hierarchii typu część–całość.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 407,
+    "question": "W kompozycie klient powinien zawsze rozróżniać, czy pracuje z liściem czy kompozytem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 408,
+    "question": "Elementy w kompozycie tworzą zwykle strukturę drzewiastą.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 409,
+    "question": "Celem kompozytu jest to, aby klient mógł traktować wszystkie obiekty w strukturze w ten sam sposób.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 410,
+    "question": "Dekorator opakowuje obiekt docelowy, aby dynamicznie dodawać do niego nowe funkcje.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 411,
+    "question": "Dekoratory można łączyć kaskadowo (dekorator może opakowywać inny dekorator).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 412,
+    "question": "Dekorator wymaga tworzenia podklas dla każdej kombinacji rozszerzeń.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 413,
+    "question": "Dekorator jest przydatny, gdy trzeba dodawać zadania do poszczególnych obiektów w sposób dynamiczny i „przezroczysty”.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 414,
+    "question": "Dekorator jest wskazany, gdy potrzebny jest mechanizm obsługi zadań, które można cofnąć.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 415,
+    "question": "Fasada udostępnia prosty interfejs do złożonego systemu lub grupy klas.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 416,
+    "question": "Fasada ujawnia wszystkie szczegóły implementacyjne, aby użytkownik mógł nimi sterować.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 417,
+    "question": "Jednym z celów fasady jest ukrycie skomplikowanych części systemu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 418,
+    "question": "Fasada jest używana, gdy chcemy udostępnić prosty interfejs do podsystemu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 419,
+    "question": "Pyłek służy do oszczędzania pamięci poprzez dzielenie wspólnych danych między wiele obiektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 420,
+    "question": "Pyłek dzieli dane na zmienne i niezmienne.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 421,
+    "question": "Proxy tworzy obiekt zastępczy pośredniczący w dostępie do obiektu właściwego.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 422,
+    "question": "Proxy wygląda i zachowuje się jak obiekt docelowy, ale może dodać dodatkową funkcjonalność.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 423,
+    "question": "Proxy stosuje się, gdy obiekt docelowy jest „ciężki” do stworzenia (czas/pamięć/zasoby).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 424,
+    "question": "Proxy nie może realizować kontroli dostępu do obiektu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 425,
+    "question": "Proxy może opóźniać tworzenie obiektu do momentu, gdy jest to faktycznie potrzebne.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 426,
+    "question": "Proxy może służyć do monitorowania lub ograniczania dostępu do obiektu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]
+	}
+}

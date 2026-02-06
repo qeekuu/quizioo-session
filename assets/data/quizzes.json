@@ -10,15 +10,21 @@
       },
 	  {
         "id": 2,
-        "question": "Czy tekst mozę być umieczony bez <Text>?",
+        "question": "Planowanie projektu - Czy obejmuje skład i strukture osób tworzących program?",
         "answers": ["Tak", "Nie"],
-        "correct": [1]
+        "correct": [0]
       },
 	  {
 		"id": 3,
-		"question": "Wymień metody, którymi można modyfikować dane:",
-		"answers": ["PUT", "GET", "POST", "PATCH"],
-		"correct": [0, 2, 3]
+		"question": "Czy przy testowaniu programów obiektowych, testowanie jednostkowe ogranicza się do testowania meotd klas?",
+		"answers": ["Tak", "Nie"],
+		"correct": [1]
+	  },
+	  {
+		"id": 4,
+		"question": "Diagram przypadków uzycia jest strukturalny?",
+		"answers": ["Tak", "Nie"],
+		"correct": [1]
 	  }
     ]
   },

@@ -1,0 +1,227 @@
+{
+	"wc": {
+		"title": "Wzorce Czynnościowe",
+"questions": [
+  {
+    "id": 427,
+    "question": "Łańcuch zobowiązań przekazuje żądanie przez łańcuch obiektów aż do momentu, gdy jeden z nich je obsłuży.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 428,
+    "question": "Każdy obiekt w łańcuchu musi obsłużyć żądanie i nie może go przekazać dalej.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 429,
+    "question": "Polecenie zamienia żądanie w samodzielny obiekt zawierający wszystkie informacje o tym żądaniu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 430,
+    "question": "Dzięki wzorcowi Polecenie można parametryzować obiekty poleceniami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 431,
+    "question": "Polecenie nie pozwala na kolejkowanie zadań do wykonania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 432,
+    "question": "Interpreter służy do reprezentacji i interpretacji prostych języków formalnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 433,
+    "question": "Iterator zapewnia sekwencyjny dostęp do elementów obiektu złożonego bez ujawniania jego reprezentacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 434,
+    "question": "Iterator ujawnia szczegóły implementacji kolekcji, aby ułatwić iterację.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 435,
+    "question": "Mediator to obiekt zawierający informacje o interakcji między obiektami z danego zbioru.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 436,
+    "question": "Mediator pomaga zapewnić luźne powiązanie, bo zapobiega bezpośredniemu odwoływaniu się obiektów do siebie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 437,
+    "question": "Pamiątka zapisuje wewnętrzny stan obiektu w zewnętrznej jednostce, aby można było go później odtworzyć.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 438,
+    "question": "Pamiątka łamie hermetyzację, bo stan jest udostępniany publicznie wszystkim obiektom.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 439,
+    "question": "Obserwator definiuje zależność jeden-do-wielu między obiektami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 440,
+    "question": "Gdy stan obiektu obserwowanego we wzorcu obserwator się zmienia, wszystkie zależne obiekty są automatycznie informowane i aktualizowane.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 441,
+    "question": "Wzorzec Stan pozwala obiektowi zmieniać zachowanie w wyniku zmiany jego wewnętrznego stanu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 442,
+    "question": "Wzorzec strategia definiuje rodzinę algorytmów, kapsułkuje je i umożliwia ich zamienne stosowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 443,
+    "question": "Metoda szablonowa definiuje szkielet algorytmu w klasie bazowej.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 444,
+    "question": "We wzorcu metoda szablonowa szczegóły implementacji kroków algorytmu są pozostawiane klasom pochodnym.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 445,
+    "question": "We wzorcu odwiedzający reprezentuje operację wykonywaną na elementach struktury obiektów.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 446,
+    "question": "Wzorzec odwiedzający pozwala zdefiniować nową operację bez zmieniania klas elementów, na których działa.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]
+	}
+}

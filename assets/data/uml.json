@@ -1,0 +1,458 @@
+{
+	"uml": {
+		"title": "UML",
+"questions": [
+  {
+    "id": 447,
+    "question": "Zależność jest najsłabszym rodzajem relacji w diagramie klas UML.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 448,
+    "question": "Zależność oznacza, że jedna klasa trwale przechowuje referencję do drugiej klasy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 449,
+    "question": "Relację zależności oznaczamy przerywaną linią z pustym grotem strzałki.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 450,
+    "question": "Zależność idczytujemy jako \"używa tymczasowo\"?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 451,
+    "question": "Jeśli obiekt jest przekazywany do metody jako parametr, to najczęściej mamy do czynienia z zależnością.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 452,
+    "question": "Asocjacja oznacza relację typu „używa tymczasowo”.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 453,
+    "question": "Asocjacja oznacza realację typu \"ma\"?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 454,
+    "question": "Asocjację oznaczamy w UML za pomocą ciągłej linii z pełnym grotem strzałki.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 455,
+    "question": "Asocjacja oznacza, że jeden obiekt ma referencję do drugiego obiektu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 456,
+    "question": "Asocjacja jest słabsza niż zależność.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 457,
+    "question": "Agregacja odczytujemy jako \"skłąda się z\"?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 458,
+    "question": "Agregacja jest rodzajem asocjacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 459,
+    "question": "W agregacji jedna klasa jest częścią drugiej, ale może istnieć niezależnie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 460,
+    "question": "Agregacje oznaczamy jako ciągła linia z pełnym grotem ale niezamalowanym diamentem na początku.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 461,
+    "question": "Kompozycje odczytujemy jako \"ma\"?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 462,
+    "question": "Kompozycja to silniejsza forma agregacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 463,
+    "question": "Kompozycje odczytujemy jako \"jest częścią\"?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 464,
+    "question": "W kompozycji obiekty mogą istnieć bez obiektu, do którego należą.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 465,
+    "question": "Kompozycja ma zamalowany diament.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 466,
+    "question": "Generalizacja to inaczej dziedziczenie?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 467,
+    "question": "Generalizację oznaczamy jako ciągła linia z pustym grotem strzałki?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 468,
+    "question": "Generalizacja oznacza, że jedna klasa dzidziczy po innej klasie?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 469,
+    "question": "Generalizację odczytujemy jako \"jest\" / \"to\"",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 470,
+    "question": "Implementacja oznacza realację pomiędzy klasą a typem wyliczeniowym?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 471,
+    "question": "Implementacja oznacza relację pomiędzy klasą a interfejsem?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 472,
+    "question": "Implementacje oznacza się za pomocą przerywanej lini z pustym grotem?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 473,
+    "question": "Klasa implementująca interfejs musi zdefiniować wszystkie jego metody?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 474,
+    "question": "Interfejs może zawierać tylko deklaracje metod?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 475,
+    "question": "Implementacja jest formą dziedzicenia?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 476,
+    "question": "Diagram aktywności służy do opisu przepływu sterowania w procesie lub fragmencie kodu?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 477,
+    "question": "Diagram aktywności może zawierać więcej niż jedną aktywność końcową?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 478,
+    "question": "Aktywność początkowa jest oznaczana zamalowanym czarnym kółkiem?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 479,
+    "question": "Aktywność końcowa jest oznaczana zamalowanym kółkiem otoczonym drugim kółkiem?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 480,
+    "question": "Typowe aktywności są przedstawiane jako prostokąty z zaokrąglonymi rogami?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 481,
+    "question": "Romb decyzyjny reprezentuje warunek logiczny i rozgałęzienie?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 482,
+    "question": "Z jednego rombu decyzyjnego może jednocześnie wypływać więcej niż jedna aktywna gałąź.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 483,
+    "question": "Po rozgałęzieniu wykonanym rombem należy złączyć przepływ również rombem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 484,
+    "question": "Symbol \"+\" przy atrybucie lub metodzie oznacza dostęp publiczny?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 485,
+    "question": "Symbol \"-\" przy atrybucie lub metodzie oznacza dostęp publiczny?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 486,
+    "question": "Symbol \"#\" przy atrybucie lub metodzie oznacza dostęp protected?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 487,
+    "question": "Symbol \"~\" przy atrybucie lub metodzie oznacza dostęp pakietowy?",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]
+	}
+}

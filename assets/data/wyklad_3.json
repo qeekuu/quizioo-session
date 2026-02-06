@@ -1,0 +1,568 @@
+{
+	"io3": {
+		"title": "Inzynieria Oprogramowania W2",
+"questions": [
+  {
+    "id": 82,
+    "question": "Inżynieria wymagań obejmuje zbieranie, analizowanie, zatwierdzanie i zarządzanie wymaganiami.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 83,
+    "question": "Wymaganie musi być niejednoznaczne, aby dało się je łatwo doprecyzować.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 84,
+    "question": "Wymaganie powinno być weryfikowalne (testowalne) lub mierzalne.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 85,
+    "question": "Interesariusz to wyłącznie osoba, która będzie końcowym użytkownikiem systemu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 86,
+    "question": "Interesariusz może mieć zarówno bezpośredni, jak i pośredni wpływ na oprogramowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 87,
+    "question": "Interesariuszem może być organizacja lub inny podmiot, nie tylko pojedyncza osoba.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 88,
+    "question": "Inżynieria wymagań jest jedną z ostatnich czynności w inżynierii oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 89,
+    "question": "Interesariusze są głównym źródłem wymagań.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 90,
+    "question": "Dziedzina zastosowania jest jednym ze źródeł wymagań.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 91,
+    "question": "Źródła wymagań zawsze są stałe i nie zmieniają się w trakcie projektu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 92,
+    "question": "Wymagania funkcjonalne mówią, jakie usługi/funkcje będzie dostarczać oprogramowanie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 93,
+    "question": "Wymagania niefunkcjonalne określają, co system ma robić.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 94,
+    "question": "Wymagania niefunkcjonalne definiują ograniczenia dla rozwiązań.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 95,
+    "question": "Wymagania niefunkcjonalne mają bezpośredni wpływ na jakość oprogramowania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 96,
+    "question": "Wymagania niefunkcjonalne mówią, jak system powinien dostarczać usługi.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 97,
+    "question": "Wymagania biznesowe są najbardziej ogólne (wysokopoziomowe).",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 98,
+    "question": "Wymagania biznesowe rzadko ulegają zmianom.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 99,
+    "question": "Wymagania użytkowników są bardziej szczegółowe niż wymagania biznesowe.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 100,
+    "question": "Wymagania biznesowe są bardziej szczegółowe niż wymagania systemowe.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 101,
+    "question": "Wymagania systemowe opisują szczegóły tego, co oprogramowanie powinno dostarczać.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 102,
+    "question": "Interesariusze często nie wiedzą, co oprogramowanie powinno robić.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 103,
+    "question": "Interesariusze mogą mieć nierealne oczekiwania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 104,
+    "question": "Słownictwo dziedzinowe interesariuszy może zawierać ukryte znaczenia.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 105,
+    "question": "Różni interesariusze mogą mieć sprzeczne oczekiwania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 106,
+    "question": "User stories są głównym narzędziem analizy wymagań w metodach zwinnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 107,
+    "question": "User stories są źródłem zadań (tasks) koniecznych do implementacji.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 108,
+    "question": "User story jest kompletnym, pełnym opisem wymagania.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 109,
+    "question": "Kryteria akceptacji służą sprawdzeniu, czy wymaganie zrealizowano poprawnie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 110,
+    "question": "Struktura 5W user story zawiera element „ponieważ <dlaczego>”.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 111,
+    "question": "Struktura BDD user story obejmuje scenariusze w formacie Given/When/Then.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 112,
+    "question": "W 5W występują pola <kto>, <kiedy>, <gdzie>, <co>, <dlaczego>.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 113,
+    "question": "Struktura user story nie może być zapisana w formie scenariuszy.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 114,
+    "question": "Scenariusze mogą być stosowane zarówno w metodach tradycyjnych, jak i zwinnych.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 115,
+    "question": "Scenariusz opisuje interakcję użytkownika z oprogramowaniem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 116,
+    "question": "Użytkownik w scenariuszu musi być człowiekiem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 117,
+    "question": "Scenariusz musi określać stan systemu przed rozpoczęciem.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 118,
+    "question": "Scenariusz musi opisywać typowy przebieg czynności.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 119,
+    "question": "Scenariusz musi określać wyjątki i sposób ich obsługi.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 120,
+    "question": "Scenariusz powinien zawierać informacje o czynnościach wykonywanych równolegle.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 121,
+    "question": "Scenariusz nie musi określać stanu systemu po zakończeniu.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 122,
+    "question": "Pojedynczy przypadek użycia reprezentuje raczej zbiór scenariuszy niż jeden scenariusz.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 123,
+    "question": "Diagram przypadków użycia UML wykorzystuje aktorów i elipsy przypadków użycia.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 124,
+    "question": "Prototypowanie jest stosowane zarówno w tradycyjnych jaki i zwinnych metodach wytwarzania oprogramowania",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 125,
+    "question": "Etnografia polega na obserwacji zwyczajów pracy przyszłych użytkowników.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 126,
+    "question": "Etnografia może ujawnić zwyczaje nieujęte w oficjalnych dokumentach.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 127,
+    "question": "Etnografia może być użyta do analizy formalnie zdefiniowanych wymagań.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 128,
+    "question": "Wprowadzenie prototypu do środowiska pracy może zmienić zachowania i ujawnić nowe fakty.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 129,
+    "question": "Defekty w wymaganiach są tańsze w naprawie niż defekty w kodzie.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 130,
+    "question": "Testowanie akceptacyjne może być użyte do zatwierdzania wymagań.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 131,
+    "question": "Wymagania w trakcie projektu nie mogą się zmieniać i najczęściej się nie zmieniają.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 132,
+    "question": "Wymagania nie zmieniają się, jeśli na początku zostały dobrze spisane.",
+    "answers": [
+      "Tak",
+      "Nie"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]
+}
+}
