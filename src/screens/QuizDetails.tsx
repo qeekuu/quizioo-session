@@ -5,7 +5,7 @@ import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { RootStackParamList } from "../navigation/types";
 import AppButton from "../components/AppButton";
 import { styles } from "./ScreenStyles.styles";
-import quizzes from "../../assets/data/quizzes.json";
+import pw from "../../assets/data/pw.json";
 import questions from "../../assets/data/questions.json";
 import io1 from "../../assets/data/wyklad_1.json";
 import io2 from "../../assets/data/wyklad_2.json";
@@ -50,6 +50,7 @@ const QUIZ_DB: Record<string, Quiz> = {
   ...(wk as Record<string, Quiz>),
   ...(ws as Record<string, Quiz>),
   ...(wc as Record<string, Quiz>),
+  ...(pw as Record<string, Quiz>),
 };
 
 type AnswerRecord = {

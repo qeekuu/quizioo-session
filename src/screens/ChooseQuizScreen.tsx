@@ -24,8 +24,8 @@ export default function ChooseQuizScreen(){
 					onPress={() => navigation.navigate("IOScreen")}
 				/>
 				<AppButton
-					title="Aplikacje Internetowe"
-					onPress={() => navigation.navigate("QuizDetails", { quizId: "ai" })}
+					title="Programowanie Współbieżne"
+					onPress={() => navigation.navigate("QuizDetails", { quizId: "pw" })}
 				/>
 			</View>
 		</SafeAreaView>	

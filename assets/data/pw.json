@@ -1,0 +1,550 @@
+{
+  "pw": {
+    "title": "PW-Kolokwium poprawkowe",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Która z metod klasy BlockingCollection jest blokująca?",
+        "answers": ["TryAdd", "Take", "TryTake", "Add"],
+        "correct": [1, 3]
+      },
+      {
+        "id": 2,
+        "question": "Czy kolekcja HashSet podczas obsługi współbieżnej musi być synchronizowana w celu zapewnienia pełnej spójności danych?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 3,
+        "question": "Kolekcja CopyOnWriteArrayList jest",
+        "answers": [
+          "Może być modyfikowana jedynie przez metodę CopyOnWriteArrayList",
+          "Są opłacalne w użyciu, jeżeli jest dużo więcej operacji iteracji niż dodawania",
+          "Może zwrócić wyjątek ConcurrentModificationException",
+          "Podczas modyfikacji należy dokonać jej ręcznego skopiowania"
+        ],
+        "correct": [1]
+      },
+      {
+        "id": 4,
+        "question": "Definicja uczciwości mocnej: Jeżeli proces zgłasza żądanie <luka1> to <luka2> będzie ono <luka3>",
+        "answers": [
+          "tylko raz; kiedyś; obsłużone",
+          "nieprzerwanie; kiedyś; obsłużone",
+          "nieskończenie wiele razy; kiedyś; obsłużone"
+        ],
+        "correct": [2],
+        "note": "W oryginale luki wybierane są z list: luka1: a/b/c; luka2: a/b/c; luka3: a/b. Powyższa odpowiedź to jedna z interpretacji."
+      },
+      {
+        "id": 5,
+        "question": "Czy instancja klasy Phaser może zakończyć działanie?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 6,
+        "question": "Czy w barierze można wskazać w której fazie wykonywania jesteśmy?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 7,
+        "question": "Czy w przypadku bariery jest możliwe odczytanie w której jesteśmy fazie wykonywania?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 8,
+        "question": "Czy anulowanie zadania przy pomocy tzw. 'pigułki z trucizną' można dokonać jedynie z wykorzystaniem łącza dwukierunkowego?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 9,
+        "question": "Klasę javax.swing.SwingWorker używamy do",
+        "answers": [
+          "Wykonywania zadań zlecanych poprzez swing",
+          "Budowa GUI",
+          "Zarządzania elementami utworzonymi w swing",
+          "Wykonywania w tle zadań czasochłonnych"
+        ],
+        "correct": [3]
+      },
+      {
+        "id": 10,
+        "question": "W przypadku mechanizmu AutoResetEvent w .Net",
+        "answers": [
+          "Wywołanie WaitOne() zawsze powoduje wstrzymanie procesu wywołującego",
+          "Procesy czekające ustawione są w kolejce FIFO",
+          "Wszystkie wywołania Set() są pamiętane",
+          "Wywołanie Set() odblokowuje tylko jeden proces"
+        ],
+        "correct": [1, 3]
+      },
+      {
+        "id": 11,
+        "question": "Czy metoda TryAdd klasy ConcurrentDictionary jest metodą blokującą?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 12,
+        "question": "Zaznacz poprawne stwierdzenia w VisualStudio",
+        "answers": [
+          "Projekt może zawierać tylko jedną solucję",
+          "Projekt może zawierać wiele solucji",
+          "Solucja może zawierać wiele projektów",
+          "Solucja może zawierać tylko jeden projekt",
+          "Solucja i projekt to dokładnie to samo"
+        ],
+        "correct": [2, 3]
+      },
+      {
+        "id": 13,
+        "question": "W sortowaniu przez scalanie procesy połączone są między sobą w kształt",
+        "answers": ["Linii", "Okręgu", "Drzewa", "Macierzy"],
+        "correct": [2]
+      },
+      {
+        "id": 14,
+        "question": "Czy Task.Start() zwraca uruchomione zadanie?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 15,
+        "question": "Klawisz F9 w VisualStudio służy do",
+        "answers": [
+          "Przechodzenia o kolejny krok podczas pracy w trybie Debug",
+          "Skompilowania i uruchamiania programu w trybie Release",
+          "Skompilowania i uruchamiania programu w trybie Debug",
+          "Ustawienia punktu przerywania (breakpoint)",
+          "Usuwania punktu przerywania (breakpoint)"
+        ],
+        "correct": [3, 4]
+      },
+      {
+        "id": 16,
+        "question": "Jeśli p procesorów obliczyło pewne zadanie w 12 sekund przy przyspieszeniu równym 6 to ile to samo zadanie będzie wykonywało się na jednym procesorze?",
+        "answers": [],
+        "correct": [],
+        "note": "Pytanie otwarte. Obliczenie: 12s * 6 = 72s."
+      },
+      {
+        "id": 17,
+        "question": "Czy w konstruktorze klasy System.Timers.Timer możemy wskazać metodę callback?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 18,
+        "question": "Task.Factory.ContinueWhenAll(...)",
+        "answers": [
+          "Zwraca jedno zadanie",
+          "Wykonanie jest nieblokujące. Po wywołaniu jej program idzie dalej",
+          "Pierwszym parametrem jest obiekt przekazywany do zadania",
+          "Zwraca wiele zadań",
+          "Zwraca liczbę integer",
+          "Pierwszym parametrem jest lista poprzedzanych zadań"
+        ],
+        "correct": [0, 1, 5]
+      },
+      {
+        "id": 19,
+        "question": "Czy blok finally w C# wykonuje się także w przypadku przechwycenia wyjątku?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 20,
+        "question": "Czy blok synchronized działa jak semafor binarny (mutex)?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 21,
+        "question": "private static <luka> DoSomethingAsync(int size) { <luka> Task.Factory.StartNew<int>((<luka>) => { if(s == null) { throw new ArgumentNullException(nameof(s)); } int[] r = new int[(int)s]; for(int i = 0; i < (int)s; i++) { r[i] = Random.Shared.Next(); } return r; }, <luka>); return r; }, <luka>); }",
+        "answers": [],
+        "correct": [],
+        "note": "Kod do uzupełnienia. Prawdopodobnie chodzi o typ zwracany, parametry delegata i argumenty StartNew."
+      },
+      {
+        "id": 22,
+        "question": "Czy synchronizacja danych musi być w Javie stosowana w dosłownie każdym przypadku?",
+        "answers": ["Tak", "Nie"],
+        "correct": [1]
+      },
+      {
+        "id": 23,
+        "question": "W sortowaniu przez scalanie każdy proces może mieć",
+        "answers": [
+          "Tylko dwóch potomków",
+          "Co najmniej dwóch potomków",
+          "Co najwyżej dwóch potomków",
+          "Przynajmniej n/2 potomków, gdzie n to długość tablicy",
+          "Tylko jednego potomka"
+        ],
+        "correct": [2]
+      },
+      {
+        "id": 24,
+        "question": "W .Net do pobrania bieżącego czasu służy",
+        "answers": [
+          "DateTime.CurrentTime",
+          "DateTime.Now()",
+          "DateTime.CurrentTime()",
+          "DateTime.Now",
+          "DateTime.GetCurrentTime()"
+        ],
+        "correct": [3]
+      },
+      {
+        "id": 25,
+        "question": "Jak wygląda delegat przekazywany do konstruktora klasy System.Threading.Timer?",
+        "answers": [
+          "delegate void System.Threading.TimerCallback(TimeSpan span)",
+          "delegate void System.Threading.TimerCallback()",
+          "delegate void System.Threading.TimerCallback(object? span)",
+          "delegate void System.Threading.TimerCallback(int span)"
+        ],
+        "correct": [2]
+      },
+      {
+        "id": 26,
+        "question": "Kiedy określamy typ dynamic w C#?",
+        "answers": [
+          "Podczas wykonywania",
+          "Podczas kompilacji",
+          "Podczas wykonywania i kompilacji"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 27,
+        "question": "Czy Task.Factory.StartNew zwraca uruchomione zadanie?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 28,
+        "question": "Dodanie nagłówka pliku w linii 'using System' spowoduje, że",
+        "answers": [
+          "Trzeba używać przedrostka System w nazwach znajdujących się w tej przestrzeni nazw",
+          "Nie trzeba używać przedrostka System w nazwach znajdujących się w tej przestrzeni nazw",
+          "Nie wolno używać przedrostka System w nazwach znajdujących się w tej przestrzeni nazw",
+          "Metoda Console.WriteLine() przestanie działać z powodu wieloznaczności nazw"
+        ],
+        "correct": [1]
+      },
+      {
+        "id": 29,
+        "question": "Który z elementów posiada BackgroundWorker w C#?",
+        "answers": [
+          "ProgressChanged",
+          "DoWork",
+          "RunWorkerCompleted",
+          "WorkerFailed"
+        ],
+        "correct": [0, 1, 2]
+      },
+      {
+        "id": 30,
+        "question": "Czy operacja z wykorzystaniem zmiennej atomowej wykonuje się w sposób niepodzielny?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 31,
+        "question": "Który sposób wypisania zmiennej a w C# jest poprawny?",
+        "answers": [
+          "Console.WriteLine(\"Zmienna {a}\")",
+          "Console.WriteLine(\"Zmienna \" + a)",
+          "Console.WriteLine(@\"Zmienna {0}\", a)",
+          "Console.WriteLine(\"Zmienna {0}\", a)",
+          "Console.WriteLine($\"Zmienna {a}\")",
+          "Console.WriteLine(@\"Zmienna {a}\")",
+          "Console.WriteLine($\"Zmienna {0}\", a)"
+        ],
+        "correct": [1, 3, 4]
+      },
+      {
+        "id": 32,
+        "question": "Utwórz listę tasków: var tasks = new <luka>()",
+        "answers": [],
+        "correct": [],
+        "note": "Uzupełnienie kodu. Chodzi prawdopodobnie o List<Task>."
+      },
+      {
+        "id": 33,
+        "question": "W konstruktorze klasy System.Timers.Timer interwał podajemy w:",
+        "answers": [
+          "milisekundach",
+          "za pomocą typu TimeSpan",
+          "w tickach",
+          "w mikrosekundach",
+          "w sekundach",
+          "za pomocą typu int",
+          "za pomocą typu interval",
+          "za pomocą typu double"
+        ],
+        "correct": [0, 5, 7]
+      },
+      {
+        "id": 34,
+        "question": "Czy w .Net przerwanie wątku za pomocą Abort definitywnie go zakończy?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 35,
+        "question": "Czy w .Net Mutex można użyć między niespokrewnionymi procesami?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 36,
+        "question": "Czy możliwa jest zmiana wartości pól obiektu, którego referencja jest ustawiona na final?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 37,
+        "question": "Interfejs Callable zwraca obiekt:",
+        "answers": [
+          "dowolnej, ale niezdefiniowanej klasy lub interfejsu",
+          "klasy V",
+          "klasy String",
+          "Interfejsu Runnable"
+        ],
+        "correct": [1]
+      },
+      {
+        "id": 38,
+        "question": "Czy Object.Wait() może wyrzucić wyjątek?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 39,
+        "question": "Definicja (w C#) int[][,] oznacza",
+        "answers": [
+          "Listę tablic",
+          "Tablicę tablic jednowymiarowych",
+          "Dwuwymiarową tablicę tablic",
+          "Błędną definicję",
+          "Tablicę dwuwymiarowych list",
+          "Tablicę trójwymiarową",
+          "Tablicę tablic dwuwymiarowych",
+          "Dwuwymiarową listę tablic"
+        ],
+        "correct": [6]
+      },
+      {
+        "id": 40,
+        "question": "Czy typ kryjący się pod var jest określany na etapie kompilacji?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 41,
+        "question": "Jeżeli wątek w .Net jest w stanie WaitSleepJoin to jego poprzednim stanem mógł być",
+        "answers": ["Running", "Skipped", "Unstarted", "AbortRequested"],
+        "correct": [0]
+      },
+      {
+        "id": 42,
+        "question": "Stan wątku WaitSleepJoin w .Net oznacza",
+        "answers": [
+          "Wątek jest uśpiony za pomocą Sleep",
+          "Wątek macierzysty czeka na swoich potomków",
+          "Zapętlenie (np. instrukcja while(true))",
+          "Zrzeczenie się czasu procesora"
+        ],
+        "correct": [0, 1]
+      },
+      {
+        "id": 43,
+        "question": "Jakie jest główne zastosowanie interfejsu IProgress?",
+        "answers": [
+          "Do wystartowania zadania raportującego postęp",
+          "Do raportowania wyjątków",
+          "Do synchronizacji wyjątków",
+          "Do anulowania operacji",
+          "Do raportowania postępu operacji asynchronicznej"
+        ],
+        "correct": [4]
+      },
+      {
+        "id": 44,
+        "question": "Co wyświetli się na ekranie gdy w C# napiszemy Console.WriteLine(2 > 3 ? \"a\" : \"b\");",
+        "answers": ["false", "true", "b", "a", "dostaniemy wyjątek"],
+        "correct": [2]
+      },
+      {
+        "id": 45,
+        "question": "Wartością zwracaną przez Thread.setUncaughtExceptionHandler jest",
+        "answers": ["UncaughtException", "void", "Failed", "Throwable"],
+        "correct": [1]
+      },
+      {
+        "id": 46,
+        "question": "Uzupełnij kod: int num = 5; int num2 = 4; Task <luka> task1 = Task.Factory.StartNew(... )",
+        "answers": [],
+        "correct": [],
+        "note": "Kod do uzupełnienia. Należy wpisać typy delegatów, argumenty, rzutowania."
+      },
+      {
+        "id": 47,
+        "question": "Czy w BlockingCollection można ograniczyć liczbę elementów?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 48,
+        "question": "Jakie metody w .Net definiuje interfejs System.IDisposable?",
+        "answers": ["Dispose()"],
+        "correct": [0]
+      },
+      {
+        "id": 49,
+        "question": "Operacje z przestrzeni nazw Interlocked są",
+        "answers": [
+          "Operacjami podzielnymi",
+          "Operacjami atomowymi",
+          "Mechanizmem migracji blokady",
+          "Używane tylko na systemach 64-bitowych"
+        ],
+        "correct": [1]
+      },
+      {
+        "id": 50,
+        "question": "Co należy wpisać by utworzyć zadanie zwracające wartości typu long i odczytać tę wartość? <luka> longTask = Task.Run(() => { long ret = 2*2; <luka> }); long result = <luka>;",
+        "answers": [],
+        "correct": [],
+        "note": "Kod do uzupełnienia. Chodzi o typ zmiennej, zwrócenie wartości i odczyt wyniku."
+      },
+      {
+        "id": 51,
+        "question": "W CountDownEvent metoda Wait powoduje:",
+        "answers": [
+          "Uśpienie bieżącego wątka do czasu osiągnięcia zadanej maksymalnej wartości licznika",
+          "Uśpienie bieżącego wątka i zasygnalizowanie innym, że czekamy poprzez podniesienie wartości licznika",
+          "Uśpienie bieżącego wątka i zasygnalizowanie innym, że czekamy poprzez obniżenie wartości licznika",
+          "Uśpienie bieżącego wątka do czasu wyzerowania licznika"
+        ],
+        "correct": [3]
+      },
+      {
+        "id": 52,
+        "question": "Czy w .Net Mutex jest szybszy niż lock?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 53,
+        "question": "Gdzie znajdziemy automatycznie wygenerowany kontekst synchronizacji dla wątków interfejsu użytkownika WindowsForms?",
+        "answers": ["WinForms", "WPF", "ASP.NET"],
+        "correct": [0]
+      },
+      {
+        "id": 54,
+        "question": "Jeżeli wątek w .Net jest w stanie Running to jego poprzednim stanem mógł być",
+        "answers": ["Unstarted", "AbortRequested", "WaitSleepJoin", "Stopped"],
+        "correct": [0, 2]
+      },
+      {
+        "id": 55,
+        "question": "Podać definicję semafora ogólnego (operacje P i V). P(S): jeśli <luka1> to <luka2> w przeciwnym wypadku <luka3>. V(S): jeśli są procesy <luka4> w wyniku P(S), to <luka5> jeden z nich, w przeciwnym wypadku <luka6>.",
+        "answers": [],
+        "correct": [],
+        "note": "Definicja do uzupełnienia. Lukom odpowiadają konkretne opcje w PDF."
+      },
+      {
+        "id": 56,
+        "question": "Jak poczekać na zakończenie Task t?",
+        "answers": ["t.Synch()", "Task.wait(t)", "t.Join()", "t.Wait()", "t.Hold()"],
+        "correct": [1, 3]
+      },
+      {
+        "id": 57,
+        "question": "Czy typ tablicowy w C# jest referencyjny?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 58,
+        "question": "Mamy daną sekcję krytyczną w której jednocześnie przebywać mogą 5 procesów. [...] Semaphore S = 2; Semaphore Sb = 1; int ii; for(ii = 0; ii < <luka>; ii++) V(S); ...",
+        "answers": [],
+        "correct": [],
+        "note": "Kod do uzupełnienia. Chodzi o inicjalizację i sekcję krytyczną."
+      },
+      {
+        "id": 59,
+        "question": "Czy struktura to typ referencyjny?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 60,
+        "question": "Podaj liczbę pasującą do definicji: Hipersześcian rzędu 5 zbudowany jest z <luka> węzłów.",
+        "answers": [],
+        "correct": [],
+        "note": "Pytanie otwarte. Odpowiedź: 32 (2^5)."
+      },
+      {
+        "id": 61,
+        "question": "Które z poniższych metod anuluje zadanie z wykorzystanie interfejsu Future?",
+        "answers": [
+          "stop(false)", "cancel(false)", "suspend()", "stop()", "stop(true)",
+          "suspend(false)", "cancel(true)", "cancel()", "suspend(true)"
+        ],
+        "correct": [1, 6, 7],
+        "note": "Poprawne: cancel(false), cancel(true), cancel() – wszystkie anulują Future."
+      },
+      {
+        "id": 62,
+        "question": "Operacje z przestrzeni nazw Interlocked w .Net w systemie 64-bitowym nie trzeba używać do:",
+        "answers": [
+          "Inkrementacji",
+          "Odczytu liczby 64-bitowej",
+          "Dekrementacji",
+          "Odczytu liczby 32-bitowej"
+        ],
+        "correct": [1, 3],
+        "note": "Odczyt liczby 32-bitowej i 64-bitowej może być atomowy bez Interlocked na odpowiednich platformach, ale inkrementacja/dekrementacja już nie."
+      },
+      {
+        "id": 63,
+        "question": "Ile procesów na raz można wymieniać danymi przy pomocy obiektów klasy Exchanger?",
+        "answers": [
+          "dowolna liczba",
+          "dowolnie parzysta ilość",
+          "3",
+          "2",
+          "1",
+          "tyle, ile było zarejestrowanych"
+        ],
+        "correct": [3]
+      },
+      {
+        "id": 64,
+        "question": "Mamy daną sekcję krytyczną w której jednocześnie przebywać mogą 5 procesów. [...] Semaphore S = 2; Semaphore Sb = 1; int ii; for(ii = 0; ii < <luka>; ii++) V(S); ...",
+        "answers": [],
+        "correct": [],
+        "note": "Kod do uzupełnienia. To samo co pytanie 58."
+      },
+      {
+        "id": 65,
+        "question": "Które użycie IProgress jest niewłaściwe?",
+        "answers": [
+          "IProgress<(long, long)>",
+          "IProgress<(object)>",
+          "IProgress<(>"
+        ],
+        "correct": [2],
+        "note": "IProgress<(> jest niepoprawne składniowo."
+      }
+    ]
+  }
+}
