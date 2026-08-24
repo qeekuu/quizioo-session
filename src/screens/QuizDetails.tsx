@@ -217,12 +217,12 @@ export default function QuizDetails() {
                                 <Text style={styles.text}>{item.question}</Text>
 
                                 <Text style={styles.text}>
-                                    Your answer:{" "}
-                                    {selectedTexts.length ? selectedTexts.join(", ") : "—"}
+                                    Your answer:{"\n-"}
+                                    {selectedTexts.length ? selectedTexts.join(",\n-") : "—"}
                                 </Text>
 
                                 <Text style={styles.text}>
-                                    Correct answer: {correctTexts.join(", ")}
+                                    Correct answer: {"\n-"} {correctTexts.join(",\n-")}
                                 </Text>
                             </View>
                         );
