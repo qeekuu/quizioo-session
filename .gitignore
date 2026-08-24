@@ -35,6 +35,9 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# uniwind
+/uniwind-types.d.ts
+
 # generated native folders
 /ios
 /android
