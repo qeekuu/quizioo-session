@@ -132,6 +132,26 @@ Publishing an update:
 npx eas-cli update --branch preview --message "description of changes"
 ```
 
-An update only reaches builds that already contain the native `expo-updates` module — adding it required a fresh build. Changes limited to JS/JSON (new questions, for example) ship with `eas update` alone, no rebuild needed.
+An update only reaches builds that already contain the native `expo-updates` module — adding it required a fresh build.
+
+### What can and cannot ship over the air
+
+An update carries exactly one thing: the JavaScript bundle produced by Metro, plus the assets it references. It never carries native code. Anything compiled into the `.apk` / `.ipa` at build time is therefore out of reach.
+
+| Change | Ships via `eas update`? |
+|---|---|
+| TypeScript / React components, hooks, navigation | yes |
+| JSON in `assets/data/` — new questions, fixed answers | yes |
+| Styles, images, fonts and other bundled assets | yes |
+| Adding a **JavaScript-only** dependency | yes |
+| Adding a dependency containing **native code** | no — rebuild |
+| `app.json`: `package`, `permissions`, `icon`, `splash`, `plugins`, `newArchEnabled`, `version` | no — rebuild |
+| Anything under `android/` or `ios/` | no — rebuild |
+
+The `app.json` row is the one worth internalizing. That file is not read by the running app — it is **input to the build**. Expo's prebuild step turns it into `AndroidManifest.xml`, `build.gradle`, `Info.plist` and the icon/splash resources, and those get compiled into the binary. Edit `app.json`, publish an update, and nothing changes on the device: the manifest that shipped inside the installed build is still the one in force. Treat any `app.json` edit as requiring a new build.
+
+`package-lock.json` is not the deciding factor by itself — what matters is *which kind* of dependency changed. A pure-JS package rewrites the lockfile and still ships over the air, because its code ends up inside the Metro bundle. A package with a native module also rewrites the lockfile, but has to be compiled in, so it needs a build. The `npm dedupe` that resolved the duplicate `expo-font` here touched only the lockfile, yet concerned a native module — that is a build-level change, not an update-level one.
+
+This is exactly what the `fingerprint` runtime version policy guards against: it hashes the native inputs, so a native change yields a new `runtimeVersion`, and updates published against it are simply never offered to older binaries — instead of being delivered and crashing on launch.
 
 The app checks for updates automatically on launch (`checkAutomatically` defaults to `ON_LOAD`) and applies them on the next start. The **Update** button at the bottom of the quiz selection screen forces a manual check — it shows "No update available" when there is nothing, or a spinner with "Updating" before restarting the app once the update is downloaded.
