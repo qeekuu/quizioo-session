@@ -27,8 +27,8 @@ export default function ChooseQuizScreen(){
 				/>
 				<AppButton
 					title="Systemy Operacyjne 2"
-					onPress={() => navigation.navigate("QuizDetails", { quizId: "so2" })}
-				/>
+					onPress={() => navigation.navigate("SOScreen")}
+        />
 			</View>
 		</ScreenWrapper>
 	);

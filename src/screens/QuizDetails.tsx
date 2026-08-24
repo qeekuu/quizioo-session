@@ -7,7 +7,7 @@ import ScreenWrapper from "../components/wrappers/ScreenWrapper";
 import { styles } from "./ScreenStyles.styles";
 import pw from "../../assets/data/pw.json";
 import questions from "../../assets/data/questions.json";
-import so2 from "../../assets/data/SO2.json";
+
 import io1 from "../../assets/data/wyklad_1.json";
 import io2 from "../../assets/data/wyklad_2.json";
 import io3 from "../../assets/data/wyklad_3.json";
@@ -16,6 +16,16 @@ import io5 from "../../assets/data/wyklad_5.json";
 import io6 from "../../assets/data/wyklad_6.json";
 import io7 from "../../assets/data/wyklad_7.json";
 import io8 from "../../assets/data/wyklad_8.json";
+
+import so2 from "../../assets/data/SO2.json";
+import so2_1 from "../../assets/data/so2_1.json";
+import so2_2 from "../../assets/data/so2_2.json";
+import so2_3 from "../../assets/data/so2_3.json";
+import so2_4 from "../../assets/data/so2_4.json";
+import so2_5 from "../../assets/data/so2_5.json";
+import so2_6 from "../../assets/data/so2_6.json";
+import so2_7 from "../../assets/data/so2_7.json";
+
 import uml from "../../assets/data/uml.json";
 import wk from "../../assets/data/wzorce_konstrukcyjne.json";
 import ws from "../../assets/data/wzorce_strukturalne.json";
@@ -53,6 +63,13 @@ const QUIZ_DB: Record<string, Quiz> = {
   ...(wc as Record<string, Quiz>),
   ...(pw as Record<string, Quiz>),
   ...(so2 as Record<string, Quiz>),
+  ...(so2_1 as Record<string, Quiz>),
+  ...(so2_2 as Record<string, Quiz>),
+  ...(so2_3 as Record<string, Quiz>),
+  ...(so2_4 as Record<string, Quiz>),
+  ...(so2_5 as Record<string, Quiz>),
+  ...(so2_6 as Record<string, Quiz>),
+  ...(so2_7 as Record<string, Quiz>),
 };
 
 type AnswerRecord = {

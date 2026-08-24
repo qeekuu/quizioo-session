@@ -1,0 +1,91 @@
+{
+  "so2_1": {
+    "title": "SO2 - Zarządzanie procesami i wątkami",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje odnośnie zarządzania procesami w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "deskryptor procesu jest umieszczony na dnie jego stosu w jądrze systemu.",
+          "makrodefinicja \"current\" zwraca adres deskryptora bieżącego procesu.",
+          "proces w stanie TASK_UNINTERRUPTIBLE może być ustawiony w stanie gotowości przez dowolny sygnał, który otrzyma.",
+          "proces zakończony ma stan TASK_STOPPED.",
+          "proces, który jest wykonywany ma stan TASK_RUNNING."
+        ],
+        "correct": [1, 4]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje odnośnie zarządzania procesami w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "proces, który jest gotów do wykonania znajduje się w stanie TASK_RUNNING.",
+          "wątki w Linuksie są tworzone za pomocą innego wywołania systemowego niż procesy.",
+          "proces \"init\" może zostać nowym rodzicem procesu, którego proces macierzysty już się zakończył.",
+          "w trakcie tworzenia nowy proces otrzymuje osobny obszar tekstu i danych.",
+          "deskryptory procesów są powiązane w dwukierunkową listę nazywaną listą procesów."
+        ],
+        "correct": [0, 2, 4]
+      },
+      {
+        "id": 3,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Deskryptor procesu jest opisywany strukturą struct thread_info",
+          "Deskryptory pamięci są połączone w listę i drzewo czerwono-czarne",
+          "Jądro cyklicznie odczytuje wartości z zegara czasu rzeczywistego (RTC)",
+          "Jądro może przydzielić dodatkową przestrzeń adresową dla procesu podczas jego wykonywania",
+          "Każda ramka jest określona strukturą struct page"
+        ],
+        "correct": [1, 3, 4]
+      },
+      {
+        "id": 4,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Procesy UNINTERRUPTIBLE mogą zostać ustawione w stan gotowości przez inne zdarzenie niż to, na które oczekują",
+          "Programista jądra powinien się posługiwać funkcją printf",
+          "Programista jądra powinien używać funkcji rekurencyjnych",
+          "Programista może napisać dedykowaną pamięć podręczną dla alokatora plastrowego",
+          "Programista powinien zwracać uwagę na rozmiar stosu jądra"
+        ],
+        "correct": [3, 4]
+      },
+      {
+        "id": 5,
+        "question": "Które twierdzenie odnośnie wątków i procesów w systemie Linux są prawdziwe?",
+        "answers": [
+          "Za szeregowanie wątków odpowiada inny mechanizm jądra niż za szeregowanie procesów",
+          "Każdy wątek jądra posiada swoją odrębną przestrzeń adresową",
+          "Makrodefinicja current pozwala na szybki dostęp do deskryptora bieżącego procesu",
+          "Proces macierzysty, którego proces potomny się zakończył przechodzi w stan TASK_ZOMBIE",
+          "Deskryptory procesów powiązane są w listę"
+        ],
+        "correct": [2, 4]
+      },
+      {
+        "id": 6,
+        "question": "Które stwierdzenia są prawidłowe?",
+        "answers": [
+          "Makrodefinicja current pozwala na dostęp do deskryptora bieżącego procesu",
+          "Deskryptor procesu znajduje się na końcu stosu jądra dla wywołań systemowych procesu",
+          "VFS jest napisany w C++?",
+          "Obiekt wpisu katalogowego (dentry) może posiadać wyłącznie dwa stany",
+          "Urządzenie znakowe jest zwykłym plikiem"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 7,
+        "question": "Które stwierdzenia są prawidłowe?",
+        "answers": [
+          "Struktura bio reprezentuje operacje wejścia-wyjścia w trakcie ich trwania",
+          "Wątki jądra mają własną sekcję tekstu",
+          "Deskryptory procesów są połączone w listę dwukierunkową",
+          "Struktura thread_struct jest deskryptorem procesu",
+          "Urządzenia znakowe mają dostęp sekwencyjny"
+        ],
+        "correct": [0, 2, 4]
+      }
+    ]
+  }
+}

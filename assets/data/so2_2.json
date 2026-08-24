@@ -1,0 +1,103 @@
+{
+  "so2_2": {
+    "title": "SO2 - Planowanie (O(1) i CFS)",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje o planiście O(1) są prawdziwe:",
+        "answers": [
+          "nowy kwant czasu dla procesu jest ustalany dopiero wtedy, gdy wszystkie procesy w systemie wyczerpią swoje kwanty.",
+          "kolejka procesów gotowych zawiera wskaźniki na dwie tablice priorytetów.",
+          "każdy procesor ma swoją kolejkę procesów gotowych.",
+          "priorytet zwykłych procesów jest ustalany wyłącznie na podstawie stopnia ich interaktywności.",
+          "im wyższy jest priorytet procesu, tym krótszy kwant czasu on otrzymuje."
+        ],
+        "correct": [1, 2]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje o planiście O(1) są prawdziwe:",
+        "answers": [
+          "każdy nowo utworzony proces otrzymuje taki sam kwant czasu, jaki ma jego rodzic.",
+          "zadanie o dużym stopniu interaktywności może, po wyczerpaniu swojego kwantu czasu, ponownie trafić do tablicy procesów aktywnych.",
+          "proces użytkownika może być wywłaszczony w ramach powrotu z wywołania systemowego lub procedury obsługi przerwania.",
+          "implementacja funkcji przełączającej kontekst (\"context_switch()\") zależy od architektury platformy sprzętowej, na której działa Linux.",
+          "równoważenie obciążenia procesorów następuje wyłącznie wtedy, gdy kolejka procesów gotowych któregoś z nich jest pusta."
+        ],
+        "correct": [1, 2, 3]
+      },
+      {
+        "id": 3,
+        "question": "Określ, które informacje o planiście CFS są prawdziwe:",
+        "answers": [
+          "priorytety procesów są prawie niezmienne.",
+          "klasa szeregowania SCHED_BATCH jest obsługiwana za pomocą algorytmu rotacyjnego.",
+          "waga procesu jest odwrotnością wartości jego priorytetu.",
+          "zegar wirtualny jest wprost implementowany w jądrze Linuksa.",
+          "kolejka procesów gotowych jest zrealizowana w postaci drzewa czerwono-czarnego."
+        ],
+        "correct": [0, 4]
+      },
+      {
+        "id": 4,
+        "question": "Określ, które informacje o planiście CFS są prawdziwe:",
+        "answers": [
+          "czas fizyczny jest mierzony z dokładnością nanosekundową.",
+          "dla procesów z priorytetem równym 0 czas wirtualny jest taki sam jak czas fizyczny.",
+          "czas wybierania procesów przez planistę CFS jest zawsze krótszy w porównaniu z analogicznym czasem dla planisty O(1).",
+          "czas wirtualny procesu zależy od jego wagi.",
+          "planista przydziela procesor temu procesowi, który najdłużej z niego korzystał."
+        ],
+        "correct": [0, 1, 3]
+      },
+      {
+        "id": 5,
+        "question": "Które z poniższych zdań dotyczących algorytmu szeregowania O(1) są prawdziwe?",
+        "answers": [
+          "Wymiana priorytetów zadań sprowadza się do zamiany wskaźników na tablice aktywną i przeterminowaną",
+          "Priorytet każdego zadania jest ustalany wyłącznie na podstawie jego interaktywności",
+          "Promowane są zadania o wysokim stopniu interaktywności",
+          "Mechanizm szeregowania dokonuje zrównoważenia obciążenia procesorów wyłącznie wtedy, kiedy kolejka zadań jednego z nich jest pusta",
+          "Kwanty czasu dla poszczególnych zadań są przeliczane dopiero wówczas, gdy ostatnie z zadań znajdujących się w tablicy priorytetów aktywnych wyczerpie swój kwant czasu"
+        ],
+        "correct": [0, 2]
+      },
+      {
+        "id": 6,
+        "question": "Określ, które ze zdań dotyczących szeregowania procesów w Linuxie 2.6 są prawdziwe?",
+        "answers": [
+          "Linux realizuje wielozadaniowość w oparciu o kooperację",
+          "Działanie planisty O(1) oparte jest na schemacie kolejek ze sprzężeniem zwrotnym",
+          "Zadania interaktywne otrzymują od planisty O(1) mniejszy kwant czasu niż zadania nieinteraktywne",
+          "Główną struktura planisty CFS jest drzewo czerwono-czarne",
+          "Linux nie jest rygorystycznym systemem czasu rzeczywistego"
+        ],
+        "correct": [1, 3, 4]
+      },
+      {
+        "id": 7,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Obsługa struktury bio jest mniej skomplikowana niż obsługa nagłówków buforów",
+          "Odczyty w mechanizmie RCU powinny być częste, a zapisy sporadyczne",
+          "Pamięć fizyczna nieciągła jest przydzielana za pomocą algorytmu bliźniaków",
+          "PID może być ujemny",
+          "Planista CFS całkowicie zastąpił planistę O(1)"
+        ],
+        "correct": [0, 1, 4]
+      },
+      {
+        "id": 8,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Planista CFS korzysta z tablicy odwrotności priorytetów",
+          "Planista CFS przelicza priorytety procesów na wagi",
+          "Plik jest powiązany z wpisem katalogowym",
+          "Procesy które nie korzystają z procesora są przesuwane w lewą stronę drzewa czerwono-czarnego",
+          "Procesy mogą współdzielić deskryptor pamięci"
+        ],
+        "correct": [1, 3, 4]
+      }
+    ]
+  }
+}

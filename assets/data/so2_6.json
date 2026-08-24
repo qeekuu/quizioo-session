@@ -1,0 +1,55 @@
+{
+  "so2_6": {
+    "title": "SO2 - Zarządzanie pamięcią i przestrzeń adresowa",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje dotyczące zarządzania pamięcią w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "Linux obsługuje systemy wieloprocesorowe o organizacji NUMA.",
+          "domyślnie Linux przydziela pamięć ze strefy DMA (ZONE_DMA).",
+          "podstawowym mechanizmem sprzętowym wykorzystywanym przez Linuksa do obsługi pamięci jest segmentacja.",
+          "nie we wszystkich platformach sprzętowych musi występować strefa pamięci wysokiej (ZONE_HIGHMEM).",
+          "niskopoziomowy mechanizm obsługi pamięci umożliwia przydzielenie obszaru pamięci o wielkości jednego bajta."
+        ],
+        "correct": [0, 3]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje dotyczące zarządzania pamięcią w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "niskopoziomowy mechanizm obsługi pamięci działa w oparciu o algorytm bliźniaków.",
+          "adresowanie stron w Linuksie jest domyślnie czteropoziomowe.",
+          "alokator plastrowy wykorzystuje do własnych celów dedykowane pamięci podręczne.",
+          "alokator plastrowy jest rozwiązaniem zapożyczonym z systemu operacyjnego firmy Sun Microsystems.",
+          "alokator plastrowy przydziela pamięć na struktury często alokowane i zwalniane przez jądro systemu."
+        ],
+        "correct": [0, 1, 3, 4]
+      },
+      {
+        "id": 3,
+        "question": "Określ, które informacje dotyczące obsługi przestrzeni adresowej procesu w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "wszystkie wątki jądra korzystają z jednego, wspólnego dla nich deskryptora pamięci.",
+          "obiekty zawierające informacje o obszarach pamięci są umieszczone jednocześnie w dwóch różnych strukturach danych.",
+          "sekcje tekstu tworzone są nie tylko dla procesów, ale również dla bibliotek współdzielonych.",
+          "deskryptor pamięci przechowuje adres startowy i końcowy obszaru argumentów wywołania programu.",
+          "deskryptory pamięci nigdy nie są współdzielone przez procesy (wątki) użytkownika."
+        ],
+        "correct": [1, 2, 3]
+      },
+      {
+        "id": 4,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Algorytm noop realizuje tylko operacje scalania",
+          "Alokator plastrowy przechowuje własne struktury w pamięci dedykowanej",
+          "Alokator plastrowy przydziela pamięć na deskryptor",
+          "Alokator plastrowy przydziela w pierwszej kolejności pamięć z plastrów pustych",
+          "Argumenty wywołań systemowych są przekazywane tylko przez rejestry programowe"
+        ],
+        "correct": [0, 2]
+      }
+    ]
+  }
+}

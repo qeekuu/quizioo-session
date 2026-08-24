@@ -1,0 +1,151 @@
+{
+  "so2_3": {
+    "title": "SO2 - Wywołania systemowe, przerwania i dolne połówki",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje dotyczące wywołań systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "wszystkie funkcje z biblioteki \"libc\" korzystają z wywołań systemowych.",
+          "wywołania systemowe mogą nie przyjmować żadnych argumentów.",
+          "każde wywołanie systemowe zwraca wartość stanowiącą kod jego wykonania.",
+          "zazwyczaj wywołania systemowe implementowane są w postaci funkcji napisanych w assemblerze.",
+          "dodanie do jądra nowego wywołania systemowego wymaga modyfikacji biblioteki \"libc\", aby umożliwić procesom użytkownika korzystanie z niego."
+        ],
+        "correct": [1, 2]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje dotyczące wywołań systemowych w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "adresy wszystkich zarejestrowanych wywołań systemowych są przechowywane w specjalnej tablicy.",
+          "kod funkcji implementującej wywołanie systemowe może być umieszczony w module.",
+          "dodawanie nowych wywołań systemowych jest zalecaną przez programistów jądra Linuksa praktyką.",
+          "część procesorów wymaga, aby argumenty do funkcji implementujących wywołania systemowych były przekazywane wyłącznie przez stos.",
+          "funkcja implementująca wywołanie systemowe musi sprawdzać poprawność przekazanych jej argumentów."
+        ],
+        "correct": [0, 3, 4]
+      },
+      {
+        "id": 3,
+        "question": "Określ, które informacje dotyczące obsługi przerwań w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "procedury obsługi przerwań w Linuksie są funkcjami napisanymi w języku C.",
+          "procedury obsługi przerwań są wykonywane w kontekście przerwania.",
+          "procedury obsługi przerwań są wywoływane w sposób asynchroniczny.",
+          "linie zgłaszania przerwań (IRQ) mogą być współdzielone.",
+          "niektóre przerwania mogą zasilać pulę entropii jądra."
+        ],
+        "correct": [0, 1, 2, 3, 4]
+      },
+      {
+        "id": 4,
+        "question": "Określ, które informacje dotyczące obsługi przerwań w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "większość procedur obsługi przerwań korzysta z makrodefinicji \"current\".",
+          "stos z którego korzystają procedury obsługi przerwań ma nieograniczoną wielkość.",
+          "wszystkie procedury obsługi przerwań wymagają wyłączenia wszystkich linii zgłaszania przerwań na czas ich wykonywania.",
+          "w komputerach klasy PC wszystkie numery przerwań są przydzielane statycznie.",
+          "czas wykonania procedur obsługi przerwań (górnych połówek) może być dowolnie długi."
+        ],
+        "correct": []
+      },
+      {
+        "id": 5,
+        "question": "Określ, które informacje dotyczące dolnych połówek w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "całkowita liczba przerwań programowych jest ograniczona.",
+          "przerwania programowe są wykonywane w kontekście procesu.",
+          "tasklety są wykonywane w kontekście procesu.",
+          "czynności z kolejek prac są wykonywane w kontekście przerwania.",
+          "można precyzyjnie określić czas, po którym przerwanie programowe powinno być wykonane."
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 6,
+        "question": "Określ, które informacje dotyczące dolnych połówek w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "przerwania programowe są alokowane statycznie podczas kompilacji jądra.",
+          "można określić minimalny czas, o jaki zostanie opóźnione wykonanie czynności w kolejkach prac.",
+          "te same tasklety mogą być wykonywane współbieżnie na platformach wieloprocesorowych.",
+          "wątek \"ksoftirqd\" odpowiedzialny jest zarówno za obsługę przerwań programowych, jak i kolejek prac.",
+          "istnieje możliwość stworzenia kolejki prac, która będzie obsługiwana na platformach wieloprocesorowych przez pojedynczy wątek roboczy."
+        ],
+        "correct": [0, 1, 4]
+      },
+      {
+        "id": 7,
+        "question": "Które z twierdzeń dotyczących obsługi przerwań w Linuksie 2.6 są prawdziwe?",
+        "answers": [
+          "Obsługa przerwań podzielona jest na górną połówkę i dolną połówkę",
+          "Procedury obsługi przerwań mogą być wykonywane dowolnie długo",
+          "Do linii obsługi przerwania o określonym numerze może być przypisanych kilka procedur obsługi przerwań",
+          "W procedurach obsługi przerwań można wywołać funkcje, które ulegają blokowaniu",
+          "Procedury obsługi przerwań korzystają ze stosu jądra, który ma nieograniczony rozmiar"
+        ],
+        "correct": [0, 2]
+      },
+      {
+        "id": 8,
+        "question": "Które ze zdań dotyczących kolejek prac są prawdziwe?",
+        "answers": [
+          "Czynności odroczone wykonywane w ramach kolejek prac wykonywane są w kontekście przerwania",
+          "Kolejki prac zastąpiły mechanizm dolnych połówek znany jako kolejki zadań",
+          "Mechanizm kolejek prac pozwala na określenie czasu po upływie, którego dana czynność może się rozpocząć",
+          "Jądro systemu Linux zawiera specjalną funkcję, która pozwala na opróżnienie domyślnej kolejki prac",
+          "Jeśli w jądrze tworzona jest nowa kolejka prac, to jest równocześnie dla niej tworzony nowy, odrębny wątek roboczy"
+        ],
+        "correct": [1, 2, 3, 4]
+      },
+      {
+        "id": 9,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Każde urządzenie musi mieć inny numer przerwania",
+          "Kod w mechanizmie RCU może ulec zawieszeniu",
+          "Licznik monotoniczny jest wysokiej rozdzielczości",
+          "Liczniki bazują na taskletach",
+          "Liczniki dynamiczne ze względu na zbyt małą precyzję nie mogą być wykorzystywane w zadaniach czasu rzeczywistego"
+        ],
+        "correct": [0, 2]
+      },
+      {
+        "id": 10,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Przerwania programowe są wykorzystywane przy taskletach",
+          "Przerwanie składa się z dwóch połówek",
+          "Przy wywołaniach systemowych jest używany sys_",
+          "Rozmiar sektora dla urządzeń blokowych wynosi zazwyczaj 1024 bajty",
+          "Rygle pętlowe powinny być stosowane wszędzie tam, gdzie nie można zawiesić wątku i gdzie czas przełączania kontekstu byłby niewspółmiernie dłuższy z czasem aktywnego oczekiwania"
+        ],
+        "correct": [1, 2, 4]
+      },
+      {
+        "id": 11,
+        "question": "Poniżej umieszczono zdania dotyczące obsługi przerwań przez Linuksa 2.6. Które z nich są prawdziwe?",
+        "answers": [
+          "Częstotliwości pojawiania się wszystkich przerwań są wykorzystywane do inicjalizowania generatora liczb losowych",
+          "Numery przerwań mogą być przydzielane niektórym urządzeniom dynamicznie",
+          "Aby procedura obsługi przerwania mogła być wywołana, musi zostać wcześniej zarejestrowana",
+          "Procedury obsługi przerwań mogą korzystać z wartości zwracanej przez makrodefinicję current",
+          "Nie jest wymagane, aby funkcje obsługi przerwań były wielobieżne"
+        ],
+        "correct": [1, 2, 4]
+      },
+      {
+        "id": 12,
+        "question": "Które ze stwierdzeń dotyczących wywołań systemowych w Linuksie 2.6 są prawdziwe?",
+        "answers": [
+          "Dodawanie nowych wywołań systemowych nie jest zalecanym przez twórców jądra sposobem dodawania nowej funkcjonalności",
+          "Każde wywołanie systemowe zwraca wartość typu long",
+          "Każde wywołanie systemowe musi przyjmować co najmniej jeden argument wywołania",
+          "Wszystkie funkcje ze standardowej biblioteki języka C korzystają z wywołań systemowych",
+          "Funkcja realizująca wywołanie systemowe musi być w całości napisana w assemblerze"
+        ],
+        "correct": [0, 1]
+      }
+    ]
+  }
+}

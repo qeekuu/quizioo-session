@@ -1,0 +1,67 @@
+{
+  "so2_5": {
+    "title": "SO2 - Pomiar i synchronizacja względem czasu",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje dotyczące pomiaru i synchronizacji względem czasu w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "zegar czasu rzeczywistego (RTC) jest okresowo odczytywany przez jądro systemu.",
+          "liczbę taktów zegara od uruchomienia systemu przechowuje zmienna \"jiffies\".",
+          "częstotliwość zegara systemowego jest określona stałą \"HZ\".",
+          "implementacja procedury obsługi przerwania zegarowego jest całkowicie niezależna od sprzętu.",
+          "wartość stałej \"HZ\" jest taka sama dla wszystkich platform sprzętowych."
+        ],
+        "correct": [1, 2]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje dotyczące pomiaru i synchronizacji względem czasu w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "liczniki niskiej rozdzielczości są cykliczne.",
+          "mechanizm liczników wysokiej rozdzielczości korzysta z drzewa czerwono-czarnego.",
+          "liczniki wysokiej rozdzielczości mogą być cykliczne.",
+          "funkcje związane z licznikami niskiej rozdzielczości wykonywane są w kontekście przerwania.",
+          "jeśli platforma sprzętowa nie dostarcza zegarów o nanosekundowej precyzji, to mechanizm liczników wysokiej rozdzielczości nie jest dla niej w ogóle dostępny."
+        ],
+        "correct": [1, 2, 3]
+      },
+      {
+        "id": 3,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Liczniki wysokiej rozdzielczości pozwalają na ich regulowanie z nanosekundową precyzją",
+          "Listy liczników nie są przez system sortowane",
+          "Maksymalna ilość przerwań programowych wynosi 32",
+          "Mechanizm RCU posługuje się wskaźnikami",
+          "Niektóre pola struktury dotyczącej plików mogą być wypełniane dowolnymi wartościami"
+        ],
+        "correct": [0, 1, 2, 3, 4]
+      },
+      {
+        "id": 4,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Zawartość zegara czasu rzeczywistego jest odczytywana przez jądro co pewien okres czasu",
+          "Zmienna jiffies jest nałożona na starsze 32 bity zmiennej jiffies_64",
+          "Zmienna jiffies przechowuje informacje o czasie rzeczywistym systemu",
+          "Zwiększenie wartości stałej HZ powoduje zmniejszenie częstotliwości przerwań zegarowych",
+          "Rygle pętlowe są rekurencyjne"
+        ],
+        "correct": []
+      },
+      {
+        "id": 5,
+        "question": "Które stwierdzenia są prawidłowe?",
+        "answers": [
+          "Programista nie powinien używać funkcji goto",
+          "Architektura NUMA jest obsługiwana od wersji jądra 2.6",
+          "Stała HZ dla architektury i386 wynosi 1000",
+          "Czy liczniki niskiej rozdzielczości działają z mikrosekundową precyzją?",
+          "Użytkownik uprzywilejowany może dowolnie zmieniać wartość stałej HZ"
+        ],
+        "correct": [0, 1, 2, 3]
+      }
+    ]
+  }
+}

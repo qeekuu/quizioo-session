@@ -1,0 +1,79 @@
+{
+  "so2_4": {
+    "title": "SO2 - Mechanizmy synchronizacji",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje dotyczące środków synchronizacji w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "funkcje realizujące operacje niepodzielne na liczbach całkowitych działają na zmiennych typu \"int\".",
+          "niepodzielne operacje na bitach przeprowadzane są za pomocą tych samych funkcji co niepodzielne operacje na liczbach całkowitych.",
+          "rygle pętlowe wprowadzają wątki oczekujące na ich zwolnienie w stan aktywnego oczekiwania.",
+          "zwykły rygiel pętlowy może być przetrzymywany przez kilka wątków jednocześnie.",
+          "rygle pętlowe nie są używane w systemach jednoprocesorowych."
+        ],
+        "correct": [2, 4]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje dotyczące środków synchronizacji w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "rygiel pętlowy czytelnika może być jednocześnie przetrzymywany przez więcej niż jeden wątek wykonania.",
+          "semafory mogą być stosowane w procedurach obsługi przerwań.",
+          "semafor nie może być przetrzymywany przez wątek, który już przetrzymuje rygiel pętlowy.",
+          "stosowanie blokady BKL nie jest zalecane.",
+          "mechanizm RCU niszczy oryginalną informację w momencie, kiedy wątek-pisarz opublikuje wskaźnik na jej zmodyfikowaną kopię."
+        ],
+        "correct": [0, 2, 3]
+      },
+      {
+        "id": 3,
+        "question": "Pytania INNE:",
+        "answers": [
+          "Rygle pętlowe są użyteczne w systemach jednoprocesorowych z wywłaszczaniem jądra",
+          "Stan procesów po zakończeniu jest przechowywany w tym samym polu deskryptora",
+          "Stronicowanie nigdy nie korzysta z segmentacji",
+          "Struktura bio korzysta z listy offsetów",
+          "Struktura bio może być wykorzystywana w macierzach RAID"
+        ],
+        "correct": [4]
+      },
+      {
+        "id": 4,
+        "question": "Które ze zdań dotyczących synchronizacji są prawdziwe?",
+        "answers": [
+          "Niektóre operacje niepodzielne mogą być zrealizowane jako pojedyncze rozkazy procesora",
+          "Przeplot operacji jest przyczyną występowania problemu sekcji krytycznej",
+          "W systemie Linux, w przestrzeni użytkownika wywłaszczenie procesu może zajść tylko w ściśle określonym momencie jego działania",
+          "Zadanie nigdy nie może być wywłaszczone po zakończeniu obsługi przerwania",
+          "Dostęp do zmiennych lokalnych wątków wykonania nie musi podlegać synchronizacji"
+        ],
+        "correct": [0, 1, 2, 4]
+      },
+      {
+        "id": 5,
+        "question": "Które stwierdzenia są prawidłowe?",
+        "answers": [
+          "Zmienna typu atomic_t jest 32 bitowa",
+          "Wszystkie architektury, które obsługuje Linux dostarczają rozkazów maszynowych realizujących operacje niepodzielne na wartościach będących liczbami całkowitymi",
+          "Rygle pętlowe mogą być stosowane we fragmentach kodu wykonywujących się w kontekście przerwania",
+          "Rygle R-W stosujemy w zagadnieniach typu problem czytelników i pisarzy, gdzie faworyzowani są pisarze",
+          "Zmienne sygnałowe są uproszczoną wersją semaforów"
+        ],
+        "correct": [0, 2, 4]
+      },
+      {
+        "id": 6,
+        "question": "Które z poniższych stwierdzeń dotyczących środków synchronizacji w jądrze Linuksa 2.6 są prawdziwe?",
+        "answers": [
+          "Wątek wykonania który przetrzymuje semafor nie może równocześnie przetrzymywać rygla pętlowego",
+          "Blokady sekwencyjne pozwalają ustalić czy operacja odczytu nie została przepleciona z operacją zapisu",
+          "Blokada BKL jest blokadą gruboziarnistą",
+          "Blokada BKL nie jest rekurencyjna",
+          "Rygle pętlowe nie są używane w systemach jednoprocesorowych w jądrze, które nie wywłaszcza wątków"
+        ],
+        "correct": [0, 1, 2, 4]
+      }
+    ]
+  }
+}

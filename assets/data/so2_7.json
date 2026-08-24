@@ -1,0 +1,103 @@
+{
+  "so2_7": {
+    "title": "SO2 - System plików, wejście-wyjście i sieć",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje dotyczące wirtualnego systemu plików (VFS) w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "VFS napisany jest w języku C++.",
+          "obiekt superbloku może być stosowany w obsłudze systemów plików, które nie mają fizycznej implementacji.",
+          "obiekty i-węzłów związane są wyłącznie z fizycznymi plikami.",
+          "niektóre nieuniksowe systemy plików nie posiadają wszystkich informacji, które muszą być umieszczone w obiekcie i-węzła.",
+          "obiekty wpisów katalogowych mają swoje odpowiedniki na nośniku danych."
+        ],
+        "correct": [1, 3]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje dotyczące wirtualnego systemu plików (VFS) w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "obiekt wpisu katalogowego, który nie jest w użyciu, ale któremu odpowiada prawidłowy i-węzeł, jest w stanie ujemnym.",
+          "obiekty wpisu katalogowego, które są w stanie ujemnym, nie są niszczone, jeśli nie zachodzi taka potrzeba.",
+          "obiekty plików związane są ze wszystkimi plikami zapisanymi w systemie plików.",
+          "pamięć na obiekty wpisów katalogowych jest przydzielana i zwalniana przez alokator plastrowy.",
+          "dla każdego zamontowanego systemu plików tworzona jest zmienna opisująca jego punkt montowania."
+        ],
+        "correct": [1, 3, 4]
+      },
+      {
+        "id": 3,
+        "question": "Określ, które informacje dotyczące obsługi urządzeń znakowych i blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "urządzenia obsługiwane przez Linuksa są wyłącznie urządzeniami fizycznymi.",
+          "w komputerach klasy PC kontroler jest zawsze częścią struktury sprzętowej łączącej szynę wejścia-wyjścia z urządzeniem.",
+          "rejestr może pełnić więcej niż jedną funkcję.",
+          "numer główny identyfikuje sterownik obsługujący urządzenie lub grupę urządzeń.",
+          "urządzenia znakowe adresują dane sekwencyjnie."
+        ],
+        "correct": [2, 3, 4]
+      },
+      {
+        "id": 4,
+        "question": "Określ, które informacje dotyczące obsługi urządzeń znakowych i blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "sterownik urządzenia może być dołączony do systemu w postaci modułu.",
+          "sterowniki urządzeń znakowych korzystają z niektórych struktur związanych z wirtualnym systemem plików (VFS).",
+          "programista piszący sterownik urządzenia znakowego musi oprogramować metody obiektu i-węzła.",
+          "metody obsługujące urządzenia znakowe muszą działać według określonego protokołu.",
+          "sterowniki wszystkich urządzeń blokowych muszą tworzyć kolejki żądań."
+        ],
+        "correct": [0, 1, 3]
+      },
+      {
+        "id": 5,
+        "question": "Określ, które informacje dotyczące warstwy operacji blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "wielkość bloku w Linuksie jest nieograniczona.",
+          "każdy bufor zawsze jest związany z blokiem na nośniku danych.",
+          "bufory są wykorzystywane wyłącznie do przechowywania danych odczytanych z nośnika urządzenia blokowego.",
+          "każdy z buforów wyposażony jest w nagłówek zawierający dane niezbędne do zarządzania nim.",
+          "nagłówek bufora nie przechowuje informacji o operacjach wejścia-wyjścia z jakimi ten bufor jest związany."
+        ],
+        "correct": [1, 3, 4]
+      },
+      {
+        "id": 6,
+        "question": "Określ, które informacje dotyczące warstwy operacji blokowych w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "struktury \"bio\" reprezentują operacje wejścia-wyjścia podczas ich trwania.",
+          "wielkość segmentu jest zawsze równa wielkości bufora.",
+          "struktury \"bio\" ułatwiają realizację operacji wejścia-wyjścia o rozproszonym źródle.",
+          "planista terminowy przydziela domyślnie dłuższy termin realizacji operacji odczytu niż operacji zapisu.",
+          "planista CFQ nie stosuje przewidywania."
+        ],
+        "correct": [0, 2]
+      },
+      {
+        "id": 7,
+        "question": "Określ, które informacje dotyczące obsługi sieci w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "jądro wykonuje czynności związane z obsługą warstwy łącza, sieci i transportowej modelu ISO/OSI",
+          "NAPI nigdy nie pozwala na sygnalizowanie odbioru pakietu za pomocą przerwania",
+          "przenoszenie bufora pakietu między kolejkami jest czasochłonne",
+          "funkcje związane z filtrem sieciowym mogą \"wykradać\" niektóre pakiety, aby przetworzyć je w inny sposób niż pozostałe",
+          "w filtrze sieciowym, z pojedynczym uchwytem nie może być skojarzona więcej niż jedna funkcja przetwarzająca"
+        ],
+        "correct": [0, 1, 3]
+      },
+      {
+        "id": 8,
+        "question": "Pytania INNE:",
+        "answers": [
+          "VFS jest zapożyczony od Microsoftu",
+          "W 64-bitowych procesorach pamięć wysoka jest oznaczona jako HIGHMEM",
+          "W wersji 2.6 deskryptor pamięci jest przechowywany na stosie",
+          "Wirtualny system plików jest modelem obiektowym",
+          "Wszystkie pliki na dysku są reprezentowane przez VFS"
+        ],
+        "correct": [3]
+      }
+    ]
+  }
+}
