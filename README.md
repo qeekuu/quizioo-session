@@ -4,6 +4,35 @@ A mobile quiz app (React Native + Expo SDK 54) for studying for exams — Inżyn
 
 Questions are multiple-choice. Both the question order and the answer order are shuffled on every attempt, and the final screen shows your score along with every question and its correct answers.
 
+## Workflow
+
+**Always commit and push before running `eas build` or `eas update`.** A published build or update is a snapshot of the working tree at that moment; if it is not in git, there is no way to tell later what shipped, and no way to go back to it when something breaks on a device.
+
+Commits follow Conventional Commits, matching the existing history:
+
+| Prefix | Use for | Example from this repo |
+|---|---|---|
+| `feat:` | new functionality, new quiz content | `feat: add questions for SO2 exam from the last year` |
+| `chore:` | dependencies, tooling, configuration | `chore: dedupe duplicate expo-font to fix native build` |
+| `docs:` | documentation | `docs: add README` |
+| `fix:` | bug fixes | `fix: correct answer indices in wyklad_3` |
+
+Small, self-contained changes can go straight to `master`. Open a pull request instead when the change is large, touches the native layer (`app.json`, native dependencies, `eas.json`), or you are not confident it is correct:
+
+```bash
+git checkout -b fix/scroll-on-results
+# ... changes ...
+git commit -m "fix: keep results list scrollable on small screens"
+git push -u origin fix/scroll-on-results
+```
+
+Once the branch is pushed, open the PR either way:
+
+- **From the terminal:** `gh pr create` (requires the [GitHub CLI](https://cli.github.com/); authenticate once with `gh auth login`).
+- **From the browser:** after the push, GitHub shows a "Compare & pull request" banner on the repository page for a few minutes. You can also go to the **Pull requests** tab → **New pull request**, and pick your branch as *compare* against `master` as *base*. The `git push` output itself prints a direct link to the PR creation form — usually the fastest route.
+
+This matters most for native changes: they require a full rebuild to verify, so a broken one is expensive to discover and awkward to undo once it is sitting on `master`.
+
 ## Requirements
 
 - Node.js — the project runs on Node 20, but npm 12 warns that it expects Node ≥ 22. It is only a warning and breaks nothing.
