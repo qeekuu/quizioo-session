@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from "react";
 import { View, Text, Pressable, FlatList } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { RootStackParamList } from "../navigation/types";
 import AppButton from "../components/AppButton";
+import ScreenWrapper from "../components/wrappers/ScreenWrapper";
 import { styles } from "./ScreenStyles.styles";
 import pw from "../../assets/data/pw.json";
 import questions from "../../assets/data/questions.json";
@@ -167,19 +167,15 @@ export default function QuizDetails() {
 
     if (!quiz) {
         return (
-            <SafeAreaView style={styles.container}>
+            <ScreenWrapper withScroll={false}>
                 <Text style={styles.text}>Cannot find quiz: {quizId}</Text>
-            </SafeAreaView>
+            </ScreenWrapper>
         );
     }
 
     if (index >= shuffledQuestions.length) {
         return (
-            <SafeAreaView style={styles.container}>
-                <View style={styles.topBar}>
-                    <Text style={styles.boldText}>{quiz.title}</Text>
-                </View>
-
+            <ScreenWrapper title={quiz.title} withScroll={false}>
                 <View style={styles.quizDetails}>
                     <Text style={styles.boldText}>Finished!</Text>
                     <Text style={styles.text}>
@@ -231,16 +227,12 @@ export default function QuizDetails() {
 						onPress={() => navigation.navigate("ChooseQuiz")}
 					/>
                 </View>
-            </SafeAreaView>
+            </ScreenWrapper>
         );
     }
 
     return (
-        <SafeAreaView style={styles.container}>
-            <View style={styles.topBar}>
-                <Text style={styles.boldText}>{quiz.title}</Text>
-            </View>
-
+        <ScreenWrapper title={quiz.title}>
             <View style={styles.quizDetails}>
                 <Text style={styles.boldText}>
                     Question {index + 1}/{shuffledQuestions.length}
@@ -274,7 +266,7 @@ export default function QuizDetails() {
                     disabled={selected.length === 0}
                 />
             </View>
-        </SafeAreaView>
+        </ScreenWrapper>
     );
 }
 

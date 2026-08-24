@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { styles, colors } from "./ScreenStyles.styles";
+import { View, Text } from "react-native";
+import { styles } from "./ScreenStyles.styles";
 import {NativeStackNavigationProp} from "@react-navigation/native-stack";
 import AppButton from "../components/AppButton";
+import ScreenWrapper from "../components/wrappers/ScreenWrapper";
 import {RootStackParamList} from "../navigation/types";
 import {useNavigation} from "@react-navigation/native";
 
@@ -13,11 +13,7 @@ export default function ChooseQuizScreen(){
 	const navigation = useNavigation<Nav>();
 
 	return (
-		<SafeAreaView style={styles.container}>
-			<View style={styles.topBar}>
-				<Text style={styles.boldText}>Inżynieria Oprogramowania</Text>
-			</View>
-			<ScrollView>
+		<ScreenWrapper title="Inżynieria Oprogramowania">
 				<View style={styles.mainCard}>
 					<Text style={styles.boldText}>Choose Quiz</Text>
 					<AppButton
@@ -74,8 +70,7 @@ export default function ChooseQuizScreen(){
 					/>
 
 				</View>
-			</ScrollView>
-		</SafeAreaView>	
+		</ScreenWrapper>
 	);
 }
 
