@@ -1,4 +1,4 @@
-# Quizio
+# Quizio - Session
 
 A mobile quiz app (React Native + Expo SDK 54) for studying for exams — Inżynieria Oprogramowania (Software Engineering), Programowanie Współbieżne (Concurrent Programming) and Systemy Operacyjne 2 (Operating Systems 2).
 
