@@ -192,7 +192,27 @@ export default function QuizDetails() {
 
     if (index >= shuffledQuestions.length) {
         return (
-            <ScreenWrapper title={quiz.title} withScroll={false}>
+            <ScreenWrapper
+                title={quiz.title}
+                withScroll={false}
+                footer={
+                    <View className="gap-2">
+                        <AppButton
+                            title="Play again!"
+                            onPress={() => {
+                                setIndex(0);
+                                setSelected([]);
+                                setScore(0);
+                                setHistory([]);
+                            }}
+                        />
+                        <AppButton
+                            title="Return to selection screen"
+                            onPress={() => navigation.navigate("ChooseQuiz")}
+                        />
+                    </View>
+                }
+            >
                 <View style={styles.quizDetails}>
                     <Text style={styles.boldText}>Finished!</Text>
                     <Text style={styles.text}>
@@ -228,28 +248,21 @@ export default function QuizDetails() {
                         );
                     }}
                 />
-
-                <View style={{ padding: 12, gap: 8 }}>
-                    <AppButton
-                        title="Play again!"
-                        onPress={() => {
-                            setIndex(0);
-                            setSelected([]);
-                            setScore(0);
-                            setHistory([]);
-                        }}
-                    />
-					<AppButton
-						title="Return to selection screen"
-						onPress={() => navigation.navigate("ChooseQuiz")}
-					/>
-                </View>
             </ScreenWrapper>
         );
     }
 
     return (
-        <ScreenWrapper title={quiz.title}>
+        <ScreenWrapper
+            title={quiz.title}
+            footer={
+                <AppButton
+                    title="Submit"
+                    onPress={onSubmit}
+                    disabled={selected.length === 0}
+                />
+            }
+        >
             <View style={styles.quizDetails}>
                 <Text style={styles.boldText}>
                     Question {index + 1}/{shuffledQuestions.length}
@@ -274,14 +287,6 @@ export default function QuizDetails() {
                         </Pressable>
                     );
                 })}
-            </View>
-
-            <View>
-                <AppButton
-                    title="Submit"
-                    onPress={onSubmit}
-                    disabled={selected.length === 0}
-                />
             </View>
         </ScreenWrapper>
     );

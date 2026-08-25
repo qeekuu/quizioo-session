@@ -49,7 +49,7 @@ export const ScreenWrapper = ({
 			{content}
 
 			{footer ? (
-				<View style={{ paddingTop: 8, paddingBottom: insets.bottom + 16 }}>
+				<View className="pt-2" style={{ paddingBottom: insets.bottom + 16 }}>
 					{footer}
 				</View>
 			) : null}
