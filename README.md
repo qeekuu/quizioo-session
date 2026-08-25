@@ -42,10 +42,15 @@ This matters most for native changes: they require a full rebuild to verify, so 
 
 ```bash
 npm install
-npx expo start
+npx expo start --go     # Expo Go
+npx expo start          # development build (dev client)
 ```
 
-Then scan the QR code with Expo Go, or press `a` (Android) / `i` (iOS).
+Then scan the QR code, or press `a` (Android) / `i` (iOS).
+
+**The `--go` flag matters.** Since `expo-dev-client` landed in the project, plain `npx expo start` starts in development build mode: the QR code points at the `quizio-session://` scheme, which Expo Go cannot open — the app simply does not launch. Either start with `--go`, or press **`s`** in the Metro terminal to switch modes; the QR code is redrawn as `exp://` and Expo Go picks it up.
+
+The development build (without `--go`) requires an installed APK from the `development` profile. That is the mode to use for anything Expo Go cannot run — and the only one where `expo-updates` behaves like on a real device.
 
 Note: the **Update** button does not work in Expo Go or in development mode — `expo-updates` only functions in release builds. In Expo Go you will see "Update check failed", which is expected.
 
