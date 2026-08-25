@@ -1,0 +1,19 @@
+name: quizlint
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  quizlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: rust/quizlint
+      - run: cargo test --manifest-path rust/quizlint/Cargo.toml
+      - run: cargo run --release --manifest-path rust/quizlint/Cargo.toml -- assets/data
