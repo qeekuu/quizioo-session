@@ -120,11 +120,15 @@ Use the `preview` profile to test OTA updates — `development` has no channel a
 Configured in `app.json`:
 
 ```json
-"runtimeVersion": { "policy": "fingerprint" },
+"runtimeVersion": { "policy": "appVersion" },
 "updates": { "url": "https://u.expo.dev/<projectId>" }
 ```
 
-The `fingerprint` policy hashes the native part of the project. That way, adding a native module changes `runtimeVersion` automatically, and older builds will not receive an update they could not run.
+The `appVersion` policy makes `runtimeVersion` equal to `version` in `app.json` — currently `1.0.0`, the same on both platforms. An update is only offered to builds carrying the same `runtimeVersion`, so the rule is:
+
+**Do not bump `version` for JavaScript-only changes.** New questions, UI fixes and styling all ship over the air on the current version. Bump `version` only together with a native change, and then everyone has to install a fresh build — every device still on the old version stops receiving updates the moment the version changes.
+
+This replaced the earlier `fingerprint` policy, which recomputed `runtimeVersion` from a hash of the native inputs. It was safer in theory, but in practice it also moved on edits to `package.json` scripts, `eas.json` or `.gitignore` — and every such drift silently cut off OTA delivery until everyone rebuilt.
 
 Publishing an update:
 
@@ -145,13 +149,22 @@ An update carries exactly one thing: the JavaScript bundle produced by Metro, pl
 | Styles, images, fonts and other bundled assets | yes |
 | Adding a **JavaScript-only** dependency | yes |
 | Adding a dependency containing **native code** | no — rebuild |
-| `app.json`: `package`, `permissions`, `icon`, `splash`, `plugins`, `newArchEnabled`, `version` | no — rebuild |
+| `app.json`: `package`, `permissions`, `icon`, `splash`, `plugins`, `newArchEnabled`, `version`, `runtimeVersion` | no — rebuild |
 | Anything under `android/` or `ios/` | no — rebuild |
 
 The `app.json` row is the one worth internalizing. That file is not read by the running app — it is **input to the build**. Expo's prebuild step turns it into `AndroidManifest.xml`, `build.gradle`, `Info.plist` and the icon/splash resources, and those get compiled into the binary. Edit `app.json`, publish an update, and nothing changes on the device: the manifest that shipped inside the installed build is still the one in force. Treat any `app.json` edit as requiring a new build.
 
 `package-lock.json` is not the deciding factor by itself — what matters is *which kind* of dependency changed. A pure-JS package rewrites the lockfile and still ships over the air, because its code ends up inside the Metro bundle. A package with a native module also rewrites the lockfile, but has to be compiled in, so it needs a build. The `npm dedupe` that resolved the duplicate `expo-font` here touched only the lockfile, yet concerned a native module — that is a build-level change, not an update-level one.
 
-This is exactly what the `fingerprint` runtime version policy guards against: it hashes the native inputs, so a native change yields a new `runtimeVersion`, and updates published against it are simply never offered to older binaries — instead of being delivered and crashing on launch.
+With the `appVersion` policy nothing detects this for you: publish an update after adding a native dependency without bumping `version`, and the update *will* be delivered to old binaries — where it can crash on launch, because the native module it expects is not in the installed app. Judging whether a change is native is now a human responsibility, which is why the table above is worth knowing by heart.
+
+To check whether the native part actually changed, compare the fingerprint of the current source against the last build:
+
+```bash
+npx expo-updates fingerprint:generate --platform android   # hash of the current source
+npx eas-cli build:list --limit 1                           # runtime/fingerprint of the last build
+```
+
+Different hashes mean a native change: bump `version` and rebuild. Identical hashes mean `eas update` is enough.
 
 The app checks for updates automatically on launch (`checkAutomatically` defaults to `ON_LOAD`) and applies them on the next start. The **Update** button at the bottom of the quiz selection screen forces a manual check — it shows "No update available" when there is nothing, or a spinner with "Updating" before restarting the app once the update is downloaded.
