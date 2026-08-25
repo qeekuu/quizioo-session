@@ -40,6 +40,7 @@ type Question = {
     question: string;
     answers: string[];
     correct: number[];
+    disabled?: boolean;
 };
 
 type Quiz = {
@@ -141,7 +142,7 @@ export default function QuizDetails() {
 	
 
     const shuffledQuestions: Question[] = useMemo(() => {
-        const qs = quiz?.questions ?? [];
+        const qs = (quiz?.questions ?? []).filter(q => !q.disabled);
         const shuffled = shuffle(qs);
         return shuffled.map(shuffleAnswersAndRemapCorrect);
     }, [quizId, quiz]);
