@@ -1,0 +1,289 @@
+[
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 4,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 6,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 8,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 10,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 12,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 14,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 16,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 18,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 20,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 22,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 24,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 32,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 33,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 34,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 35,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 36,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 37,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 38,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 39,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 40,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 48,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 49,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 50,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "pw.json",
+    "quiz": "pw",
+    "question_id": 64,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_1.json",
+    "quiz": "so2_1",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_1.json",
+    "quiz": "so2_1",
+    "question_id": 4,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_1.json",
+    "quiz": "so2_1",
+    "question_id": 7,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_2.json",
+    "quiz": "so2_2",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_2.json",
+    "quiz": "so2_2",
+    "question_id": 4,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_2.json",
+    "quiz": "so2_2",
+    "question_id": 8,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_3.json",
+    "quiz": "so2_3",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_3.json",
+    "quiz": "so2_3",
+    "question_id": 4,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_3.json",
+    "quiz": "so2_3",
+    "question_id": 6,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_3.json",
+    "quiz": "so2_3",
+    "question_id": 10,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_4.json",
+    "quiz": "so2_4",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_5.json",
+    "quiz": "so2_5",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_6.json",
+    "quiz": "so2_6",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_7.json",
+    "quiz": "so2_7",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_7.json",
+    "quiz": "so2_7",
+    "question_id": 4,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_7.json",
+    "quiz": "so2_7",
+    "question_id": 6,
+    "message": "duplicated question text"
+  }
+]

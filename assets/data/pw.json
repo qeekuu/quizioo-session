@@ -127,9 +127,16 @@
       {
         "id": 16,
         "question": "Jeśli p procesorów obliczyło pewne zadanie w 12 sekund przy przyspieszeniu równym 6 to ile to samo zadanie będzie wykonywało się na jednym procesorze?",
-        "answers": [],
-        "correct": [],
-        "note": "Pytanie otwarte. Obliczenie: 12s * 6 = 72s."
+        "answers": [
+          "72 sekundy",
+          "2 sekundy",
+          "6 sekund",
+          "18 sekund"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "Przyspieszenie S = T1/Tp, czyli T1 = 6 * 12 s = 72 s."
       },
       {
         "id": 17,
@@ -167,7 +174,8 @@
         "question": "private static <luka> DoSomethingAsync(int size) { <luka> Task.Factory.StartNew<int>((<luka>) => { if(s == null) { throw new ArgumentNullException(nameof(s)); } int[] r = new int[(int)s]; for(int i = 0; i < (int)s; i++) { r[i] = Random.Shared.Next(); } return r; }, <luka>); return r; }, <luka>); }",
         "answers": [],
         "correct": [],
-        "note": "Kod do uzupełnienia. Prawdopodobnie chodzi o typ zwracany, parametry delegata i argumenty StartNew."
+        "note": "Wyłączone: wklejony kod jest uszkodzony (niesparowane nawiasy, nieznana zmienna s, podwójne return). Do włączenia po sprawdzeniu w oryginale.",
+        "disabled": true
       },
       {
         "id": 22,
@@ -271,9 +279,16 @@
       {
         "id": 32,
         "question": "Utwórz listę tasków: var tasks = new <luka>()",
-        "answers": [],
-        "correct": [],
-        "note": "Uzupełnienie kodu. Chodzi prawdopodobnie o List<Task>."
+        "answers": [
+          "List<Task>()",
+          "Task[]()",
+          "TaskCollection()",
+          "IEnumerable<Task>()"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "var tasks = new List<Task>();"
       },
       {
         "id": 33,
@@ -390,9 +405,16 @@
       {
         "id": 46,
         "question": "Uzupełnij kod: int num = 5; int num2 = 4; Task <luka> task1 = Task.Factory.StartNew(... )",
-        "answers": [],
-        "correct": [],
-        "note": "Kod do uzupełnienia. Należy wpisać typy delegatów, argumenty, rzutowania."
+        "answers": [
+          "<int>",
+          "<void>",
+          "<num>",
+          "<object>"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "Task<int> task1 = Task.Factory.StartNew(...) — parametr typu określa typ wyniku zadania."
       },
       {
         "id": 47,
@@ -403,8 +425,16 @@
       {
         "id": 48,
         "question": "Jakie metody w .Net definiuje interfejs System.IDisposable?",
-        "answers": ["Dispose()"],
-        "correct": [0]
+        "answers": [
+          "Dispose()",
+          "Close()",
+          "Finalize()",
+          "Dispose() oraz Close()"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "IDisposable definiuje wyłącznie metodę Dispose(). Close() to konwencja niektórych klas, Finalize() pochodzi z System.Object."
       },
       {
         "id": 49,
@@ -420,9 +450,16 @@
       {
         "id": 50,
         "question": "Co należy wpisać by utworzyć zadanie zwracające wartości typu long i odczytać tę wartość? <luka> longTask = Task.Run(() => { long ret = 2*2; <luka> }); long result = <luka>;",
-        "answers": [],
-        "correct": [],
-        "note": "Kod do uzupełnienia. Chodzi o typ zmiennej, zwrócenie wartości i odczyt wyniku."
+        "answers": [
+          "Task<long> ... return ret; ... longTask.Result",
+          "Task ... ret; ... longTask.Value",
+          "long ... return ret; ... longTask",
+          "Task<long> ... yield ret; ... longTask.Get()"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "Task<long> longTask = Task.Run(() => { long ret = 2*2; return ret; }); long result = longTask.Result;"
       },
       {
         "id": 51,
@@ -456,9 +493,16 @@
       {
         "id": 55,
         "question": "Podać definicję semafora ogólnego (operacje P i V). P(S): jeśli <luka1> to <luka2> w przeciwnym wypadku <luka3>. V(S): jeśli są procesy <luka4> w wyniku P(S), to <luka5> jeden z nich, w przeciwnym wypadku <luka6>.",
-        "answers": [],
-        "correct": [],
-        "note": "Definicja do uzupełnienia. Lukom odpowiadają konkretne opcje w PDF."
+        "answers": [
+          "P(S): jeśli S > 0 to S = S - 1, w przeciwnym wypadku wstrzymaj proces wykonujący operację. V(S): jeśli są procesy wstrzymane w wyniku P(S), to obudź jeden z nich, w przeciwnym wypadku S = S + 1.",
+          "P(S): jeśli S > 0 to S = S + 1, w przeciwnym wypadku obudź proces. V(S): jeśli są procesy wstrzymane, to wstrzymaj jeden z nich, w przeciwnym wypadku S = S - 1.",
+          "P(S): jeśli S = 0 to S = S + 1, w przeciwnym wypadku wstrzymaj proces. V(S): jeśli są procesy wstrzymane, to obudź wszystkie, w przeciwnym wypadku S = S - 1.",
+          "P(S): zawsze S = S - 1. V(S): zawsze S = S + 1, bez wstrzymywania procesów."
+        ],
+        "correct": [
+          0
+        ],
+        "note": "Klasyczna definicja semafora ogólnego (Dijkstra)."
       },
       {
         "id": 56,
@@ -475,9 +519,16 @@
       {
         "id": 58,
         "question": "Mamy daną sekcję krytyczną w której jednocześnie przebywać mogą 5 procesów. [...] Semaphore S = 2; Semaphore Sb = 1; int ii; for(ii = 0; ii < <luka>; ii++) V(S); ...",
-        "answers": [],
-        "correct": [],
-        "note": "Kod do uzupełnienia. Chodzi o inicjalizację i sekcję krytyczną."
+        "answers": [
+          "3",
+          "5",
+          "2",
+          "4"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "S startuje z wartością 2, a sekcja ma pomieścić 5 procesów, więc pętla wykonuje V(S) 3 razy (2 + 3 = 5)."
       },
       {
         "id": 59,
@@ -488,9 +539,16 @@
       {
         "id": 60,
         "question": "Podaj liczbę pasującą do definicji: Hipersześcian rzędu 5 zbudowany jest z <luka> węzłów.",
-        "answers": [],
-        "correct": [],
-        "note": "Pytanie otwarte. Odpowiedź: 32 (2^5)."
+        "answers": [
+          "32",
+          "25",
+          "10",
+          "64"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "Hipersześcian rzędu n ma 2^n węzłów, czyli 2^5 = 32."
       },
       {
         "id": 61,
@@ -530,9 +588,16 @@
       {
         "id": 64,
         "question": "Mamy daną sekcję krytyczną w której jednocześnie przebywać mogą 5 procesów. [...] Semaphore S = 2; Semaphore Sb = 1; int ii; for(ii = 0; ii < <luka>; ii++) V(S); ...",
-        "answers": [],
-        "correct": [],
-        "note": "Kod do uzupełnienia. To samo co pytanie 58."
+        "answers": [
+          "3",
+          "5",
+          "2",
+          "4"
+        ],
+        "correct": [
+          0
+        ],
+        "note": "S startuje z wartością 2, a sekcja ma pomieścić 5 procesów, więc pętla wykonuje V(S) 3 razy (2 + 3 = 5)."
       },
       {
         "id": 65,

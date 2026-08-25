@@ -48,7 +48,9 @@
           "Zwiększenie wartości stałej HZ powoduje zmniejszenie częstotliwości przerwań zegarowych",
           "Rygle pętlowe są rekurencyjne"
         ],
-        "correct": []
+        "correct": [],
+        "disabled": true,
+        "note": "Wyłączone: żadne z podanych zdań nie jest prawdziwe — przy przepisywaniu z PDF-a najpewniej zgubiła się poprawna opcja. Do włączenia po sprawdzeniu w oryginale."
       },
       {
         "id": 5,

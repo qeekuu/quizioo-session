@@ -120,7 +120,10 @@
           "w komputerach klasy PC wszystkie numery przerwań są przydzielane statycznie.",
           "czas wykonania procedur obsługi przerwań (górnych połówek) może być dowolnie długi."
         ],
-        "correct": []
+        "correct": [
+          2
+        ],
+        "note": "Od jądra 2.6.35 (a więc i w 3.0+) każda procedura obsługi przerwania działa z wyłączonymi przerwaniami na lokalnym procesorze — flaga IRQF_DISABLED została usunięta i takie zachowanie stało się domyślne."
       },
       {
         "id": 11,
@@ -492,7 +495,9 @@
           "Zwiększenie wartości stałej HZ powoduje zmniejszenie częstotliwości przerwań zegarowych",
           "Rygle pętlowe są rekurencyjne"
         ],
-        "correct": []
+        "correct": [],
+        "disabled": true,
+        "note": "Wyłączone: żadne z podanych zdań nie jest prawdziwe — przy przepisywaniu z PDF-a najpewniej zgubiła się poprawna opcja. Do włączenia po sprawdzeniu w oryginale."
       },
       {
         "id": 42,
