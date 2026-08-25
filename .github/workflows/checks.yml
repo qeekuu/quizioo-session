@@ -16,5 +16,6 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npx uniwind generate-artifacts --css ./global.css --dts ./uniwind-types.d.ts
       - run: npx tsc --noEmit
       - run: npx --yes expo-doctor
