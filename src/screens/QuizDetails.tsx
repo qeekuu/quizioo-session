@@ -25,7 +25,7 @@ import so2_4 from "../../assets/data/so2_4.json";
 import so2_5 from "../../assets/data/so2_5.json";
 import so2_6 from "../../assets/data/so2_6.json";
 import so2_7 from "../../assets/data/so2_7.json";
-
+import so2_8 from "../../assets/data/so2_8.json";
 import uml from "../../assets/data/uml.json";
 import wk from "../../assets/data/wzorce_konstrukcyjne.json";
 import ws from "../../assets/data/wzorce_strukturalne.json";
@@ -71,6 +71,7 @@ const QUIZ_DB: Record<string, Quiz> = {
   ...(so2_5 as Record<string, Quiz>),
   ...(so2_6 as Record<string, Quiz>),
   ...(so2_7 as Record<string, Quiz>),
+  ...(so2_8 as Record<string, Quiz>),
 };
 
 type AnswerRecord = {

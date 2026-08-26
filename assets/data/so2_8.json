@@ -1,0 +1,115 @@
+{
+  "so2_8": {
+    "title": "SO2 - Pytania 2026",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Określ, które informacje odnośnie zarządzania procesami w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "PID procesu nigdy nie jest liczbą ujemną.",
+          "Wątek użytkownika jest procesem, który współdzieli większość swoich zasobów z innymi wątkami.",
+          "W Linuksie wątki są implementowane jako procesy współdzielące zasoby za pomocą wywołania clone.",
+          "Wątki użytkownika są tworzone przez inne wywołanie systemowe niż procesy użytkownika.",
+          "Deskryptory procesów mogą być powiązane w większe struktury danych."
+        ],
+        "correct": [0, 1, 2, 4]
+      },
+      {
+        "id": 2,
+        "question": "Określ, które informacje odnośnie zarządzania procesami w Linuksie 3.0 i nowszych są prawdziwe:",
+        "answers": [
+          "Proces potomny, którego proces macierzysty się zakończył jest automatycznie unicestwiany.",
+          "Proces zakończony jest w stanie TASK_STOPPED.",
+          "Proces, który jest gotów do wykonania, znajduje się w stanie TASK_RUNNING.",
+          "Makro current zwraca adres deskryptora jądra.",
+          "Kontekst procesu to to samo, co przestrzeń użytkownika."
+        ],
+        "correct": [2]
+      },
+      {
+        "id": 3,
+        "question": "Określ, które informacje odnośnie zarządzania procesami i wątkami w Linuksie są prawdziwe:",
+        "answers": [
+          "Proces w stanie TASK_INTERRUPTIBLE może zostać wybudzony na skutek wystąpienia sygnału związanego z dowolnym zdarzeniem.",
+          "Obsługa urządzeń wejścia-wyjścia jest powiązana z Wirtualnym Systemem Plików (VFS).",
+          "Głównymi strukturami danych używanymi w Modelu Urządzeń Linuksa (LDM) są obiekty jądra.",
+          "Obiekty jądra są reprezentowane w systemie procfs.",
+          "Numer poboczny identyfikuje sterownik obsługujący daną rodzinę urządzeń."
+        ],
+        "correct": [0, 1, 2]
+      },
+      {
+        "id": 4,
+        "question": "Określ, które informacje odnośnie systemu Linux są prawdziwe:",
+        "answers": [
+          "Przykładami urządzeń znakowych są mysz i klawiatura.",
+          "VFS napisany jest w języku C.",
+          "Obiekty i-węzłów mogą być związane z plikami specjalnymi.",
+          "Dla systemów plików, które są zrealizowane w całości w pamięci RAM, VFS nie tworzy obiektu superbloku.",
+          "Każdy system plików zawiera wszystkie dane, które muszą być umieszczone w obiekcie i-węzła."
+        ],
+        "correct": [0, 1, 2]
+      },
+      {
+        "id": 5,
+        "question": "Określ, które informacje odnośnie systemu Linux są prawdziwe:",
+        "answers": [
+          "Obiekt wpisu katalogowego (obiekt dentry) w stanie 'nieużywany' jest związany z prawidłowym obiektem i-węzła.",
+          "Wartość stałej HZ jest taka sama dla wszystkich platform sprzętowych obsługiwanych przez Linuksa.",
+          "Źródła czasu generują sygnały oznaczające upływ określonego odcinka czasu.",
+          "Kod procedury obsługi przerwania zegara systemowego jest całkowicie niezależny od sprzętu.",
+          "Zmienna jiffies przechowuje liczbę przerwań zegarowych wygenerowanych od momentu uruchomienia systemu."
+        ],
+        "correct": [0, 2, 4]
+      },
+      {
+        "id": 6,
+        "question": "Określ, które informacje odnośnie systemu Linux są prawdziwe:",
+        "answers": [
+          "Jądro może być skonfigurowane tak, aby ignorowało stałą HZ i generowało zdarzenia czasowe tylko wtedy, gdy są one potrzebne.",
+          "Przerwania sprzętowe są asynchroniczne.",
+          "Procedury obsługi przerwań (górne połówki) w Linuksie są funkcjami napisanymi wyłącznie w języku asemblera.",
+          "Linie zgłaszania przerwań (IRQ) mogą być współdzielone przez urządzenia.",
+          "Linux obsługuje przerwania sygnalizowane wiadomością (MSI)."
+        ],
+        "correct": [0, 1, 3, 4]
+      },
+      {
+        "id": 7,
+        "question": "Określ, które informacje odnośnie obsługi przerwań w systemie Linux są prawdziwe:",
+        "answers": [
+          "Procedury obsługi przerwań są wykonywane w kontekście procesu.",
+          "Stos, z którego korzystają procedury obsługi przerwań, ma rozmiar ograniczony domyślnie do dwóch stron.",
+          "Wszystkie procedury obsługi przerwań wymagają wyłączenia całego systemu przerwań na czas ich wykonywania.",
+          "Większość procedur obsługi przerwań związanych z urządzeniami peryferyjnymi korzysta z makrodefinicji current.",
+          "Czas wykonania procedury obsługi przerwania (górnej połówki) musi być możliwie krótki."
+        ],
+        "correct": [4]
+      },
+      {
+        "id": 8,
+        "question": "Określ, które informacje odnośnie obsługi przerwań i sieci w systemie Linux są prawdziwe:",
+        "answers": [
+          "Wszystkie procedury obsługi przerwań korzystają z wartości rejestrów zapisanych w strukturze typu struct pt_regs.",
+          "NAPI umożliwia sterownikowi przełączenie urządzenia sieciowego w tryb przeglądania.",
+          "Definicje funkcji wskazywanych przez uchwyty filtra sieciowego nie mogą być umieszczone w module jądra.",
+          "Podsystem odpowiedzialny za komunikację sieciową składa się z części odpowiadających warstwom łącza danych, sieciowej i transportowej modelu ISO/OSI.",
+          "Funkcje filtra sieciowego nie mogą przetwarzać pakietów wysyłanych do innego urządzenia sieciowego."
+        ],
+        "correct": [1, 3]
+      },
+      {
+        "id": 9,
+        "question": "Określ, które informacje odnośnie systemu Linux są prawdziwe:",
+        "answers": [
+          "W filtrze sieciowym funkcje przetwarzające nie mogą odrzucać pakietów.",
+          "Makrodefinicja \"current\" zwraca adres deskryptora bieżącego procesu.",
+          "Proces w stanie TASK_UNINTERRUPTIBLE może być ustawiony w stanie gotowości przez dowolny sygnał, który otrzyma.",
+          "Proces zakończony ma stan TASK_STOPPED.",
+          "Proces, który jest wykonywany ma stan TASK_RUNNING."
+        ],
+        "correct": [1, 4]
+      }
+    ]
+  }
+}

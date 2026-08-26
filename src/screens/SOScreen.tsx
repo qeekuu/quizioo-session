@@ -48,6 +48,10 @@ export default function ChooseQuizScreen(){
 						title="System plików, wejście-wyjście i sieć"
 						onPress={() => navigation.navigate("QuizDetails", { quizId: "so2_7" })}
 					/>
+          <AppButton
+						title="Baza 2026"
+						onPress={() => navigation.navigate("QuizDetails", { quizId: "so2_8" })}
+					/>
 				</View>
 		</ScreenWrapper>
 	);
