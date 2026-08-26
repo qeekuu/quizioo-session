@@ -91,6 +91,45 @@ src/screens/          ChooseQuizScreen, IOScreen, QuizDetails, shared styles
 2. Import the file in `src/screens/QuizDetails.tsx` and add it to `QUIZ_DB`.
 3. Add an `AppButton` pointing at the quiz in `ChooseQuizScreen.tsx` (or `IOScreen.tsx`), passing the JSON's top-level key as `quizId`.
 
+## quizlint — validating the questions (Rust)
+
+`rust/quizlint` is a small Rust program that checks the question JSON in `assets/data/`. The app itself is TypeScript — quizlint is purely a development tool, nothing from it ends up in a build.
+
+```bash
+cargo run --manifest-path rust/quizlint/Cargo.toml -- assets/data
+cargo test --manifest-path rust/quizlint/Cargo.toml
+```
+
+The directory is an optional argument, defaulting to `assets/data`. Every `.json` file in it is checked, except those whose name starts with `_` — that is what keeps the generated report from being validated as if it were a quiz.
+
+### What it checks
+
+First the JSON has to parse into the quiz shape (`title` plus a list of questions with `id`, `question`, `answers`, `correct`, and an optional `disabled`). A parse error or a missing field aborts the run immediately.
+
+Questions marked `"disabled": true` are skipped entirely — the escape hatch for questions with broken content that are not worth fixing or deleting yet.
+
+| Check | Level |
+|---|---|
+| an index in `correct` is out of range for `answers` | error |
+| `correct` is empty — no correct answer marked | error |
+| fewer than 2 answers to choose from | error |
+| duplicated `id` within one quiz | error |
+| the same quiz key used in two files | error |
+| duplicated answers within one question | warning |
+| duplicated question text within one quiz | warning |
+
+The split matters: **only errors exit with code 1** and fail CI. Warnings pass — a repeated answer or a duplicated question is usually deliberate or harmless, but still worth seeing.
+
+### Output
+
+The run prints the quizzes it found (file, key, title, question count), then every issue as `level: file/quiz/qID: message`, then a summary (files, questions, errors, warnings). It also writes the full list as JSON to `assets/data/_lint-report.json` — useful for inspecting a CI run or for further processing.
+
+### CI
+
+`.github/workflows/quizlint.yml` runs on every push and PR against `master`: first `cargo test` (unit tests for the rules, at the bottom of `main.rs`), then the linter itself over `assets/data`. It needs the `stable` toolchain, pinned by `rust-toolchain.toml`.
+
+The practical takeaway: run quizlint locally before adding new questions. The most common mistake when writing them by hand is a wrong index in `correct` — easy to make when reordering answers, and in the app it only shows up as a question that cannot be answered correctly.
+
 ## Project diagnostics
 
 ```bash
