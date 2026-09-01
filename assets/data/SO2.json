@@ -277,7 +277,7 @@
           "każdy z buforów wyposażony jest w nagłówek zawierający dane niezbędne do zarządzania nim.",
           "nagłówek bufora nie przechowuje informacji o operacjach wejścia-wyjścia z jakimi ten bufor jest związany."
         ],
-        "correct": [1, 3, 4]
+        "correct": [1, 3]
       },
       {
         "id": 24,
