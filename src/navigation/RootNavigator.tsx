@@ -7,6 +7,7 @@ import ChooseQuizScreen from "../screens/ChooseQuizScreen";
 import QuizDetails from "../screens/QuizDetails";
 import IOScreen from "../screens/IOScreen";
 import SOScreen from "../screens/SOScreen";
+import PWScreen from "../screens/PWScreen";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -32,6 +33,11 @@ export default function RootNavigator(){
         <Stack.Screen
 					name="SOScreen"
 					component={SOScreen}
+					options={{ headerShown: false }}
+				/>
+				<Stack.Screen
+					name="PWScreen"
+					component={PWScreen}
 					options={{ headerShown: false }}
 				/>
 			</Stack.Navigator>

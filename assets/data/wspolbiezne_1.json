@@ -1,0 +1,572 @@
+{
+  "Paduch_wejsciowka_1": {
+    "title": "Paduch - wejściówka 1",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Co przy uprawnieniach w Linuxie oznacza zapis rw-r-xr-- ?",
+        "answers": [
+          "Właściciel: odczyt i zapis; grupa: odczyt i wykonanie; pozostali: odczyt.",
+          "Właściciel: odczyt i wykonanie; grupa: odczyt i zapis; pozostali: odczyt.",
+          "Właściciel: odczyt i zapis; grupa: odczyt; pozostali: odczyt i wykonanie.",
+          "Właściciel: zapis i wykonanie; grupa: odczyt i wykonanie; pozostali: odczyt."
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 2,
+        "question": "Jaki parametr trzeba podać poleceniu „grep” by przeszukiwał także podkatalogi?",
+        "answers": ["-r", "-i", "-l", "-v"],
+        "correct": [0]
+      },
+      {
+        "id": 3,
+        "question": "Jaki parametr trzeba podać poleceniu „grep” by nie sprawiały mu różnicy duże i małe znaki?",
+        "answers": ["-i", "-r", "-w", "-x"],
+        "correct": [0]
+      },
+      {
+        "id": 4,
+        "question": "Jakie uprawnienia zostaną nadane po wykonaniu komendy chmod a+x plik ? Wybierz wszystkie poprawne:",
+        "answers": [
+          "Plik dostanie uprawnienia do wykonania z możliwością dopisywania",
+          "Plik o danej nazwie stanie się katalogiem",
+          "Inni dostaną uprawnienie na wykonanie",
+          "Właściciel dostanie uprawnienie na wykonanie",
+          "wszyscy dostaną uprawnienie na wykonywanie"
+        ],
+        "correct": [2, 3, 4]
+      },
+      {
+        "id": 5,
+        "question": "Jakie uprawnienia zostaną nadane po wykonaniu komendy chmod a+x plik ?",
+        "answers": [
+          "Tylko inni dostaną uprawnienie na wykonanie",
+          "wszyscy dostaną uprawnienie na wykonywanie",
+          "Tylko właściciel dostanie uprawnienie na wykonanie",
+          "Plik dostanie uprawnienia do wykonania z możliwością dopisywania",
+          "Plik o danej nazwie stanie się katalogiem"
+        ],
+        "correct": [1]
+      },
+      {
+        "id": 6,
+        "question": "Jakie należy wydać polecenie aby zobaczyć w jakich plikach w bieżącym katalogu występują linie zawierające ciąg znaków „ala ma kota”?",
+        "answers": [
+          "grep 'ala ma kota'",
+          "grep -r 'ala ma kota'",
+          "find 'ala ma kota'",
+          "cat 'ala ma kota'"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 7,
+        "question": "Jak jednym poleceniem umieścić listę wszystkich plików z katalogu bieżącego w pliku katalog.txt tak by dołączyła się ona na koniec tego pliku.",
+        "answers": [
+          "ls >> katalog.txt",
+          "ls > katalog.txt",
+          "ls | katalog.txt",
+          "ls < katalog.txt"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 8,
+        "question": "W jaki sposób przekazać do programu „wc” wynik działania (strumień wyjściowy) programu „ls”?",
+        "answers": [
+          "ls | wc",
+          "ls > wc",
+          "ls >> wc",
+          "wc < ls"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 9,
+        "question": "W jaki sposób w konsoli Linuxa sprawdzić kto jest właścicielem pliku plik.txt i jakie ma uprawnienia?",
+        "answers": [
+          "ls -l | grep \"plik.txt\"",
+          "ls -a | grep \"plik.txt\"",
+          "whoami plik.txt",
+          "file plik.txt"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 14,
+        "question": "Czy funkcja exec() służy do tworzenia nowego procesu?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [1]
+      },
+      {
+        "id": 15,
+        "question": "Czy po wywołaniu funkcji exec() istnieje możliwość powrotu do procesu który ją wywołał?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [1]
+      },
+      {
+        "id": 16,
+        "question": "Czy nowy program wywołany funkcją exec() dziedziczy id procesu?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [0]
+      },
+      {
+        "id": 22,
+        "question": "Jakim poleceniem w konsoli Linux sprawdzić w jakim katalogu obecnie jesteśmy?",
+        "answers": ["pwd", "cd", "ls", "dir"],
+        "correct": [0]
+      },
+      {
+        "id": 23,
+        "question": "Jaką komendą można wylistować wszystkie procesy, jakie znajdują się w systemie Unix/Linux?",
+        "answers": [
+          "ps -efa LUB ps aux",
+          "ls -la",
+          "top -all",
+          "cat /proc/processes"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 24,
+        "question": "W jaki sposób z konsoli Linux wysłać sygnał o numerze 9 do programu o identyfikatorze 666.",
+        "answers": [
+          "kill -9 666",
+          "kill 666 -9",
+          "signal 9 666",
+          "ps -9 666"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 25,
+        "question": "Jakie należy wydać polecenie w konsoli Linuxa w celu sprawdzenia czy program „prog” działa gdzieś w systemie?",
+        "answers": [
+          "ps -efa | grep \"prog\"",
+          "ls | grep \"prog\"",
+          "find \"prog\"",
+          "top \"prog\""
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 26,
+        "question": "Jakie polecenie należy wykonać by otrzymać pełną listę plików, z katalogu bieżącego, łącznie z ukrytymi ale nie w formie „długiej”?",
+        "answers": ["ls -a", "ls -l", "ls -la", "ls -R"],
+        "correct": [0]
+      },
+      {
+        "id": 27,
+        "question": "Do czego służy w Unixie funkcja systemowa signal()?",
+        "answers": [
+          "do określenia, sygnałów ignorowanych",
+          "Do określenia sposobu obsługi sygnału",
+          "do odbierania sygnału",
+          "do wysyłania sygnału"
+        ],
+        "correct": [0, 1]
+      },
+      {
+        "id": 28,
+        "question": "Czy nowy program wywołany funkcją exec() dziedziczy procedury obsługi sygnałów?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [1]
+      },
+      {
+        "id": 29,
+        "question": "Jak jednym poleceniem przejść z katalogu /usr/lib/jakis/katalog do katalogu /usr/lib/inny nie posługując się ścieżką bezwzględną (zaczynającą się od / ).",
+        "answers": [
+          "cd .. && cd .. && cd inny LUB cd ../../inny",
+          "cd /usr/lib/inny",
+          "cd ~/inny",
+          "cd inny"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 30,
+        "question": "Podaj parametr w kompilatorze gcc odpowiedzialny za ustalenie nazwy pliku wynikowego.",
+        "answers": ["-o", "-O", "-out", "-f"],
+        "correct": [0]
+      },
+      {
+        "id": 31,
+        "question": "Jakim klawiszem w vim wklejamy skopiowany tekst?",
+        "answers": ["p", "y", "d", "c"],
+        "correct": [0]
+      },
+      {
+        "id": 32,
+        "question": "Jaką komendą w terminalu Unixa/Linuxa sprawdzić jakie procesy uruchomił użytkownik „student”?",
+        "answers": [
+          "ps -efa | grep student",
+          "ls -l | grep student",
+          "who student",
+          "top student"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 33,
+        "question": "Czy wiele procesów może mieć ten sam numer grupy procesów?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [0]
+      },
+      {
+        "id": 34,
+        "question": "Gdy proces rodzicielski nie zainteresuje się wynikiem zakończenia procesu potomnego to proces potomny stanie się:",
+        "answers": ["zombie", "demon", "drakuła", "sierota"],
+        "correct": [0]
+      },
+      {
+        "id": 35,
+        "question": "Czy po wywołaniu funkcji fork wracamy do procesu macierzystego?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [0]
+      },
+      {
+        "id": 36,
+        "question": "Podaj definicje blokady procesu (deadlock).",
+        "answers": [
+          "Sytuacja, w której co najmniej dwie różne akcje czekają na siebie nawzajem, więc żadna nie może się zakończyć.",
+          "Sytuacja, w której proces jest wstrzymany przez sygnał SIGSTOP.",
+          "Sytuacja, w której proces potomny nie został odebrany przez rodzica.",
+          "Sytuacja, w której proces zużywa 100% czasu procesora."
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 37,
+        "question": "Jakim poleceniem możemy usunąć niepusty katalog?",
+        "answers": ["rm -r", "rmdir", "del", "rm"],
+        "correct": [0]
+      },
+      {
+        "id": 38,
+        "question": "Jakie polecenie służy do zmiany katalogu w konsoli Linux?",
+        "answers": ["cd", "pwd", "ls", "mv"],
+        "correct": [0]
+      },
+      {
+        "id": 39,
+        "question": "Jakie znaki w konsoli Linuxowej służą do poniższych czynności?",
+        "answers": [
+          "Uruchom program w tle: &",
+          "Przekieruj standardowy strumień wyjściowy do pliku nadpisując go: >",
+          "Przekieruj standardowy strumień wyjściowy do pliku dopisując na jego końcu: >>",
+          "Przekieruj standardowy strumień wyjściowy do innego programu: |"
+        ],
+        "correct": [0, 1, 2, 3]
+      },
+      {
+        "id": 40,
+        "question": "W jaki sposób przekazać do programu „grep” wynik działania programu „ps”?",
+        "answers": [
+          "ps | grep",
+          "ps > grep",
+          "ps >> grep",
+          "grep < ps"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 41,
+        "question": "Jak wyświetlić w konsoli wartość zmiennej środowiskowej NASZ_PATH?",
+        "answers": [
+          "echo $NASZ_PATH",
+          "print NASZ_PATH",
+          "env NASZ_PATH",
+          "set NASZ_PATH"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 42,
+        "question": "Czy proces potomny stworzony przy pomocy funkcji fork() kopiuje identyfikator grupy procesów?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [0]
+      },
+      {
+        "id": 43,
+        "question": "Jeżeli funkcja fork() zwróci wartość 0 to znaczy że proces się nie powiódł!?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [1]
+      },
+      {
+        "id": 44,
+        "question": "Do czego służy w Unixie funkcja systemowa kill() ? Wybierz wszystkie poprawne:",
+        "answers": [
+          "do odbierania sygnałów od zabitych procesów",
+          "do odbierania wszystkich sygnałów",
+          "do wysyłania sygnałów",
+          "tylko do zabicia procesu"
+        ],
+        "correct": [2]
+      },
+      {
+        "id": 45,
+        "question": "Czy każdy proces jest członkiem grupy procesów?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [0]
+      },
+      {
+        "id": 46,
+        "question": "Czy proces potomny stworzony przy pomocy funkcji fork() ma taki sam identyfikator rodzica co jego rodzic?",
+        "answers": ["Prawda", "Falsz"],
+        "correct": [1]
+      },
+      {
+        "id": 47,
+        "question": "Jeżeli p procesorów obliczyło pewne zadanie w 12 sekund przy przyspieszeniu równym 6, to ile to samo zadanie wykonywane byłoby na jednym procesorze?",
+        "answers": ["72", "36", "18", "144"],
+        "correct": [0]
+      },
+      {
+        "id": 58,
+        "question": "Jak zobaczyć kilka ostatnich linii pliku plik.txt nie posługując się edytorem?",
+        "answers": ["tail plik.txt", "head plik.txt", "cat plik.txt", "more plik.txt"],
+        "correct": [0]
+      },
+      {
+        "id": 59,
+        "question": "Jak zobaczyć kilka pierwszych linii pliku plik.txt nie posługując się żadnym edytorem?",
+        "answers": ["head plik.txt", "tail plik.txt", "cat plik.txt", "less plik.txt"],
+        "correct": [0]
+      },
+      {
+        "id": 60,
+        "question": "Jaki znak należy wcisnąć aby zacząć pisanie w vim.",
+        "answers": ["i", "a", "o", "Esc"],
+        "correct": [0]
+      },
+      {
+        "id": 61,
+        "question": "Jakim poleceniem w konsoli Linuxa możemy stworzyć katalog?",
+        "answers": ["mkdir", "rmdir", "touch", "cp"],
+        "correct": [0]
+      },
+      {
+        "id": 62,
+        "question": "Jakim poleceniem odmontować nośnik danych?",
+        "answers": ["umount", "mount", "eject", "unmount"],
+        "correct": [0]
+      },
+      {
+        "id": 63,
+        "question": "Wiemy że w katalogu $NASZE_LIB znajdują się biblioteki do zlinkowania, jakiej opcji musimy użyć by kompilator gcc wiedział gdzie ich szukać?",
+        "answers": [
+          "gcc -L$NASZE_LIB",
+          "gcc -i$NASZE_LIB",
+          "gcc -I$NASZE_LIB (<- przed $ małe L)",
+          "gcc -o$NASZE_LIB",
+          "gcc -ISNASZE_LIB (<- przed $ duże i)"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 64,
+        "question": "Jakie polecenie w konsoli Linux służy do zmiany nazwy pliku?",
+        "answers": ["mv", "cp", "rename", "ln"],
+        "correct": [0]
+      },
+      {
+        "id": 65,
+        "question": "Jakim poleceniem w konsoli Linuxa możemy usunąć pusty katalog?",
+        "answers": ["rmdir", "rm", "mkdir", "del"],
+        "correct": [0]
+      },
+      {
+        "id": 66,
+        "question": "Jakim poleceniem w konsoli Linuxa możemy usunąć plik?",
+        "answers": ["rm", "rmdir", "del", "erase"],
+        "correct": [0]
+      },
+      {
+        "id": 67,
+        "question": "Do czego służy funkcja wait() w Unixie?",
+        "answers": [
+          "Do odbierania wartości zwracanej przez potomka",
+          "Do wstrzymania procesu wywołującego na zadaną liczbę sekund.",
+          "Do wysyłania sygnału do potomka.",
+          "Do tworzenia nowego procesu potomnego."
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 68,
+        "question": "Co robi polecenie hostname?",
+        "answers": [
+          "wyświetlenie nazwy komputera",
+          "wyświetlenie nazwy użytkownika",
+          "zmiana nazwy pliku",
+          "wyświetlenie adresu IP"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 69,
+        "question": "Co robi polecenie cp?",
+        "answers": [
+          "kopiowanie pliku",
+          "przenoszenie pliku",
+          "usuwanie pliku",
+          "tworzenie pliku"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 70,
+        "question": "Co robi polecenie rm <plik> i opcja -rf?",
+        "answers": [
+          "usuwanie pliku. Opcja -rf pozwoli usunąć też cały katalog.",
+          "kopiowanie pliku. Opcja -rf pozwoli kopiować katalogi.",
+          "przenoszenie pliku. Opcja -rf pozwoli przenieść katalogi.",
+          "wyświetlanie pliku. Opcja -rf pozwoli wyświetlić katalogi."
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 71,
+        "question": "Co robi polecenie cat <plik>?",
+        "answers": [
+          "wyświetl zawartość pliku",
+          "kopiuje plik",
+          "usuwa plik",
+          "tworzy plik"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 76,
+        "question": "Co robi polecenie ln -s <plik> <link>?",
+        "answers": [
+          "tworzenie linku symbolicznego do pliku",
+          "tworzenie twardego linku do pliku",
+          "kopiowanie pliku",
+          "przenoszenie pliku"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 77,
+        "question": "Co robi polecenie more <plik>?",
+        "answers": [
+          "wyświetlanie zawartości pliku z zatrzymywaniem po każdym ekranie",
+          "wyświetlanie całej zawartości pliku na raz",
+          "zliczanie linii w pliku",
+          "wyszukiwanie wzorca w pliku"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 78,
+        "question": "Co robi polecenie wc <plik>?",
+        "answers": [
+          "zliczanie znaków, słów i linii w pliku",
+          "wyświetlanie zawartości pliku",
+          "kopiowanie pliku",
+          "usuwanie pliku"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 79,
+        "question": "Jak w Vim kasujemy?",
+        "answers": ["x, d, D", "y, p, P", "cw, r", "/, n, N"],
+        "correct": [0]
+      },
+      {
+        "id": 80,
+        "question": "Jak w Vim kopiujemy?",
+        "answers": ["y", "p", "d", "x"],
+        "correct": [0]
+      },
+      {
+        "id": 81,
+        "question": "Jak w Vim wklejamy?",
+        "answers": ["p, P", "y, Y", "d, D", "x, X"],
+        "correct": [0]
+      },
+      {
+        "id": 82,
+        "question": "Jak w Vim szukamy?",
+        "answers": ["/, n, N, *, #", "y, p, P", "x, d, D", "cw, r"],
+        "correct": [0]
+      },
+      {
+        "id": 83,
+        "question": "Jak w Vim zamieniamy?",
+        "answers": ["cw, r", "y, p", "d, D", "/, n"],
+        "correct": [0]
+      },
+      {
+        "id": 84,
+        "question": "Jak w Vim wychodzimy?",
+        "answers": ["q, q!, wq, q!", "i, a, o", "x, d, D", "y, p, P"],
+        "correct": [0]
+      },
+      {
+        "id": 85,
+        "question": "Jeżeli chcemy by kompilator powiadamiał nas o wszystkich błędach i ostrzeżeniach należy włączyć opcję:",
+        "answers": ["-Wall", "-Werror", "-O2", "-g"],
+        "correct": [0]
+      },
+      {
+        "id": 86,
+        "question": "Do czego służą env i set?",
+        "answers": [
+          "operacje na zmiennych środowiskowych",
+          "operacje na plikach",
+          "operacje na procesach",
+          "operacje na uprawnieniach"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 87,
+        "question": "Co robi export SZMIENNA?",
+        "answers": [
+          "wyeksportowanie zmiennej środowiskowej",
+          "usunięcie zmiennej środowiskowej",
+          "wyświetlenie zmiennej środowiskowej",
+          "zmiana wartości zmiennej środowiskowej"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 91,
+        "question": "Co robi id?",
+        "answers": [
+          "wyświetlenie identyfikatorów użytkownika",
+          "wyświetlenie nazwy użytkownika",
+          "wyświetlenie identyfikatorów procesów",
+          "wyświetlenie nazwy komputera"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 92,
+        "question": "Co robi logname?",
+        "answers": [
+          "wyświetlenie loginu użytkownika",
+          "wyświetlenie nazwy komputera",
+          "wyświetlenie identyfikatora użytkownika",
+          "wyświetlenie listy zalogowanych użytkowników"
+        ],
+        "correct": [0]
+      },
+      {
+        "id": 93,
+        "question": "Co robi fork?",
+        "answers": [
+          "tworzenie nowego procesu",
+          "tworzenie nowego wątku",
+          "kończenie procesu",
+          "oczekiwanie na zakończenie procesu potomnego"
+        ],
+        "correct": [0]
+      }
+    ]
+  }
+}

@@ -3,4 +3,5 @@ export type RootStackParamList = {
 	QuizDetails: {quizId: string};
 	IOScreen: undefined;
 	SOScreen: undefined;
+	PWScreen: undefined;
 }

@@ -23,7 +23,7 @@ export default function ChooseQuizScreen(){
 				/>
 				<AppButton
 					title="Programowanie Współbieżne"
-					onPress={() => navigation.navigate("QuizDetails", { quizId: "pw" })}
+					onPress={() => navigation.navigate("PWScreen")}
 				/>
 				<AppButton
 					title="Systemy Operacyjne 2"
