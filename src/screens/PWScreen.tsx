@@ -24,6 +24,14 @@ export default function PWScreen(){
 						title="Paduch - wejściówka 1"
 						onPress={() => navigation.navigate("QuizDetails", { quizId: "Paduch_wejsciowka_1" })}
 					/>
+					<AppButton
+						title="Stare pytania"
+						onPress={() => navigation.navigate("QuizDetails", { quizId: "wspol" })}
+					/>
+					<AppButton
+						title="Pytania dodatkowe"
+						onPress={() => navigation.navigate("QuizDetails", { quizId: "wspol_ai" })}
+					/>
 				</View>
 		</ScreenWrapper>
 	);

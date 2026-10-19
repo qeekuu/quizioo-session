@@ -1,0 +1,220 @@
+{
+  "wspol": {
+    "title": "Programowanie Współbieżne stare pytania",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Czy w konstruktorze klasy System.Timers.Timer możemy wskazać metodę callback?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 2,
+        "question": "Czy w konstruktorze klasy System.Threading.Timer możemy wskazać metodę callback?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 3,
+        "question": "Jakie metody w .NET Core definiuje interfejs System.IDisposable?",
+        "answers": ["Dispose()", "End()", "Return()", "Exit()", "Free()"],
+        "correct": [0]
+      },
+      {
+        "id": 4,
+        "question": "Definicja (w C#) int [][,] oznacza:",
+        "answers": [
+          "dwuwymiarową tablicę tablic",
+          "tablicę tablic dwuwymiarowych",
+          "tablicę dwuwymiarowych list",
+          "listę tablic",
+          "tablicę tablic jednowymiarowych",
+          "dwuwymiarową listę tablic",
+          "błędną definicję",
+          "tablicę trójwymiarową"
+        ],
+        "correct": [1]
+      },
+      {
+        "id": 5,
+        "question": "Jeżeli event jest zdefiniowany przez delegat SomeEventHandler, to ten delegat powinien mieć sygnaturę:",
+        "answers": [
+          "void SomeEventHandler()",
+          "void SomeEventHandler(EventArgs e)",
+          "void SomeEventHandler(object sender)",
+          "void SomeEventHandler(object sender, EventArgs e)",
+          "void SomeEventHandler(EventArgs e, object sender)"
+        ],
+        "correct": [3]
+      },
+      {
+        "id": 6,
+        "question": "Jak wygląda delegat przekazywany do konstruktora klasy System.Threading.Timer?",
+        "answers": [
+          "delegate void System.Threading.TimerCallback(TimeSpan state)",
+          "delegate void System.Threading.TimerCallback(int state)",
+          "delegate void System.Threading.TimerCallback()",
+          "delegate void System.Threading.TimerCallback(object? state)"
+        ],
+        "correct": [3]
+      },
+      {
+        "id": 7,
+        "question": "Który sposób wypisania zmiennej a w C# jest poprawny?",
+        "answers": [
+          "Console.WriteLine($\"Zmienna: {a}\");",
+          "Console.WriteLine(\"Zmienna: {0}\", a);",
+          "Console.WriteLine(@\"Zmienna: {a}\");",
+          "Console.WriteLine(@\"Zmienna: {0}\", a);",
+          "Console.WriteLine($\"Zmienna: {0}\", a);",
+          "Console.WriteLine(\"Zmienna: \" + a);",
+          "Console.WriteLine(\"Zmienna: {a}\");"
+        ],
+        "correct": [0, 1, 3, 5]
+      },
+      {
+        "id": 8,
+        "question": "W jakim stanie (ThreadState) jest wątek, gdy wykonasz Thread.CurrentThread.ThreadState?",
+        "answers": ["Unstarted", "Running", "Stopped", "WaitSleepJoin"],
+        "correct": [1]
+      },
+      {
+        "id": 9,
+        "question": "Jak wygląda metoda, którą można przekazać jako callback do konstruktora System.Threading.Timer?",
+        "answers": [
+          "void OnTimerTick(object? state)",
+          "void OnTimerTick(object state)",
+          "void OnTimerTick(object? sender, EventArgs e)",
+          "void OnTimerTick(object sender, ElapsedEventArgs e)",
+          "void OnTimerTick(TimeSpan state)"
+        ],
+        "correct": [0, 1]
+      },
+      {
+        "id": 10,
+        "question": "W przypadku mechanizmu AutoResetEvent w .NET:",
+        "answers": [
+          "Proces zablokowany na WaitOne() może być odblokowany tylko przez proces macierzysty",
+          "Jedno wywołanie Set() odpowiada wpuszczeniu 1 procesu",
+          "Wywołanie Set() może nastąpić tylko po WaitOne()",
+          "Gdy nie będzie czekających procesów w kolejce to kolejne wołania Set() będą zapamiętane"
+        ],
+        "correct": [0, 2]
+      },
+      {
+        "id": 11,
+        "question": "Czy obiekt klasy ConcurrentDictionary może zagwarantować unikalność danych?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 12,
+        "question": "Czy blokowanie i odblokowywanie Semafora w .NET musi odbywać się z tego samego wątka?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 13,
+        "question": "Czy Mutex w .NET jest automatycznie zwalniany gdy proces, który go zablokował, się zakończy?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 14,
+        "question": "Czy obiekt klasy ConcurrentBag gwarantuje unikalność przechowywanych danych?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 15,
+        "question": "W przypadku mechanizmu AutoResetEvent w .NET:",
+        "answers": [
+          "Wywołanie Set() odblokuje tylko jeden proces",
+          "Procesy czekające ustawione są w kolejce FIFO",
+          "Wywołanie WaitOne() zawsze powoduje wstrzymanie procesu wywołującego",
+          "Wszystkie wywołania Set() są pamiętane"
+        ],
+        "correct": [0, 2]
+      },
+      {
+        "id": 16,
+        "question": "Czy w .NET mechanizm EventWaitHandle można użyć pomiędzy procesami niespokrewnionymi?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 17,
+        "question": "Czy blokowanie i odblokowywanie Mutexa w .NET musi odbywać się z tego samego wątka?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 18,
+        "question": "Czy łącze komunikacyjne PIPE można identyfikować za pomocą nazwy?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 19,
+        "question": "Czy w BlockingCollection można ograniczyć maksymalną liczbę elementów?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 20,
+        "question": "Czy blok finally w C# wykonywany jest także w przypadku przechwycenia wyjątku?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 21,
+        "question": "Czy struktury w C# obsługują dziedziczenie?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 22,
+        "question": "Czy do jednego delegata możemy przypisać wiele metod o tej samej sygnaturze?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 23,
+        "question": "Czy blok finally w C# wykonywany jest także w przypadku braku wyjątku?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [0]
+      },
+      {
+        "id": 24,
+        "question": "Czy enum w C# to typ referencyjny?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 25,
+        "question": "Jakim klawiszem w Visual Studio uruchamiamy program w trybie release?",
+        "answers": ["ctrl+F5", "F12", "F5", "F9", "ctrl+F9", "F10", "F1", "ctrl+F12"],
+        "correct": [0]
+      },
+      {
+        "id": 26,
+        "question": "Czy struktura w C# to typ referencyjny?",
+        "answers": ["Prawda", "Fałsz"],
+        "correct": [1]
+      },
+      {
+        "id": 27,
+        "question": "W poniższym przykładzie:\nstring astr = \"a\";\nint b = -1;\nint.TryParse(astr, out b);",
+        "answers": [
+          "program się nie skompiluje",
+          "b będzie miało wartość -1",
+          "TryParse zwróci -1",
+          "Dostaniemy wyjątek FormatException",
+          "b będzie miało wartość 0",
+          "TryParse zwróci false"
+        ],
+        "correct": [4, 5]
+      }
+    ]
+  }
+}

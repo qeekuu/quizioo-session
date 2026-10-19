@@ -7,6 +7,8 @@ import ScreenWrapper from "../components/wrappers/ScreenWrapper";
 import { styles } from "./ScreenStyles.styles";
 import pw from "../../assets/data/pw.json";
 import wspolbiezne_1 from "../../assets/data/wspolbiezne_1.json";
+import questions_wspol from "../../assets/data/questions_wspol.json";
+import questions_nowewspol from "../../assets/data/questions_nowewspol.json";
 import questions from "../../assets/data/questions.json";
 
 import io1 from "../../assets/data/wyklad_1.json";
@@ -65,6 +67,8 @@ const QUIZ_DB: Record<string, Quiz> = {
   ...(wc as Record<string, Quiz>),
   ...(pw as Record<string, Quiz>),
   ...(wspolbiezne_1 as Record<string, Quiz>),
+  ...(questions_wspol as Record<string, Quiz>),
+  ...(questions_nowewspol as Record<string, Quiz>),
   ...(so2 as Record<string, Quiz>),
   ...(so2_1 as Record<string, Quiz>),
   ...(so2_2 as Record<string, Quiz>),
