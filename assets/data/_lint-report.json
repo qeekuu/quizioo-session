@@ -169,9 +169,51 @@
   },
   {
     "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 51,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 52,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 55,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 56,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "SO2.json",
+    "quiz": "so2",
+    "question_id": 59,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
     "file": "pw.json",
     "quiz": "pw",
     "question_id": 64,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "questions_wspol.json",
+    "quiz": "wspol",
+    "question_id": 15,
     "message": "duplicated question text"
   },
   {
@@ -284,6 +326,34 @@
     "file": "so2_7.json",
     "quiz": "so2_7",
     "question_id": 6,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_8.json",
+    "quiz": "so2_8",
+    "question_id": 2,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_8.json",
+    "quiz": "so2_8",
+    "question_id": 5,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_8.json",
+    "quiz": "so2_8",
+    "question_id": 6,
+    "message": "duplicated question text"
+  },
+  {
+    "severity": "warning",
+    "file": "so2_8.json",
+    "quiz": "so2_8",
+    "question_id": 9,
     "message": "duplicated question text"
   }
 ]

@@ -1,18 +1,33 @@
 {
   "wspol_ai": {
-    "title": "Programowanie Współbieżne – pytania dodatkowe",
+    "title": "Programowanie Współbieżne – pytania dodatkowe (funkcje, parametry, wartości zwracane)",
     "questions": [
       {
         "id": 1,
         "question": "Które z poniższych klas bazują na abstrakcyjnej klasie WaitHandle?",
-        "answers": ["EventWaitHandle", "Mutex", "Semaphore", "Monitor", "SemaphoreSlim"],
-        "correct": [0, 1, 2]
+        "answers": [
+          "EventWaitHandle",
+          "Mutex",
+          "Semaphore",
+          "Monitor",
+          "SemaphoreSlim"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ]
       },
       {
         "id": 2,
         "question": "Czy klasy AutoResetEvent i ManualResetEvent dziedziczą po klasie EventWaitHandle?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [0]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          0
+        ]
       },
       {
         "id": 3,
@@ -24,7 +39,9 @@
           "initialState = false",
           "name = null"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
         "id": 4,
@@ -36,37 +53,72 @@
           "Zostanie zgłoszony wyjątek",
           "Program się nie skompiluje"
         ],
-        "correct": [1]
+        "correct": [
+          1
+        ]
       },
       {
         "id": 5,
         "question": "Na AutoResetEvent (stan początkowy: zamknięty) wywołano trzy razy Set(), gdy nikt nie czekał. Następnie trzy wątki wywołują WaitOne(). Ile z nich przejdzie dalej?",
-        "answers": ["0", "1", "2", "3"],
-        "correct": [1]
+        "answers": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
         "id": 6,
         "question": "Trzy wątki czekają na AutoResetEvent. Ile wątków zostanie odblokowanych po jednym wywołaniu Set()?",
-        "answers": ["0", "1", "2", "Wszystkie trzy"],
-        "correct": [1]
+        "answers": [
+          "0",
+          "1",
+          "2",
+          "Wszystkie trzy"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
         "id": 7,
         "question": "Trzy wątki czekają na ManualResetEvent. Ile wątków zostanie odblokowanych po jednym wywołaniu Set()?",
-        "answers": ["0", "1", "2", "Wszystkie trzy"],
-        "correct": [3]
+        "answers": [
+          "0",
+          "1",
+          "2",
+          "Wszystkie trzy"
+        ],
+        "correct": [
+          3
+        ]
       },
       {
         "id": 8,
         "question": "Czy po wywołaniu Set() na ManualResetEvent kolejne wywołania WaitOne() nie blokują wątku aż do wywołania Reset()?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [0]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          0
+        ]
       },
       {
         "id": 9,
         "question": "Tworzymy: new EventWaitHandle(false, EventResetMode.Auto, \"Nazwa\", out createdNew); Obiekt o takiej nazwie już istnieje w systemie (utworzył go inny proces). Jaką wartość będzie miała zmienna createdNew?",
-        "answers": ["true", "false", "null", "Zostanie zgłoszony wyjątek"],
-        "correct": [1]
+        "answers": [
+          "true",
+          "false",
+          "null",
+          "Zostanie zgłoszony wyjątek"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
         "id": 10,
@@ -78,13 +130,20 @@
           "Wątek A zostanie przerwany",
           "Licznik Mutexa zostanie zwiększony"
         ],
-        "correct": [1]
+        "correct": [
+          1
+        ]
       },
       {
         "id": 11,
         "question": "Czy Semaphore można zwolnić (Release) z innego wątku niż ten, który wykonał WaitOne()?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [0]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          0
+        ]
       },
       {
         "id": 12,
@@ -96,19 +155,31 @@
           "Wątek zostanie zablokowany",
           "Semafor zostanie zniszczony"
         ],
-        "correct": [1]
+        "correct": [
+          1
+        ]
       },
       {
         "id": 13,
         "question": "Czy Mutex (przy braku blokowania) jest szybszy od instrukcji lock?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [1]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
         "id": 14,
         "question": "Czy Semaphore jest nieco szybszy od Mutexa?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [0]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          0
+        ]
       },
       {
         "id": 15,
@@ -120,22 +191,12 @@
           "Sygnalizuje oba uchwyty",
           "Zamyka uchwyt wh1 i otwiera wh2"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
         "id": 16,
-        "question": "Jeden wątek wywołuje WaitHandle.SignalAndWait(wh1, wh2), a drugi WaitHandle.SignalAndWait(wh2, wh1) (oba uchwyty to AutoResetEvent). Jaki mechanizm w ten sposób zrealizowano?",
-        "answers": [
-          "Wzajemne wykluczanie",
-          "Spotkanie (rendezvous) dwóch wątków",
-          "Producent-konsument z kolejką",
-          "Semafor zliczający",
-          "Barierę dla 10 wątków"
-        ],
-        "correct": [1]
-      },
-      {
-        "id": 17,
         "question": "Co zwraca metoda WaitHandle.WaitAny(WaitHandle[] waitHandles)?",
         "answers": [
           "Wartość bool",
@@ -144,10 +205,12 @@
           "Liczbę zasygnalizowanych uchwytów",
           "Nic (void)"
         ],
-        "correct": [1]
+        "correct": [
+          1
+        ]
       },
       {
-        "id": 18,
+        "id": 17,
         "question": "Kiedy zostanie odblokowany wątek czekający na WaitHandle.WaitAll(waitHandles)?",
         "answers": [
           "Gdy którykolwiek z uchwytów zostanie zasygnalizowany",
@@ -155,74 +218,23 @@
           "Gdy pierwszy uchwyt z tablicy zostanie zasygnalizowany",
           "Natychmiast, a sygnalizacja zostanie sprawdzona później"
         ],
-        "correct": [1]
+        "correct": [
+          1
+        ]
+      },
+      {
+        "id": 18,
+        "question": "Czy klasa Queue<T> jest bezpieczna wątkowo (thread-safe)?",
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
         "id": 19,
-        "question": "W przykładzie ReadyGo (dwa AutoResetEvent: ready i go) konsument kończy działanie, gdy:",
-        "answers": [
-          "job == null",
-          "ready zostanie zasygnalizowane",
-          "go zostanie zamknięte",
-          "licznik pętli osiągnie 5",
-          "zostanie naciśnięty klawisz"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 20,
-        "question": "Po co w przykładzie ReadyGo pole job jest oznaczone jako volatile?",
-        "answers": [
-          "Aby wątki zawsze widziały aktualną wartość pola",
-          "Aby pole zastąpiło blokadę lock",
-          "Aby pole było automatycznie zerowane po odczycie",
-          "Aby kompilator pozwolił na użycie pola w dwóch wątkach"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 21,
-        "question": "Co wypisze program ReadyGo, w którym producent zleca 5 razy zadanie job = \"a\".PadRight(i, 'a') dla i = 1..5?",
-        "answers": [
-          "Pięć linii: a, aa, aaa, aaaa, aaaaa",
-          "Pięć linii po 5 znaków 'a'",
-          "Tylko ostatnią linię: aaaaa",
-          "Pięć linii: a, aa, aaa, aaaa, a",
-          "Nic nie zostanie wypisane"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 22,
-        "question": "Po co konsument w ReadyGo na początku każdej iteracji wywołuje ready.Set()?",
-        "answers": [
-          "Informuje producenta, że jest gotowy na przyjęcie kolejnego zadania",
-          "Zamyka bramkę go",
-          "Kończy wątek producenta",
-          "Resetuje wartość pola job",
-          "Zwalnia blokadę na kolejce"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 23,
-        "question": "W przykładzie producenta i konsumenta z Queue<string> wstawienie wartości null do kolejki oznacza:",
-        "answers": [
-          "Sygnał końca produkcji",
-          "Błąd producenta",
-          "Pusty produkt do pominięcia",
-          "Konieczność ponownego uruchomienia konsumenta"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 24,
-        "question": "Czy klasa Queue<T> jest bezpieczna wątkowo (thread-safe)?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [1]
-      },
-      {
-        "id": 25,
         "question": "Kiedy wykonywana jest akcja przekazana jako drugi parametr konstruktora System.Threading.Barrier?",
         "answers": [
           "Po zakończeniu każdej fazy, gdy wszyscy uczestnicy wywołali SignalAndWait()",
@@ -231,10 +243,12 @@
           "Przy każdym wywołaniu SignalAndWait() przez dowolny wątek",
           "Gdy któryś z wątków zostanie przerwany"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 26,
+        "id": 20,
         "question": "Utworzono CountdownEvent ce = new CountdownEvent(10). Kiedy ce.IsSet zwróci true?",
         "answers": [
           "Zaraz po utworzeniu obiektu",
@@ -243,10 +257,12 @@
           "Gdy CurrentCount osiągnie 10",
           "Po pierwszym wywołaniu Signal()"
         ],
-        "correct": [1]
+        "correct": [
+          1
+        ]
       },
       {
-        "id": 27,
+        "id": 21,
         "question": "Co robi Monitor.Wait(o) wywołane wewnątrz bloku lock(o)?",
         "answers": [
           "Zwalnia blokadę na o i wstrzymuje wątek do momentu Pulse/PulseAll",
@@ -255,10 +271,12 @@
           "Zwalnia blokadę na o na stałe",
           "Odblokowuje wszystkie inne wątki"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 28,
+        "id": 22,
         "question": "Co się stanie, gdy wątek wywoła Monitor.Wait(o) bez wcześniejszego uzyskania blokady na obiekcie o?",
         "answers": [
           "Zostanie zgłoszony wyjątek SynchronizationLockException",
@@ -266,45 +284,34 @@
           "Wątek sam uzyska blokadę",
           "Nic, metoda zwróci false"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 29,
-        "question": "W próbie zbudowania bariery z użyciem Monitora ostatni wątek wywołuje Monitor.PulseAll(o). Co to powoduje?",
-        "answers": [
-          "Wybudza wszystkie wątki oczekujące na obiekcie o",
-          "Wybudza tylko jeden wątek oczekujący na o",
-          "Kończy wszystkie wątki",
-          "Trwale usuwa blokadę z obiektu o",
-          "Resetuje licznik callCounter"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 30,
-        "question": "100 wątków dodaje po 100 liczb do wspólnej List<int> bez żadnej synchronizacji. Które stwierdzenie jest prawdziwe?",
-        "answers": [
-          "Count może być mniejszy niż 10000",
-          "Count zawsze będzie równe 10000, bo pojemność listy to 10000",
-          "Kompilator odrzuci taki program",
-          "Zawsze zostanie zgłoszony wyjątek"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 31,
+        "id": 23,
         "question": "Czy ConcurrentBag<T> gwarantuje kolejność FIFO pobierania elementów?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [1]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
-        "id": 32,
+        "id": 24,
         "question": "Czy ConcurrentQueue<T> posiada blokującą metodę pobierania elementu (analogiczną do Take w BlockingCollection)?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [1]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
-        "id": 33,
+        "id": 25,
         "question": "Co zwróci metoda TryDequeue(out result) na pustej kolejce ConcurrentQueue<int>?",
         "answers": [
           "false",
@@ -312,21 +319,12 @@
           "Zgłosi wyjątek InvalidOperationException",
           "Zablokuje wątek do pojawienia się elementu"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 34,
-        "question": "Dlaczego ConcurrentBag<int>, do którego wątki dodają liczby po sprawdzeniu numbers.Any(x => x == number), może zawierać duplikaty, jeśli nie użyjemy dodatkowego lock?",
-        "answers": [
-          "Ponieważ sekwencja „sprawdź, a potem dodaj” nie jest atomowa",
-          "Ponieważ ConcurrentBag nie jest bezpieczny wątkowo",
-          "Ponieważ metoda Any modyfikuje kolekcję",
-          "Ponieważ ConcurrentBag nie pozwala na unikalne wartości"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 35,
+        "id": 26,
         "question": "W kontekście ConcurrentDictionary<int, object>: kiedy TryAdd(key, value) zwróci false?",
         "answers": [
           "Gdy klucz już istnieje w słowniku",
@@ -335,21 +333,12 @@
           "Gdy inny wątek odczytuje słownik",
           "Nigdy nie zwraca false"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 36,
-        "question": "Dlaczego w przykładzie z ConcurrentDictionary każdy wątek tworzy własny obiekt Random z ziarnem Thread.CurrentThread.ManagedThreadId?",
-        "answers": [
-          "Aby nie współdzielić obiektu Random między wątkami i uzyskać różne ziarna",
-          "Ponieważ ConcurrentDictionary wymaga losowych kluczy",
-          "Ponieważ Random jest klasą statyczną",
-          "Aby przyspieszyć działanie TryAdd"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 37,
+        "id": 27,
         "question": "Co się stanie po wywołaniu Add() na pełnej BlockingCollection<int> z ograniczoną pojemnością?",
         "answers": [
           "Wątek zostanie zablokowany do czasu zwolnienia miejsca",
@@ -357,10 +346,12 @@
           "Najstarszy element zostanie nadpisany",
           "Pojemność kolekcji zostanie automatycznie zwiększona"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 38,
+        "id": 28,
         "question": "Co zrobi metoda Take() na pustej BlockingCollection, dla której nie wywołano CompleteAdding()?",
         "answers": [
           "Zwróci default(T)",
@@ -368,10 +359,12 @@
           "Zablokuje wątek do czasu pojawienia się elementu",
           "Zwróci null"
         ],
-        "correct": [2]
+        "correct": [
+          2
+        ]
       },
       {
-        "id": 39,
+        "id": 29,
         "question": "Co się stanie po wywołaniu Take() na pustej BlockingCollection, dla której wywołano już CompleteAdding()?",
         "answers": [
           "Zostanie zgłoszony wyjątek InvalidOperationException",
@@ -379,71 +372,23 @@
           "Zwrócone zostanie default(T)",
           "Zostanie ponownie otwarte dodawanie elementów"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 40,
-        "question": "W przykładzie ProducerConsumerBC producent dodaje 100 elementów do BlockingCollection<int>(10), a konsument pobiera tylko 10 elementów, po czym kończy pracę. Co stanie się z producentem?",
-        "answers": [
-          "Zakończy pracę po dodaniu wszystkich 100 elementów",
-          "Zablokuje się na Add() po zapełnieniu kolekcji i nie zakończy pracy",
-          "Zgłosi wyjątek po dodaniu 10. elementu",
-          "Nadpisze najstarsze elementy w kolekcji"
-        ],
-        "correct": [1]
-      },
-      {
-        "id": 41,
-        "question": "Co oznacza początkowa wartość 0 w SemaphoreSlim elementCounter = new SemaphoreSlim(0, int.MaxValue) w przykładzie z ConcurrentQueue?",
-        "answers": [
-          "Kolejka jest pusta, więc konsument wywołujący Wait() zostanie zablokowany",
-          "Semafor jest wyłączony",
-          "Kolejka może zawierać maksymalnie 0 elementów",
-          "Konsument może pobierać elementy bez ograniczeń"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 42,
-        "question": "Jaką rolę pełni semafor upperLimit = new SemaphoreSlim(limit, limit) w przykładzie ProducerConsumerQ4?",
-        "answers": [
-          "Ogranicza maksymalną liczbę elementów w kolejce; producent czeka, gdy kolejka jest pełna",
-          "Ogranicza liczbę konsumentów",
-          "Zlicza elementy dostępne do pobrania",
-          "Zapewnia wyłączny dostęp do kolejki"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 43,
-        "question": "Dlaczego w przykładzie Q4 konsument po udanym TryDequeue wywołuje upperLimit.Release()?",
-        "answers": [
-          "Aby zwolnić miejsce w kolejce dla producenta",
-          "Aby zasygnalizować, że pojawił się nowy element",
-          "Aby zwolnić blokadę lock",
-          "Aby zakończyć pracę producenta"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 44,
-        "question": "Dlaczego w przykładzie Q3 (ConcurrentQueue + SemaphoreSlim) wyjątek „OMG we shouldn't be here” nie powinien nigdy zostać zgłoszony?",
-        "answers": [
-          "Ponieważ licznik semafora odpowiada liczbie elementów w kolejce, więc po Wait() element jest dostępny",
-          "Ponieważ TryDequeue nigdy nie zwraca false",
-          "Ponieważ producent zawsze jest szybszy od konsumenta",
-          "Ponieważ ConcurrentQueue blokuje się na pustej kolejce"
-        ],
-        "correct": [0]
-      },
-      {
-        "id": 45,
+        "id": 30,
         "question": "Czy SemaphoreSlim można nazwać i użyć do synchronizacji pomiędzy odrębnymi procesami?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [1]
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          1
+        ]
       },
       {
-        "id": 46,
+        "id": 31,
         "question": "Co oznacza wartość false w wywołaniu new Mutex(false, \"tu.kielce.pl mutex\")?",
         "answers": [
           "Wątek tworzący nie jest początkowym właścicielem Mutexa",
@@ -451,10 +396,12 @@
           "Mutex może być użyty tylko w jednym procesie",
           "Mutex jest początkowo zablokowany"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 47,
+        "id": 32,
         "question": "Wątek zakończył się, nie zwalniając Mutexa. Co się stanie, gdy inny wątek wywoła WaitOne() na tym Mutexie?",
         "answers": [
           "Wątek zostanie zablokowany na zawsze",
@@ -462,21 +409,25 @@
           "Mutex pozostanie zablokowany, a WaitOne zwróci false",
           "Cały proces zostanie zakończony"
         ],
-        "correct": [1]
+        "correct": [
+          1
+        ]
       },
       {
-        "id": 48,
-        "question": "Co zapewnia wywołanie barrier.SignalAndWait() w przykładzie z klasą Barrier?",
+        "id": 33,
+        "question": "Co zapewnia wywołanie barrier.SignalAndWait() na obiekcie klasy Barrier?",
         "answers": [
-          "Wątek czeka, aż wszyscy uczestnicy dotrą do tego samego punktu (fazy)",
+          "Wątek czeka, aż wszyscy uczestnicy dotrą do tej samej fazy",
           "Wątek kończy działanie po zakończeniu swojej fazy",
           "Wątek jest wykonywany wyłącznie po wątku głównym",
           "Wątek otrzymuje wyłączny dostęp do konsoli"
         ],
-        "correct": [0]
+        "correct": [
+          0
+        ]
       },
       {
-        "id": 49,
+        "id": 34,
         "question": "Które z poniższych wywołań mogą zablokować wątek wywołujący (w typowej sytuacji)?",
         "answers": [
           "AutoResetEvent.WaitOne()",
@@ -485,14 +436,224 @@
           "Semaphore.WaitOne()",
           "ConcurrentBag<T>.Add(T)"
         ],
-        "correct": [0, 2, 3]
+        "correct": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 35,
+        "question": "Czy instrukcja lock może być użyta do synchronizacji wątków działających w różnych procesach?",
+        "answers": [
+          "Prawda",
+          "Fałsz"
+        ],
+        "correct": [
+          1
+        ]
+      },
+      {
+        "id": 36,
+        "question": "Co określa pierwszy parametr konstruktora System.Threading.Barrier(int participantCount, Action<Barrier> postPhaseAction)?",
+        "answers": [
+          "Liczbę uczestników (wątków), którzy muszą wywołać SignalAndWait(), aby faza się zakończyła",
+          "Numer początkowej fazy",
+          "Maksymalny czas oczekiwania w ms",
+          "Liczbę faz, po których bariera się wyłączy"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 37,
+        "question": "Co się stanie, gdy na CountdownEvent, którego CurrentCount wynosi już 0, wywołamy Signal()?",
+        "answers": [
+          "Zostanie zgłoszony wyjątek InvalidOperationException",
+          "CurrentCount zmieni się na -1",
+          "Wywołanie zostanie zignorowane",
+          "CountdownEvent zostanie zresetowany do InitialCount"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 38,
+        "question": "Co się stanie po wykonaniu: var s = new Semaphore(2, 1);",
+        "answers": [
+          "Zostanie zgłoszony wyjątek ArgumentException (initialCount większe od maximumCount)",
+          "Zostanie utworzony semafor z licznikiem 1",
+          "Zostanie utworzony semafor z licznikiem 2 i limitem 2",
+          "Zostanie utworzony semafor zablokowany"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 39,
+        "question": "Co zwraca metoda Semaphore.Release() (wersja bez argumentów)?",
+        "answers": [
+          "Liczbę równą wartości licznika semafora sprzed wywołania Release",
+          "Wartość bool informującą, czy ktoś czekał",
+          "Nic (void)",
+          "Wartość licznika semafora po wywołaniu Release",
+          "Liczbę wątków oczekujących na semaforze"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 40,
+        "question": "Co zwraca metoda WaitHandle.WaitOne(int millisecondsTimeout), jeśli w podanym czasie uchwyt nie zostanie zasygnalizowany?",
+        "answers": [
+          "true",
+          "false",
+          "-1",
+          "Zgłasza wyjątek TimeoutException",
+          "null"
+        ],
+        "correct": [
+          1
+        ]
+      },
+      {
+        "id": 41,
+        "question": "Co zwróci WaitHandle.WaitAny(handles, 100), jeśli żaden z uchwytów nie zostanie zasygnalizowany w ciągu 100 ms?",
+        "answers": [
+          "Wartość stałej WaitHandle.WaitTimeout",
+          "0",
+          "-1",
+          "false",
+          "Zgłosi wyjątek TimeoutException"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 42,
+        "question": "Które stwierdzenie o typach zwracanych przez metody klasy WaitHandle jest prawdziwe?",
+        "answers": [
+          "WaitAll zwraca bool, a WaitAny zwraca int",
+          "WaitAll zwraca int, a WaitAny zwraca bool",
+          "Obie zwracają bool",
+          "Obie zwracają int",
+          "Obie są typu void"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 43,
+        "question": "Wątek wywołał dwa razy z rzędu mutex.WaitOne() na tym samym Mutexie (nikt inny go nie posiada). Co się stanie?",
+        "answers": [
+          "Drugie wywołanie nie zablokuje wątku, ale trzeba wywołać ReleaseMutex() dwa razy",
+          "Wątek zablokuje się na drugim WaitOne() (deadlock)",
+          "Drugie wywołanie zgłosi wyjątek",
+          "Wystarczy jedno ReleaseMutex(), aby zwolnić Mutex"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 44,
+        "question": "Instrukcja lock(o) { ... } jest przez kompilator tłumaczona na:",
+        "answers": [
+          "Monitor.Enter(o) i Monitor.Exit(o) w konstrukcji try/finally",
+          "Mutex.WaitOne() i Mutex.ReleaseMutex()",
+          "Semaphore.WaitOne() i Semaphore.Release()",
+          "Interlocked.Exchange(ref o, ...)"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 45,
+        "question": "Czym różni się Monitor.Pulse(o) od Monitor.PulseAll(o)?",
+        "answers": [
+          "Pulse budzi jeden oczekujący wątek, a PulseAll wszystkie oczekujące wątki",
+          "Pulse budzi wszystkie wątki, a PulseAll tylko jeden",
+          "Pulse zwalnia blokadę, a PulseAll jej nie zwalnia",
+          "Nie ma żadnej różnicy"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 46,
+        "question": "Co zwraca metoda ConcurrentDictionary.GetOrAdd(key, value), gdy klucz key już istnieje w słowniku?",
+        "answers": [
+          "Istniejącą wartość powiązaną z kluczem, bez jej zmiany",
+          "Nową wartość value, która nadpisała starą",
+          "false",
+          "Zgłasza wyjątek ArgumentException",
+          "null"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 47,
+        "question": "Co określa parametr boundedCapacity w konstruktorze new BlockingCollection<int>(10)?",
+        "answers": [
+          "Maksymalną liczbę elementów, jakie mogą być jednocześnie w kolekcji",
+          "Liczbę wątków, które mogą korzystać z kolekcji",
+          "Czas oczekiwania w sekundach",
+          "Początkową liczbę elementów w kolekcji"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 48,
+        "question": "Kiedy właściwość IsCompleted obiektu BlockingCollection<T> ma wartość true?",
+        "answers": [
+          "Gdy wywołano CompleteAdding() i kolekcja jest już pusta",
+          "Gdy wywołano CompleteAdding(), niezależnie od liczby elementów",
+          "Gdy kolekcja jest pusta",
+          "Gdy kolekcja osiągnęła maksymalną pojemność"
+        ],
+        "correct": [
+          0
+        ]
+      },
+      {
+        "id": 49,
+        "question": "Jaki typ kolekcji jest domyślnie używany wewnątrz BlockingCollection<T>, jeśli nie podano innej?",
+        "answers": [
+          "ConcurrentQueue<T>",
+          "ConcurrentBag<T>",
+          "ConcurrentStack<T>",
+          "List<T>"
+        ],
+        "correct": [
+          0
+        ]
       },
       {
         "id": 50,
-        "question": "Czy instrukcja lock może być użyta do synchronizacji wątków działających w różnych procesach?",
-        "answers": ["Prawda", "Fałsz"],
-        "correct": [1]
+        "question": "Jaką sygnaturę ma delegat ParameterizedThreadStart używany przy new Thread(...) i Start(object)?",
+        "answers": [
+          "void ParameterizedThreadStart(object? obj)",
+          "void ParameterizedThreadStart()",
+          "object ParameterizedThreadStart(object? obj)",
+          "void ParameterizedThreadStart(object sender, EventArgs e)"
+        ],
+        "correct": [
+          0
+        ]
       }
     ]
   }
 }
+
